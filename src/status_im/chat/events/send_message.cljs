@@ -8,13 +8,16 @@
             [status-im.chat.utils :as chat.utils]
             [status-im.protocol.core :as protocol]
             [status-im.native-module.core :as status]
-            [taoensso.timbre :as log]))
+            [taoensso.timbre :as log]
+            [status-im.utils.types :as types]))
 
 (re-frame/reg-fx
   ::send-notification
-  (fn [fcm-token]
-    (log/debug "send-notification fcm-token: " fcm-token) 
-    (status/notify fcm-token #(log/debug "send-notification cb result: " %))))
+  (fn [{:keys [message payload tokens]}]
+    (let [payload-json (types/clj->json payload)
+          tokens-json  (types/clj->json tokens)]
+      (log/debug "send-notification message: " message " payload: " payload-json " tokens: " tokens-json)
+      (status/notify-users message payload-json tokens-json #(log/debug "send-notification cb result: " %)))))
 
 (re-frame/reg-fx
   ::send-message
@@ -68,7 +71,7 @@
             :user-message              (cond-> {::send-message
                                                 (assoc-in message-to-send
                                                           [:message :to] to)} 
-                                         fcm-token (assoc ::send-notification fcm-token))))))))
+                                         fcm-token (assoc ::send-notification :message content :payload {:title "Title" :body content} :tokens [fcm-token]))))))))
 
 (defn prepare-message
   [{:keys [db now random-id get-last-clock-value] :as cofx}

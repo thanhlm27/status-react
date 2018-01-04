@@ -58,6 +58,6 @@
     (impl/module-initialized!))
   (-should-move-to-internal-storage? [this callback]
     (impl/should-move-to-internal-storage? callback))
-  (-notify [this token callback])
+  (-notify-users [this message payload tokens callback])
   (-add-peer [this enode callback])
   (-close-application [this]))
