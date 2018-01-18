@@ -6,7 +6,7 @@
 (defn- callback [options]
   (fn [index]
     (when (< index (count options))
-      (when-let [handler (:actione (nth options index))]
+      (when-let [handler (:action (nth options index))]
         (handler)))))
 
 (defn- options [options]
@@ -16,9 +16,9 @@
                     (when destructive-opt-index
                       {:destructiveButtonIndex destructive-opt-index})))))
 
-(defn show [{:keys [title message options callback]}]
+(defn show [{:keys [title message options]}]
   (.showActionSheetWithOptions (.-ActionSheetIOS rn-dependencies/react-native)
                                (merge (options options)
                                       (when title {:title title})
                                       (when message {:message message}))
-                               callback))
+                               (callback options)))

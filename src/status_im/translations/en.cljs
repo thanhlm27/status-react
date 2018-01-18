@@ -273,6 +273,10 @@
    :unsigned-transaction-expired          "Unsigned transaction expired"
    :status                                "Status"
    :recipient                             "Recipient"
+   :specify-recipient                     "Specify recipient..."
+   :recipient-code                        "Enter recipient address"
+   :enter-contact-code                    "Enter Contact Code"
+   :recent-recipients                     "Recent recipients"
    :to                                    "To"
    :from                                  "From"
    :data                                  "Data"
@@ -322,9 +326,10 @@
    :send-request                          "Send request"
    :share                                 "Share"
    :eth                                   "ETH"
+   :gwei                                  "Gwei"
    :currency                              "Currency"
    :usd-currency                          "USD"
-   :amount-placeholder                    "Specify amount"
+   :amount-placeholder                    "Specify amount..."
    :transactions                          "Transactions"
    :transaction-details                   "Transaction details"
    :transaction-failed                    "Transaction failed"
@@ -352,6 +357,7 @@
    :not-applicable                        "Not applicable for unsigned transactions"
    :send-transaction                      "Send transaction"
    :receive-transaction                   "Receive transaction"
+   :new-transaction                       "New Transaction"
    :transaction-history                   "Transaction History"
 
    ;; Wallet Send
@@ -367,6 +373,7 @@
    :wallet-transaction-total-fee          "Total Fee"
    :validation-amount-invalid-number      "Amount is not a valid number"
    :validation-amount-is-too-precise      "Amount is too precise. The smallest unit you can send is 1 Wei (1x10^-18 ETH)"
+   :scan-qr-code                          "Scan a QR code with a wallet address"
 
 
 
