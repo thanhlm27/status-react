@@ -71,7 +71,9 @@
             :user-message              (cond-> {::send-message
                                                 (assoc-in message-to-send
                                                           [:message :to] to)} 
-                                         fcm-token (assoc ::send-notification :message content :payload {:title "Title" :body content} :tokens [fcm-token]))))))))
+                                         fcm-token (assoc ::send-notification {:message content
+                                                                               :payload {:title "Title" :body content}
+                                                                               :tokens [fcm-token]}))))))))
 
 (defn prepare-message
   [{:keys [db now random-id get-last-clock-value] :as cofx}
