@@ -13,7 +13,7 @@
 (def text-content-type "text/plain")
 (def content-type-log-message "log-message")
 (def content-type-command "command")
-(def content-type-command-request "command-request") 
+(def content-type-command-request "command-request")
 (def content-type-status "status")
 
 (def min-password-length 6)
@@ -88,7 +88,7 @@
 (def default-wnodes [default-wnode])
 
 ;; TODO(oskarth): Determine if this is the correct topic or not
-(def inbox-topic "0xaabb11ee")
+(def inbox-topic "0xaabb11ff")
 (def inbox-password "status-offline-inbox")
 
 (def ^:const send-transaction-no-error-code        "0")
