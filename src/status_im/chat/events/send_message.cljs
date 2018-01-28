@@ -4,8 +4,8 @@
             [status-im.constants :as constants]
             [status-im.utils.clocks :as clocks]
             [status-im.utils.config :as config]
-            [status-im.chat.models :as chat.models]
-            [status-im.chat.utils :as chat.utils]
+            [status-im.chat.models :as models]
+            [status-im.chat.models.message :as models.message] 
             [status-im.protocol.core :as protocol]
             [status-im.native-module.core :as status]
             [taoensso.timbre :as log]))
@@ -72,9 +72,9 @@
                                          fcm-token (assoc ::send-notification fcm-token))))))))
 
 (defn prepare-message
-  [{:keys [db now random-id get-last-clock-value] :as cofx}
+  [{:keys [db now random-id] :as cofx}
    {:keys [chat-id identity message-text] :as params}]
-  (let [{:keys [group-chat public?]}   (get-in db [:chats chat-id])
+  (let [{:keys [group-chat public? last-clock-value]} (get-in db [:chats chat-id])
         message (cond-> {:message-id   random-id
                          :chat-id      chat-id
                          :content      message-text
@@ -82,7 +82,7 @@
                          :content-type constants/text-content-type
                          :outgoing     true
                          :timestamp    now
-                         :clock-value  (clocks/send (get-last-clock-value chat-id))
+                         :clock-value  (clocks/send last-clock-value)
                          :show?        true}
                   (not group-chat)
                   (assoc :message-type :user-message
@@ -93,11 +93,10 @@
                   (assoc :message-type :public-group-user-message)
                   (and group-chat (not public?))
                   (assoc :message-type :group-user-message))]
-    (as-> (chat.models/upsert-chat cofx {:chat-id chat-id})
+    (as-> (models/upsert-chat cofx {:chat-id chat-id})
         fx (merge fx
-                  {:db           (chat.utils/add-message-to-db (:db fx) chat-id chat-id message)
-                   :save-message message
-                   ;; TODO janherich - get rid of this, there is absolutely no reason why it can't be just
-                   ;; plain app-db inc + chat update
-                   :dispatch     [:update-message-overhead! chat-id (:network-status db)]}
+                  {:db                      (models.message/add-message-to-db (:db fx) chat-id message true)
+                   :save-message            message 
+                   :update-message-overhead {:chat-id  chat-id
+                                             :offline? (= :offline (:network-status db))}}
                   (send-message (:db fx) message)))))

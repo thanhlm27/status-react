@@ -20,7 +20,7 @@
             :color      styles/default-chat-color
             :group-chat false
             :is-active  true
-            :timestamp  now
+            :timestamp  now 
             :contacts   [{:identity chat-id}]}
            chat-props)))
 
@@ -39,9 +39,9 @@
 ;; this shouldn't need a specific function like `upsert-chat` which
 ;; is wrongfuly named
 (defn update-chat
-  "Updates chat properties, if chat is not present in db, creates a default new one"
-  [{:keys [db get-stored-chat] :as cofx} {:keys [chat-id] :as chat}]
-  (let [chat (merge (or (get-stored-chat chat-id)
+  "Updates chat properties, if chat is not present in app-db, creates a default new one"
+  [{:keys [db] :as cofx} {:keys [chat-id] :as chat}]
+  (let [chat (merge (or (-> db (get-in [:chats chat-id]) (dissoc :contacts))
                         (create-new-chat cofx chat-id {}))
                     chat)]
     {:db        (cond-> db
