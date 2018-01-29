@@ -242,14 +242,15 @@
        (if outgoing
          [my-photo from]
          [member-photo from]))]
-    [react/view (style/group-message-view message)
+    [react/view (style/group-message-view outgoing)
      (when-not same-author?
        [message-author-name from])
-     content
-     (when last-outgoing?
-       (if (= (keyword message-type) :group-user-message)
-         [group-message-delivery-status message]
-         [message-delivery-status message]))]]])
+     content]]
+   (when last-outgoing?
+     [react/view {:align-self :flex-end}
+     (if (= (keyword message-type) :group-user-message)
+       [group-message-delivery-status message]
+       [message-delivery-status message])])])
 
 (defn message-container-animation-logic [{:keys [to-value val callback]}]
   (fn [_]

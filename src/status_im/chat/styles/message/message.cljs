@@ -3,6 +3,8 @@
   (:require [status-im.ui.components.styles :as styles]
             [status-im.constants :as constants]))
 
+(def photo-size 36)
+
 (defstyle style-message-text
   {:fontSize 15
    :color    styles/text1-color
@@ -62,7 +64,7 @@
   {:flex-direction :column})
 
 (defn group-message-view
-  [{:keys [outgoing] :as message}]
+  [outgoing]
   (let [align (if outgoing :flex-end :flex-start)]
     {:flexDirection :column
      :width         260
@@ -71,13 +73,13 @@
      :alignItems    align}))
 
 (def message-author
-  {:width      36
-   :align-self :center})
+  {:width      photo-size
+   :align-self :flex-end})
 
 (def photo
-  {:borderRadius 18
-   :width        36
-   :height       36})
+  {:border-radius (/ photo-size 2)
+   :width         photo-size
+   :height        photo-size})
 
 (def delivery-view
   {:flexDirection :row
