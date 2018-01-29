@@ -24,10 +24,6 @@
 
 (def window-width (:width (react/get-dimensions "window")))
 
-(defview message-author-name [{:keys [outgoing from username] :as message}]
-  (letsubs [name   [:contact-name-by-identity from]]
-    [react/text {:style style/author} name]))
-
 (defview message-content-status []
   (letsubs [{:keys [chat-id group-id name color public-key]} [:get-current-chat]
             members                                          [:current-chat-contacts]]
@@ -89,7 +85,6 @@
 (defn message-view
   [{:keys [group-chat] :as message} content]
   [react/view (style/message-view message)
-   (when group-chat [message-author-name message])
    content])
 
 (def replacements
@@ -232,7 +227,7 @@
   (letsubs [{:keys [photo-path]} [:get-current-account]]
     (photo from photo-path)))
 
-(defview participant-name [from]
+(defview message-author-name [from]
   (letsubs [username    [:contact-name-by-identity from]]
     [react/text {:style {:font-size      12
                          :letter-spacing -0.2
@@ -249,7 +244,7 @@
          [member-photo from]))]
     [react/view (style/group-message-view message)
      (when-not same-author?
-       [participant-name from])
+       [message-author-name from])
      content
      (when last-outgoing?
        (if (= (keyword message-type) :group-user-message)

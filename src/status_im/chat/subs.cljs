@@ -130,7 +130,7 @@
                                                                                              last-outgoing-message-id)))
                                                         (concat (rest messages) '(nil))
                                                         messages
-                                                        (concat (rest messages) '(nil))))]
+                                                        (concat '(nil) (butlast messages))))]
                        (conj prepared-messages {:type :datemark
                                                 :value datemark}))))))
     ;; when no messages are in chat, we need to at least fake-out today's datemark
