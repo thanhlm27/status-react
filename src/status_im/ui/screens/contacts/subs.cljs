@@ -200,7 +200,8 @@
         (identicon/identicon chat-id)))))
 
 (defn- address= [{:keys [address] :as contact} s]
-  (when (and address (= s (ethereum/normalized-address address)))
+  (when (and address (= (ethereum/normalized-address s)
+                        (ethereum/normalized-address address)))
     contact))
 
 (defn- contact-by-address [[_ contact] s]
