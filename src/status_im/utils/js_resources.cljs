@@ -15,14 +15,14 @@
 
 (def console-js (slurp-bot :console "web3_metadata.js"))
 
-(def mailman-js (slurp-bot :mailman))
+(def browse-js (slurp-bot :browse))
 
 (def demo-bot-js (slurp-bot :demo_bot))
 
 (def resources
   {:transactor-bot transactor-js
    :console-bot    console-js
-   :mailman-bot    mailman-js
+   :browse-bot     browse-js
    :demo-bot       demo-bot-js})
 
 (defn get-resource [url]

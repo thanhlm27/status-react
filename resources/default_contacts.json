@@ -1,14 +1,14 @@
 {
-    "mailman":
+    "browse":
     {
         "name":
         {
-            "en": "Mailman",
-            "ru": "Печкин"
+            "en": "Browse"
         },
         "dapp?": true,
         "hide-contact?": true,
-        "bot-url": "local://mailman-bot"
+        "bot-url": "local://browse-bot", 
+        "unremovable?": true
     },
 
     "transactor":

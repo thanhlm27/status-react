@@ -3,7 +3,7 @@
             [status-im.data-store.realm.schemas.account.v1.chat-contact :as chat-contact]
             [status-im.data-store.realm.schemas.account.v19.contact :as contact]
             [status-im.data-store.realm.schemas.account.v20.discover :as discover]
-            [status-im.data-store.realm.schemas.account.v19.message :as message]
+            [status-im.data-store.realm.schemas.account.v21.message :as message]
             [status-im.data-store.realm.schemas.account.v12.pending-message :as pending-message]
             [status-im.data-store.realm.schemas.account.v1.processed-message :as processed-message]
             [status-im.data-store.realm.schemas.account.v19.request :as request]
