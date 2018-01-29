@@ -45,11 +45,11 @@
   (let [align     (if outgoing :flex-end :flex-start)
         direction (if outgoing :row-reverse :row)]
     (merge message-body-base
-           {:flexDirection direction
+           {:flex-direction direction
             :width         260
-            :paddingTop    (message-padding-top message)
-            :alignSelf     align
-            :alignItems    align}
+            :padding-top    (message-padding-top message)
+            :align-self     align
+            :align-items    align}
            (last-message-padding message))))
 
 (def selected-message
@@ -59,7 +59,7 @@
    :color      styles/text2-color})
 
 (def group-message-wrapper
-  {:flexDirection :column})
+  {:flex-direction :column})
 
 (defn group-message-view
   [{:keys [outgoing] :as message}]
@@ -71,8 +71,8 @@
      :alignItems    align}))
 
 (def message-author
-  {:width     36
-   :alignSelf :flex-start})
+  {:width      36
+   :align-self :center})
 
 (def photo
   {:borderRadius 18
