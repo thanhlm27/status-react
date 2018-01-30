@@ -170,7 +170,7 @@
        (i18n/label :t/send-transaction)]
       [common/network-info {:text-color :white}]
       [react/scroll-view (merge {:keyboardShouldPersistTaps :always} (when-not modal? {:ref #(reset! scroll %)}))
-       [react/view components.styles/flex
+       [react/view send.styles/send-transaction-form
         [components/recipient-selector {:disabled? modal?
                                         :address   to
                                         :name      to-name}]

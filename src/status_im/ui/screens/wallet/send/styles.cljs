@@ -3,6 +3,10 @@
             [status-im.ui.components.styles :as styles]
             [status-im.ui.screens.wallet.components.styles :as wallet.components.styles]))
 
+(def send-transaction-form
+  {:flex           1
+   :padding-bottom 60})
+
 (defn animated-sign-panel [bottom-value]
   {:position           :absolute
    :left               12
