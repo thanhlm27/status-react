@@ -81,7 +81,6 @@
    :message                               "메시지"
    :not-specified                         "지정되지 않음"
    :public-key                            "공개 키"
-   :phone-number                          "휴대전화 번호"
    :update-status                         "상태 메시지 업데이트..."
    :add-a-status                          "상태 메시지 추가..."
    :status-prompt                         "상태 메시지를 설정하세요. #해시태그를 사용하여 다른 사람이 날 찾는 것을 도울 수 있습니다."
@@ -108,26 +107,15 @@
    :browsing-cancel                       "취소"
 
    ;;sign-up
-   :contacts-syncronized                  "연락처가 동기화되었습니다"
-   :confirmation-code                     (str "감사합니다! 확인 코드를 문자 메시지로 보내 드렸습니다. "
-                                               "전화번호 검증을 위해 확인 코드를 입력해 주세요")
-   :incorrect-code                        (str "잘못된 코드입니다. 다시 입력해 주세요")
    :phew-here-is-your-passphrase          "휴~ 꽤 어려웠어요. 이것이 당신의 암호문입니다. *이걸 적어두신 다음 안전한 곳에 보관하세요!* 계정을 복구할 때 필요합니다."
    :here-is-your-passphrase               "이것이 당신의 암호문입니다. *이걸 적어두신 다음 안전한 곳에 보관하세요!* 계정을 복구할 때 필요합니다."
    :here-is-your-signing-phrase           "이건 당신의 서명 문구입니다. 거래를 승인할 때 필요합니다. *이걸 적어두신 다음 안전한 곳에 보관하세요!*"
-   :phone-number-required                 "여기를 눌러 전화번호를 검증하시면 친구들을 찾아드리겠습니다"
    :shake-your-phone                      "버그나 건의사항이 있나요? 폰을 ~흔들어~ 보세요!"
    :intro-status                          "계정을 설정하고 설정을 변경하려면 저와 채팅하세요!"
    :intro-message1                        "Status에 오신 것을 환영합니다!\n이 메시지를 탭하여 비밀번호를 설정하고 시작하세요!"
    :account-generation-message            "잠시만요, 계정을 만들려면 엄청 복잡한 수학 문제를 풀어야 합니다. 기다려 주세요!"
    :move-to-internal-failure-message      "몇몇 중요한 파일을 외부 저장소에서 내부 저장소로 옮기기 위해 권한이 필요합니다. 추후 버전에서는 외부 저장소를 사용하지 않을 것입니다."
    :debug-enabled                         "디버그 서버가 시작되었습니다! 같은 네트워크 상의 컴퓨터에서 *status-dev-cli scan*를 실행하여 디버그 서버를 확인하세요."
-
-   ;;phone types
-   :phone-e164                            "국제전화 1"
-   :phone-international                   "국제전화 2"
-   :phone-national                        "국내"
-   :phone-significant                     "전국 전화번호"
 
    ;;chats
    :chats                                 "채팅"
@@ -241,7 +229,6 @@
    :done                                  "완료"
 
    ;;validation
-   :invalid-phone                         "잘못된 전화번호"
    :amount                                "액수"
 
    ;;transactions

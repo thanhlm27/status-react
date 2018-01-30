@@ -82,7 +82,6 @@
    :message                               "信息"
    :not-specified                         "未指定"
    :public-key                            "公钥"
-   :phone-number                          "电话号码"
    :update-status                         "更新你的状态..."
    :add-a-status                          "添加状态..."
    :status-prompt                         "设置你的 Status。使用 #hashtags 可以帮助其他人了解你，并且谈论你正在想些什么。"
@@ -109,26 +108,15 @@
    :browsing-cancel                       "取消"
 
    ;;sign-up
-   :contacts-syncronized                  "已同步你的联系人"
-   :confirmation-code                     (str "谢谢！我们已经向你发送了一条包含确认代码的短信，"
-                                               "请提供该代码以确认你的电话号码。")
-   :incorrect-code                        (str "抱歉，代码不正确，请重新输入")
    :phew-here-is-your-passphrase          "嗨，真不容易。这是你的密码，*写下来并好好保管它!* 你需要用它来恢复你的帐户。"
    :here-is-your-passphrase               "这是你的密码，*写下来并好好保管它!* 你需要用它来恢复你的帐户。"
    :here-is-your-signing-phrase           "这是你的签名密码，你需要用它来验证你的交易，*写下来并好好保管它!*"
-   :phone-number-required                 "点击此处输入你的电话号码，我会找到你的朋友"
    :shake-your-phone                      "发现错误或有建议？只要 ~摇一摇~ 你的手机！"
    :intro-status                          "跟我聊天，以设置你的帐户并更改你的设置！"
    :intro-message1                        "欢迎来到Status\n点击该消息来设置你的密码并开始！"
    :account-generation-message            "给我一点时间，我得疯狂地计算一下，才能生成你的帐户！"
    :move-to-internal-failure-message      "我们需要将一些重要的文件从外部存储移动到内部存储。为此，我们需要你的许可。在之后的版本中，我们将不会使用外部存储。"
    :debug-enabled                         "调试服务器已经推出！现在你可以在自己的计算机上执行 *status-dev-cli scan* 来查找在同一网络上的服务器。"
-
-   ;;phone types
-   :phone-e164                            "国际1"
-   :phone-international                   "国际2"
-   :phone-national                        "国内"
-   :phone-significant                     "重要"
 
    ;;chats
    :chats                                 "聊天"
@@ -242,7 +230,6 @@
    :done                                  "完成"
 
    ;;validation
-   :invalid-phone                         "无效的电话号码"
    :amount                                "金额"
 
    ;;transactions

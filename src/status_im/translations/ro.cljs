@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Membri"
    :not-implemented                       "!nu a fost implementat"
    :chat-name                             "Nume chat"
    :notifications-title                   "Notificări și sunete"
    :offline                               "Offline"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Schimbă utilizatori"
 
-   ;chat
+   ;;chat
    :is-typing                             "tastează"
    :and-you                               "Și cu tine"
    :search-chat                           "Caută în chat"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Solicitări"
    :suggestions-commands                  "Comenzi"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Se sincronizează…"
    :sync-synced                           "Sincronizat"
 
-   ;messages
+   ;;messages
    :status-sending                        "Se trimite"
    :status-pending                        "În așteptare"
    :status-sent                           "Trimis"
@@ -42,7 +42,7 @@
    :status-delivered                      "Livrat"
    :status-failed                         "Eșuat"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "secundă"
                                            :other "secunde"}
    :datetime-minute                       {:one   "minut"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "ieri"
    :datetime-today                        "azi"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :message                               "Mesaj"
    :not-specified                         "Nu este specificat"
    :public-key                            "Cheie publică"
-   :phone-number                          "Număr de telefon"
    :add-to-contacts                       "Adaugă la contacte"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Captează"
    :image-source-gallery                  "Selectează din galerie"
 
-   ;sign-up
-   :contacts-syncronized                  "Contactele tale au fost sincronizate"
-   :confirmation-code                     (str "Mulțumim! Ți-am trims un mesaj text cu un cod "
-                                               "de confirmare. Te rugăm să ne transmiți acel cod pentru a-ți confirma numărul de telefon")
-   :incorrect-code                        (str "Ne pare rău, dar codul este greșit, te rugăm să-l introduci încă o dată")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Pfui* a fost greu, iată fraza ta de acces, *noteaz-o și păstreaz-o în siguranță!* Vei avea nevoie de ea pentru a-ți redobândi accesul la cont."
    :here-is-your-passphrase               "Iată fraza ta de acces, *noteaz-o și păstreaz-o în siguranță!* Vei avea nevoie de ea pentru a-ți redobândi accesul la cont."
-   :phone-number-required                 "Apasă aici ca să-ți introduci numărul de telefon și eu îți voi invita prietenii"
    :intro-status                          "Hai să vorbim pe chat pentru a-ți seta contul și modifica setările!"
    :intro-message1                        "Bine ai vent în Status\nApasă pe acest mesaj pentru a-ți seta parola și a începe!"
    :account-generation-message            "O secundă, trebuie să fac niște calcule complicate ca să-ți generez contul!"
 
-   ;chats
+   ;;chats
    :chats                                 "Discuții pe chat"
    :new-group-chat                        "Grup nou de chat"
 
-   ;discover
+   ;;discover
    :discover                              "Descoperire"
    :none                                  "Niciuna"
    :search-tags                           "Tastează aici etichetele de căutat"
@@ -92,17 +86,17 @@
    :recent                                "Recente"
    :no-statuses-discovered                "Nici un status găsit"
 
-   ;settings
+   ;;settings
    :settings                              "Setări"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Contacte"
    :new-contact                           "Contact nou"
    :contacts-group-new-chat               "Începe discuție nouă"
    :no-contacts                           "Nici un contact deocamdată"
    :show-qr                               "Afișează QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Elimină"
    :save                                  "Salvează"
    :clear-history                         "Șterge istoricul"
@@ -110,14 +104,14 @@
    :edit                                  "Editare"
    :add-members                           "Adăugare membri"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "A primit invitația de chat"
    :removed-from-chat                     "te-a elimination din grupul de chat"
    :left                                  "a plecat"
@@ -125,7 +119,7 @@
    :removed                               "eliminat"
    :You                                   "Tu"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Adaugă contact nou"
    :scan-qr                               "Scanează QR"
    :name                                  "Nume"
@@ -135,35 +129,34 @@
    :unknown-address                       "Adresă necunoscută"
 
 
-   ;login
+   ;;login
    :connect                               "Conectare"
    :address                               "Adresă"
    :password                              "Parolă"
    :wrong-password                        "Parola greșită"
 
-   ;recover
+   ;;recover
    :passphrase                            "Fraza de acces"
    :recover                               "Recuperează"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Recuperează acces"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Gata"
    :main-wallet                           "Portofelul principal"
 
-   ;validation
-   :invalid-phone                         "Număr de telefon nevalid"
+   ;;validation
    :amount                                "Sumă"
-   ;transactions
+
+   ;;transactions
    :status                                "Status"
    :recipient                             "Beneficiar"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "ups, eroare"
 
    :confirm                               "Confirmare"
-   :phone-national                        "Național"
    :public-group-topic                    "Subiect"
    :debug-enabled                         "Serverul de curățare a fost lansat! Adresa dvs. Acum vă puteți adăuga DApp rulând *status-dev-cli scan* de pe computerul dvs."
    :new-public-group-chat                 "Alăturați-vă chat-ului public"
@@ -186,7 +179,6 @@
    :faucet-success                        "Solicitarea a fost primită"
    :choose-from-contacts                  "Alegeți dintre contacte"
    :new-group                             "Grup nou"
-   :phone-e164                            "Internațional 1"
    :remove-from-group                     "Eliminare din grup"
    :search-contacts                       "Căutare contacte"
    :transaction                           "Tranzacție"
@@ -196,10 +188,8 @@
    :topic-format                          "Format greșit [a-z0-9\\-]+"
    :enter-valid-public-key                "Vă rugăm să introduceți o cheie publică validă sau să scanați un cod QR"
    :faucet-error                          "Eroare solicitare"
-   :phone-significant                     "Important"
    :search-for                            "Căutare după..."
    :sharing-copy-to-clipboard             "Copiere în clipboard"
-   :phone-international                   "Internațional 2"
    :enter-address                         "Introduceți adresa"
    :send-transaction                      "Trimitere tranzacție"
    :delete-contact                        "Ștergere contact"

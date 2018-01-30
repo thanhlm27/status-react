@@ -82,7 +82,6 @@
    :message                               "Žinutė"
    :not-specified                         "Nenurodyta"
    :public-key                            "Viešasis raktas"
-   :phone-number                          "Telefono numeris"
    :update-status                         "Atsinaujinkite būseną..."
    :add-a-status                          "Pridėkite būseną..."
    :status-prompt                         "Sukurkite būseną, kad žmonės žinotų, ką jūs siūlote. Taip pat galite naudoti #hashtagus."
@@ -109,26 +108,15 @@
    :browsing-cancel                       "Naršyti"
 
    ;;sign-up
-   :contacts-syncronized                  "Jūsų kontaktai buvo sinchronizuoti"
-   :confirmation-code                     (str "Dėkui! Mes išsiuntėme jums teksto pranešimą su patvirtinimo kodu. "
-                                               "Prašau nurodyti šį kodą, kad patvirtintumėte savo telefono numerį")
-   :incorrect-code                        (str "Atsiprašome, kodas neteisingas, prašome įvesti jį dar kartą")
    :phew-here-is-your-passphrase          "Vajė, buvo sunkoka, čia yra jūsų slaptažodis, *išsaugokite jį!* jeigu reikės atkurti jūsų paskyrą."
    :here-is-your-passphrase               "Čia yra jūsų slaptafrazė, *išsaugokite ją!* jeigu reikės atkurti jūsų paskyrą."
    :here-is-your-signing-phrase           "Čia yra jūsų pasirašymo frazė. Ją naudosite, kad patvirtintumėte savo sandorius. *Užsirašykite ir saugokite!*"
-   :phone-number-required                 "Palieskite čia, jei norite įvesti savo telefono numerį, tam kad rasti jūsų draugus"
    :shake-your-phone                      "Radote klaidą arba turite pasiūlymų? Tiesiog ~pakratykite~ savo telefoną!"
    :intro-status                          "Kalbėkite su manimi, kad nustatytumėte savo paskyrą ir pakeistumėte savo nustatymus!"
    :intro-message1                        "Sveiki atvykę į Status!\nPalieskite šį pranešimą, kad nustatytumėte slaptažodį ir pradėtumėte!"
    :account-generation-message            "Sekundėlę, vyksta nemenki skaičiavimai! Generuojama jūsų paskyra!"
    :move-to-internal-failure-message      "Mums reikia perkelti keletą svarbių failų iš išorinės į vidinę atmintį. Norėdami tai padaryti, mums reikia jūsų leidimo. Būsimose versijose mes nenaudosime išorinės atminties."
    :debug-enabled                         "Debug serveris buvo paleistas! Dabar galite paleisti *status-dev-cli scan*, kad surastumėte serverį iš savo kompiuterio tame pačiame tinkle."
-
-   ;;phone types
-   :phone-e164                            "Tarptautinis 1"
-   :phone-international                   "Tarptautinis 2"
-   :phone-national                        "Vietinis"
-   :phone-significant                     "Reikšmingas"
 
    ;;chats
    :chats                                 "Pokalbiai"
@@ -242,7 +230,6 @@
    :done                                  "Baigta"
 
    ;;validation
-   :invalid-phone                         "Neteisingas telefono numeris"
    :amount                                "Paskyra"
 
    ;;transactions

@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Tagok"
    :not-implemented                       "!nem végrehajtott"
    :chat-name                             "Csevegés neve"
    :notifications-title                   "Értesítések és hangok"
    :offline                               "Offline"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Felhasználók váltása"
 
-   ;chat
+   ;;chat
    :is-typing                             "gépel"
    :and-you                               "és te"
    :search-chat                           "Csevegés keresése"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Kérések"
    :suggestions-commands                  "Parancsok"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Szinkronizálás..."
    :sync-synced                           "Szinkronizálás folyamatban"
 
-   ;messages
+   ;;messages
    :status-sending                        "Küldés"
    :status-pending                        "Függőben levő"
    :status-sent                           "Elküldve"
@@ -42,7 +42,7 @@
    :status-delivered                      "Kézbesítve"
    :status-failed                         "Nem sikerült"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "másodperc"
                                            :other "másodperc"}
    :datetime-minute                       {:one   "perc"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "tegnap"
    :datetime-today                        "ma"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :message                               "Üzenet"
    :not-specified                         "Nincs megadva"
    :public-key                            "Nyilvános kulcs"
-   :phone-number                          "Telefonszám"
    :add-to-contacts                       "Hozzáadás a kapcsolatokhoz"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Rögzítés"
    :image-source-gallery                  "Kiválasztás a galériából"
 
-   ;sign-up
-   :contacts-syncronized                  "Kapcsolataid szinkronizálásra kerültek"
-   :confirmation-code                     (str "Köszönjük! Küldtünk neked egy szöveges üzenetet megerősítési "
-                                               "kóddal. Kérjük, add meg a kódot telefonszámod megerősítése érdekében")
-   :incorrect-code                        (str "Sajnáljuk, hibás kód, kérjük, add meg újból")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Hűha* ez nehéz volt, de kész a jelmondatod, *írd fel valahova és vigyázz rá!* Szükséged lesz hozzá felhasználói fiókod helyreállításához."
    :here-is-your-passphrase               "Kész a jelmondatod, *írd fel valahová és őrizd meg!* Szükséged lesz hozzá felhasználói fiókod helyreállításához."
-   :phone-number-required                 "Érints ide telefonszámod megadásához és megtalálom a barátaidat"
    :intro-status                          "Csevegj velem felhasználói fiókod létrehozásáról és beállításaid megváltoztatásáról!"
    :intro-message1                        "Üdv az Állapotnál\nÉrints erre a üzenetre, állítsd be a jelszavad és fogj hozzá!"
    :account-generation-message            "Adj egy percet, varázsolok egy kicsit és létre is hozom a felhasználói fiókodat!"
 
-   ;chats
+   ;;chats
    :chats                                 "Csevegések"
    :new-group-chat                        "Új csoportos csevegés"
 
-   ;discover
+   ;;discover
    :discover                              "Felfedezés"
    :none                                  "Semmi"
    :search-tags                           "Add meg keresési címkéidet itt"
@@ -92,17 +86,17 @@
    :recent                                "Legutóbbi"
    :no-statuses-discovered                "Nincsenek felfedezett állapotok"
 
-   ;settings
+   ;;settings
    :settings                              "Beállítások"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Kapcsolatok"
    :new-contact                           "Új kapcsolat"
    :contacts-group-new-chat               "Új csevegés indítása"
    :no-contacts                           "Még nincsenek kapcsolatok"
    :show-qr                               "QR mutatása"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Eltávolítás"
    :save                                  "Mentés"
    :clear-history                         "Előzmények törlése"
@@ -110,14 +104,14 @@
    :edit                                  "Szerkesztés"
    :add-members                           "Tagok hozzáadása"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "csevegési meghívásban részesült"
    :removed-from-chat                     "eltávolítva a csoportos csevegésből"
    :left                                  "maradt"
@@ -125,7 +119,7 @@
    :removed                               "eltávolított"
    :You                                   "Te"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Új kapcsolat hozzáadása"
    :scan-qr                               "QR beolvasása"
    :name                                  "Név"
@@ -135,35 +129,34 @@
    :unknown-address                       "Ismeretlen cím"
 
 
-   ;login
+   ;;login
    :connect                               "Kapcsolódás"
    :address                               "Cím"
    :password                              "Jelszó"
    :wrong-password                        "Hibás jelszó"
 
-   ;recover
+   ;;recover
    :passphrase                            "Jelmondat"
    :recover                               "Visszaállítás"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Hozzáférés helyreállítása"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Kész"
    :main-wallet                           "Fő zseb"
 
-   ;validation
-   :invalid-phone                         "Hibás telefonszám"
+   ;;validation
    :amount                                "Összeg"
-   ;transactions
+
+   ;;transactions
    :status                                "Állapot"
    :recipient                             "Címzett"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "hoppá, hiba"
 
    :confirm                               "Megerősít"
-   :phone-national                        "Nemzeti"
    :public-group-topic                    "Téma"
    :debug-enabled                         "A hibakereső szerver elindításra került! Mostantól hozzáadhatod a DAppod, ha futtatod a számítógépeden a következőt: *status-dev-cli scan*"
    :new-public-group-chat                 "Csatlakozás nyilvános csevegéshez"
@@ -186,7 +179,6 @@
    :faucet-success                        "A Faucet kérés beérkezett"
    :choose-from-contacts                  "Választás a névjegyekből"
    :new-group                             "Új csoport"
-   :phone-e164                            "1. nemzetközi"
    :remove-from-group                     "Eltávolítás a csoportból"
    :search-contacts                       "Névjegyek keresése"
    :transaction                           "Tranzakció"
@@ -196,10 +188,8 @@
    :topic-format                          "Rossz formátum [a-z0-9\\-]+"
    :enter-valid-public-key                "Kérjük, adj meg egy érvényes nyilvános billentyűkombinációt vagy olvasd be a QR-kódot"
    :faucet-error                          "Hiba a Faucet kérés során"
-   :phone-significant                     "Jelentős"
    :search-for                            "Keresés a következőre: ..."
    :sharing-copy-to-clipboard             "Másolás vágólapra"
-   :phone-international                   "2. nemzetközi"
    :enter-address                         "Cím megadása"
    :send-transaction                      "Tranzakció küldése"
    :delete-contact                        "Névjegy törlése"

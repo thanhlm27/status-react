@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "ممبران"
    :not-implemented                       "نافذ نہیں ہوا!"
    :chat-name                             "چیٹ کا نام"
    :notifications-title                   "نوٹیفیکیشن اور آوازیں"
    :offline                               "آف لائن"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "صارف تبدیل کریں"
 
-   ;chat
+   ;;chat
    :is-typing                             "اندراج کر رہا ہے"
    :and-you                               "اور آپ"
    :search-chat                           "چیٹ تلاش کریں"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "درخواستیں"
    :suggestions-commands                  "کمانڈ"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "سنکرونائز ہو رہا ہے"
    :sync-synced                           "دوران سنکرونائز"
 
-   ;messages
+   ;;messages
    :status-sending                        "بھیجا جا رہا ہے"
    :status-pending                        "زیر غور"
    :status-sent                           "بھیج دیا گیا"
@@ -42,7 +42,7 @@
    :status-delivered                      "پہنچا دیا گیا"
    :status-failed                         "ناکام ہو گیا"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "سیکنڈ"
                                            :other "سیکنڈ"}
    :datetime-minute                       {:one   "منٹ"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "کل"
    :datetime-today                        "آج"
 
-   ;profile
+   ;;profile
    :profile                               "پروفائل"
    :message                               "پیغام"
    :not-specified                         "واضح نہیں کیا گیا"
    :public-key                            "Public Key"
-   :phone-number                          "فون نمبر"
    :add-to-contacts                       "اپنے رابطوں میں درج کریں"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "کھینچیں"
    :image-source-gallery                  "گیلری سے چنیں"
 
-   ;sign-up
-   :contacts-syncronized                  "آپ کے کانٹیکٹس سنکرونائز ہو گئے ہیں"
-   :confirmation-code                     (str "شکریہ! ہم نے آپ کو تصدیق کا پیغام بھیج دیا ہے "
-                                               "کوڈ کے ساتھ۔ برائے مہربانی اپنا نمبر کنفرم کرنے کے لیے وہ کوڈ فراہم کریں۔")
-   :incorrect-code                        (str "معذرت، کوڈ غلط تھا، برائے مہربانی دوبارہ درج کریں")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*اف* یہ مشکل تھا, یہ آپ کی passphrase ہے۔, *اسے لکھ لیں اور اپنے پاس محفوظ کر لیں۔* آپ کو اپنا اکاؤنٹ بحال کرنے کے لیے اس کی ضرورت ہو گی۔"
    :here-is-your-passphrase               "یہ آپ کی passphrase ہے۔, *ا اکاؤنٹ بحال کرنے کے لیے اس کی ضرورت * ہے۔, *اسے لکھ لیں اور اپنے پاس محفوظ کر لیں۔* آپ کو ا"
-   :phone-number-required                 "اپنا فون نمبر درج کرنے کے لیے یہاں ٹیپ کریں اور میں آپ کے دوستوں کو تلاش کروں گا"
    :intro-status                          "اپنا اکاؤنٹ سیٹ اپ کرنے اور سیٹنگز تبدیل کرنے کے لیے مجھ سے چیٹ کریں!"
    :intro-message1                        "سٹیٹس میں خوش آمدید اور اپنا پاسورڈ سیٹ کرنے کے لیے اس کو ٹیپ کریں اور شروعات کریں۔"
    :account-generation-message            "مجھے ایک سیکنڈ دیں، اپ کا اکاؤنٹ تشکیل دینے کے لیے مجھے کچھ ریاضی سے کام کرنا ہے۔!"
 
-   ;chats
+   ;;chats
    :chats                                 "چیٹ"
    :new-group-chat                        "نئی گروپ چیٹ"
 
-   ;discover
+   ;;discover
    :discover                              "دریافت"
    :none                                  "کوئی نہیں"
    :search-tags                           "اپنا تلاش کا ٹیگ یہاں درج کریں"
@@ -92,17 +86,17 @@
    :recent                                "حالیہ"
    :no-statuses-discovered                "کوئی سٹیٹس نہیں پایا گیا"
 
-   ;settings
+   ;;settings
    :settings                              "سیٹنگز"
 
-   ;contacts
+   ;;contacts
    :contacts                              "رابطے"
    :new-contact                           "نئے رابطے"
    :contacts-group-new-chat               "نئی چیٹ شروع کریں"
    :no-contacts                           "ابھی یہاں کوئی کنٹیکٹ نہیں"
    :show-qr                               "دکھائیں QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "نکالیں"
    :save                                  "محفوظ کریں"
    :clear-history                         "تاریخ مٹا دیں"
@@ -110,14 +104,14 @@
    :edit                                  "تصحیح"
    :add-members                           "ممبران شامل کریں"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "چیٹ کا دعوت نامہ وصول ہوا ہے"
    :removed-from-chat                     "گروپ سے نکال دیا ہے"
    :left                                  "چھوڑ دیا"
@@ -125,7 +119,7 @@
    :removed                               "نکال دیا گیا"
    :You                                   "آپ"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "نیا کانٹیکٹ شامل کریں"
    :scan-qr                               "سکین کریں QR"
    :name                                  "نام"
@@ -135,35 +129,34 @@
    :unknown-address                       "نامعلوم پتہ"
 
 
-   ;login
+   ;;login
    :connect                               "ملیں"
    :address                               "پتہ"
    :password                              "پاسورڈ"
    :wrong-password                        "غلط پاسورڈ"
 
-   ;recover
+   ;;recover
    :passphrase                            "Passphrase"
    :recover                               "بحال کریں"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "رسائی بحال کریں"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "ہو گیا"
    :main-wallet                           "مرکزی والٹ"
 
-   ;validation
-   :invalid-phone                         "غلط فون نمبر"
+   ;;validation
    :amount                                "رقم"
-   ;transactions
+
+   ;;transactions
    :status                                "سٹیٹس"
    :recipient                             "وصول کنندہ"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "اوہ، غلطی ہو گئی"
 
    :confirm                               "توثیق کریں"
-   :phone-national                        "قومی"
    :public-group-topic                    "موضوع"
    :debug-enabled                         "ڈی بگ سرور کو لانچ کیا گیا ہے! آپ کا آئی پتہ ہے۔ اب آپ اپنے کمپیوٹر سے *status-dev-cli scan* کو چلاتے ہوئے اپنا DApp شامل کر سکتے ہیں"
    :new-public-group-chat                 "عوامی چیٹ میں شامل ہوں"
@@ -186,7 +179,6 @@
    :faucet-success                        "فوسیٹ درخواست موصول ہوئی ہے"
    :choose-from-contacts                  "روابط سے منتخب کریں"
    :new-group                             "نیا گروپ"
-   :phone-e164                            "بین الاقوامی 1"
    :remove-from-group                     "گروپ سے خارج کریں"
    :search-contacts                       "روابط کی تلاش کریں"
    :transaction                           "لین دین"
@@ -196,18 +188,16 @@
    :topic-format                          "غلط فارمیٹ [a-z0-9\\-]+"
    :enter-valid-public-key                "برائے مہربانی ایک درست عوامی کلید داخل کریں یا کوئی کیو آر کوڈ اسکین کریں"
    :faucet-error                          "فاسیٹ درخواست کی خرابی"
-   :phone-significant                     "اہم"
    :search-for                            ".... کو تلاش کریں"
    :sharing-copy-to-clipboard             "کلپ بورڈ پر نقل کیا گیا"
-   :phone-international                   "بین الاقوامی 2"
    :enter-address                         "پتہ داخل کریں"
    :send-transaction                      "لین دین بھیجیں"
    :delete-contact                        "رابطہ حذف کریں"
    :mute-notifications                    "اطلاع نامے خاموش کریں"
 
    :contact-s
-                                          {:one   "رابطہ"
-                                           :other "روابط"}
+   {:one   "رابطہ"
+    :other "روابط"}
    :next                                  "اگلا"
    :from                                  "سے"
    :search-chats                          "چیٹس تلاش کریں"

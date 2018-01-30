@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "สมาชิก"
    :not-implemented                       "!ยังไม่ได้ดำเนินการ"
    :chat-name                             "ชื่อแชท"
    :notifications-title                   "การแจ้งเตือนและเสียง"
    :offline                               "ออฟไลน์"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "สลับผู้ใช้"
 
-   ;chat
+   ;;chat
    :is-typing                             "กำลังพิมพ์"
    :and-you                               "และคุณ"
    :search-chat                           "ค้นหาแชท"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "คำร้องขอ"
    :suggestions-commands                  "คำสั่ง"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "กำลังซิงค์..."
    :sync-synced                           "ระหว่างการซิงค์"
 
-   ;messages
+   ;;messages
    :status-sending                        "กำลังส่ง"
    :status-pending                        "อยู่ระหว่างดำเนินการ"
    :status-sent                           "ส่งแล้ว"
@@ -42,7 +42,7 @@
    :status-delivered                      "ส่งแล้ว"
    :status-failed                         "ล้มเหลว"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "วินาที"
                                            :other "วินาที"}
    :datetime-minute                       {:one   "นาที"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "เมื่อวาน"
    :datetime-today                        "วันนี้"
 
-   ;profile
+   ;;profile
    :profile                               "โปรไฟล์"
    :message                               "ข้อความ"
    :not-specified                         "ไม่ระบุ"
    :public-key                            "คีย์สาธารณะ"
-   :phone-number                          "หมายเลขโทรศัพท์"
    :add-to-contacts                       "เพิ่มไปยังผู้ติดต่อ"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "ถ่ายภาพ"
    :image-source-gallery                  "เลือกจากแกลเลอรี"
 
-   ;sign-up
-   :contacts-syncronized                  "ไซิงค์รายชื่อผู้ติดต่อของคุณแล้ว"
-   :confirmation-code                     (str "ขอขอบคุณ! เราได้ส่งข้อความตัวอักษรพร้อมรหัสยืนยันแล้ว"
-                                               "โปรดมอบรหัสนั้นเพื่อยืนยันหมายเลขโทรศัพท์ของคุณ")
-   :incorrect-code                        (str "ขออภัย รหัสไม่ถูกต้อง โปรดกรอกอีกครั้ง")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*โล่งอกไปที* มันไม่ง่ายเลย นี่คือวลีรหัสผ่านของคุณ *จดมันไว้และรักษามันให้ปลอดภัย!* คุณจะจำเป็นต้องใช้มันเพื่อกู้คืนบัญชีของคุณ"
    :here-is-your-passphrase               "นี่คือวลีรหัสผ่านของคุณ *จดมันไว้และรักษามันให้ปลอดภัย!* คุณจะจำเป็นต้องใช้มันเพื่อกู้คืนบัญชีของคุณ"
-   :phone-number-required                 "แตะที่นี่เพื่อกรอกหมายเลขโทรศัพท์ของคุณ & ฉันจะค้นหาเพื่อนของคุณ"
    :intro-status                          "แชทกับฉันเพื่อตั้งค่าบัญชีของคุณและเปลี่ยนการตั้งค่าของคุณ!"
    :intro-message1                        "ยินดีต้อนรับสู่สถานะ \n แตะข้อความนี้เพื่อตั้งรหัสผ่านของคุณ & เริ่มต้น!"
    :account-generation-message            "ให้เวลาฉันหนึ่งวินาที ฉันจะต้องคำนวณอย่างหนักเพื่อสร้างบัญชีของคุณ!"
 
-   ;chats
+   ;;chats
    :chats                                 "แชท"
    :new-group-chat                        "แชทกลุ่มใหม่"
 
-   ;discover
+   ;;discover
    :discover                              "การค้นพบ"
    :none                                  "ไม่มี"
    :search-tags                           "พิมพ์แท็กการค้นหาของคุณที่นี่"
@@ -92,17 +86,17 @@
    :recent                                "เมื่อเร็ว ๆ นี้"
    :no-statuses-discovered                "ไม่พบสถานะใด ๆ"
 
-   ;settings
+   ;;settings
    :settings                              "การตั้งค่า"
 
-   ;contacts
+   ;;contacts
    :contacts                              "ผู้ติดต่อ"
    :new-contact                           "ผู้ติดต่อใหม่"
    :contacts-group-new-chat               "เริ่มแชทใหม่"
    :no-contacts                           "ยังไม่มีผู้ติดต่อ"
    :show-qr                               "แสดง QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "ลบ"
    :save                                  "บันทึก"
    :clear-history                         "ลบประวัติ"
@@ -110,14 +104,14 @@
    :edit                                  "แก้ไข"
    :add-members                           "เพิ่มสมาชิก"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "คำเชิญแชทที่ได้รับ"
    :removed-from-chat                     "ลบคุณออกจากแชทกลุ่ม"
    :left                                  "ออกไปแล้ว"
@@ -125,7 +119,7 @@
    :removed                               "ลบแล้ว"
    :You                                   "คุณ"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "เพิ่มผู้ติดต่อใหม่"
    :scan-qr                               "สแกน QR"
    :name                                  "ชื่อ"
@@ -135,35 +129,34 @@
    :unknown-address                       "ที่อยู่ที่ไม่ทราบ"
 
 
-   ;login
+   ;;login
    :connect                               "เชื่อมต่อ"
    :address                               "ที่อยู่"
    :password                              "รหัสผ่าน"
    :wrong-password                        "รหัสผ่านไม่ถูกต้อง"
 
-   ;recover
+   ;;recover
    :passphrase                            "วลีรหัสผ่าน"
    :recover                               "กู้คืน"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "กู้คืนการเข้าถึง"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "เสร็จสิ้น"
    :main-wallet                           "กระเป๋าเงินหลัก"
 
-   ;validation
-   :invalid-phone                         "หมายเลขโทรศัพท์ไม่ถูกต้อง"
+   ;;validation
    :amount                                "จำนวน"
-   ;transactions
+
+   ;;transactions
    :status                                "สถานะ"
    :recipient                             "ผู้รับ"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "อุ๊ย มีข้อผิดพลาด"
 
    :confirm                               "ยืนยัน"
-   :phone-national                        "ระดับชาติ"
    :public-group-topic                    "หัวข้อ"
    :debug-enabled                         "มีการเปิดการดำเนินงานของเซิร์ฟเวอร์ที่ได้แก้ไขข้อบกพร่องแล้ว! ตอนนี้คุณสามารถเพิ่ม DApp ของคุณโดยการเปิดดำเนินการ *status-dev-cli scan* จากคอมพิวเตอร์ของคุณ"
    :new-public-group-chat                 "เข้าร่วมแชทสาธารณะ"
@@ -186,7 +179,6 @@
    :faucet-success                        "ได้รับคำขอไขก๊อกแล้ว"
    :choose-from-contacts                  "เลือกจากรายชื่อติดต่อ"
    :new-group                             "กลุ่มใหม่"
-   :phone-e164                            "ระหว่างประเทศ 1"
    :remove-from-group                     "ลบออกจากกลุ่ม"
    :search-contacts                       "ค้นหารายชื่อติดต่อ"
    :transaction                           "การทำธุรกรรม"
@@ -196,18 +188,16 @@
    :topic-format                          "รูปแบบไม่ถูกต้อง [a-z0-9\\-]+"
    :enter-valid-public-key                "โปรดใส่คีย์สาธารณะที่ถูกต้องหรือสแกนรหัส QR"
    :faucet-error                          "คำขอไขก๊อกผิดพลาด"
-   :phone-significant                     "มีความสำคัญ"
    :search-for                            "ค้นหา..."
    :sharing-copy-to-clipboard             "คัดลอกไปยังคลิปบอร์ด"
-   :phone-international                   "ระหว่างประเทศ 2"
    :enter-address                         "ใส่ที่อยู่"
    :send-transaction                      "ส่งการทำธุรกรรม"
    :delete-contact                        "ลบรายชื่อติดต่อ"
    :mute-notifications                    "ปิดเสียงการแจ้งเตือน"
 
    :contact-s
-                                          {:one   "รายชื่อติดต่อ"
-                                           :other "รายชื่อติดต่อ"}
+   {:one   "รายชื่อติดต่อ"
+    :other "รายชื่อติดต่อ"}
    :next                                  "ถัดไป"
    :from                                  "จาก"
    :search-chats                          "ค้นหาแชท"

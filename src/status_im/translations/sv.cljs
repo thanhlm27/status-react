@@ -82,7 +82,6 @@
    :message                               "Meddelande"
    :not-specified                         "Inte angivet"
    :public-key                            "Offentlig nyckel"
-   :phone-number                          "Telefonnummer"
    :update-status                         "Uppdatera din status..."
    :add-a-status                          "Lägg till status..."
    :status-prompt                         "Lägg till din status. Använd #hashtags för att göra det lättare för andra att hitta dig och tala om det som intresserar dig"
@@ -109,26 +108,15 @@
    :browsing-cancel                       "Avbryt"
 
    ;;sign-up
-   :contacts-syncronized                  "Dina kontakter har synkroniserats"
-   :confirmation-code                     (str "Tack! Vi har skickat dig ett textmeddelande med en bekräftelse "
-                                               "kod. Var god ange den koden för att bekräfta ditt telefonnummer")
-   :incorrect-code                        (str "Tyvärr var koden felaktig, var god ange den igen")
    :phew-here-is-your-passphrase          "*Pust* det var svårt, här är din lösenordsfras, *skriv ner den och förvara den säkert!* Du kommer att behöva den för att återställa ditt konto."
    :here-is-your-passphrase               "Här är din lösenordsfras, *skriv ner den och förvara den säkert!* Du kommer att behöva den för att återställa ditt konto."
    :here-is-your-signing-phrase           "Här är din underskriftsfras. Du kommer att använde den för att verifiera dina transaktioner. *Skriv ner den och förvara den säkert!*"
-   :phone-number-required                 "Tryck här för att ange ditt telefonnummer så jag kommer att hitta dina vänner"
    :shake-your-phone                      "Hittade du ett fel eller har du ett förbättringsförslag? ~Skaka~ bara din telefon!"
    :intro-status                          "Chatta med mig för att konfigurera ditt konto och ändra dina inställningar!"
    :intro-message1                        "Välkommen till Status\nTryck på detta meddelande för att ange ett lösenord och komma igång!"
    :account-generation-message            "Vänta ett ögonblick, jag måste göra lite galna beräkningar för att generera ditt konto!"
    :move-to-internal-failure-message      "Vi måste flytta vissa viktiga filer från extern lagring till intern lagring. För att göra detta behöver vi ditt tillstånd. Vi kommer inte längre att använda extern lagring i framtida versioner."
    :debug-enabled                         "Debugservern har startats! Du kan nu köra *status-dev-cli scan* för att hitta servern på samma nätverk som din dator."
-
-   ;;phone types
-   :phone-e164                            "Internationell 1"
-   :phone-international                   "Internationell 2"
-   :phone-national                        "Nationell"
-   :phone-significant                     "Viktig"
 
    ;;chats
    :chats                                 "Chattar"
@@ -242,7 +230,6 @@
    :done                                  "Klar"
 
    ;;validation
-   :invalid-phone                         "Ogiltigt telefonnummer"
    :amount                                "Belopp"
 
    ;;transactions
@@ -360,4 +347,3 @@
    :close-app-title                       "Varning!"
    :close-app-content                     "Denna app kommer att avslutas. När du öppnar den på nytt kommer det valda nätverket att användas"
    :close-app-button                      "Bekräfta"})
-

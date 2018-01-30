@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Medlemmer"
    :not-implemented                       "!ikke implementert"
    :chat-name                             "Kallenavn"
@@ -20,11 +20,11 @@
    :camera-access-error                   "For å tillate bruk av kamera, gå til systeminstillinger og sørg for at Status > Kamera er aktivert."
    :photos-access-error                   "For å tillate bruk av bilder, gå til systeminstillinger og sørg for at Status > Bilder er aktivert."
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Bytt brukere"
    :current-network                       "Nåværende nettverk"
 
-   ;chat
+   ;;chat
    :is-typing                             "skriver"
    :and-you                               "og du"
    :search-chat                           "Søk i meldinger"
@@ -44,11 +44,11 @@
    :faucet-success                        "Du har mottatt en faucet forespørsel"
    :faucet-error                          "Faucet forespørselen feilet"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Synkroniserer..."
    :sync-synced                           "Synkronisert"
 
-   ;messages
+   ;;messages
    :status-sending                        "Sender"
    :status-pending                        "Venter"
    :status-sent                           "Sendt"
@@ -57,7 +57,7 @@
    :status-delivered                      "Levert"
    :status-failed                         "Feilet"
 
-   ;datetime
+   ;;datetime
    :datetime-ago-format                   "{{number}} {{time-intervals}} {{ago}}"
    :datetime-second                       {:one   "sekund"
                                            :other "sekunder"}
@@ -71,13 +71,12 @@
    :datetime-yesterday                    "i går"
    :datetime-today                        "i dag"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :edit-profile                          "Rediger profil"
    :message                               "Melding"
    :not-specified                         "Ikke spesifisert"
    :public-key                            "Offentlig nøkkel"
-   :phone-number                          "Telefonnummer"
    :update-status                         "Oppdater din status..."
    :add-a-status                          "Legg til en status..."
    :status-prompt                         "Legg til en status slik at andre forstår hva du tilbyr. Bruk gjerne #hashtag."
@@ -101,16 +100,10 @@
    :browsing-open-in-web-browser          "Åpne i nettleser"
    :browsing-cancel                       "Avbryt"
 
-   ;sign-up
-   :contacts-syncronized                  "Dine kontaker har blitt synkronisert"
-   :confirmation-code                     (str "Topp! Vi har sendt deg en tekstmelding med bekreftelseskode."
-                                               "Vennligst send oss tilbake koden for å verifisere at dette er din telefon")
-   :incorrect-code                        (str "Beklager, prøv på ny")
-
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Phew* det var vrient, her er din nye passordfrase, *skriv den ned og hold den for deg selv!* Du vil trenge den for å kunne gjenopprette kontoen."
    :here-is-your-passphrase               "Her er din nye passordfrase, *skriv den ned og hold den for deg selv!* Du vil trenge den for å kunne gjenopprette kontoen."
    :here-is-your-signing-phrase           "Her er din signeringsfrase. Du vil bruke den til å verifisere dine transaksjoner. *skriv den ned og hold den for deg selv!*"
-   :phone-number-required                 "Trykk her og skriv ditt telefonnummer, så skal jeg finne vennene dine"
    :shake-your-phone                      "Har du funnet en feil eller har du tilbakemelding til oss? Bare ~rist~ på telefonen!"
    :intro-status                          "Chat med meg for å sette opp kontoen din og endre instillinger!"
    :intro-message1                        "Velkommen til Status\nTrykk på denne beskjeden for å sette et passord og komme i gang!"
@@ -118,13 +111,7 @@
    :move-to-internal-failure-message      "Vi må flytte noen viktige filer fra ekstern til intern lagring. For å kunne gjøre dette, trenger vi din godkjenning. Vi kommer ikke til å bruke ekstern lagring i fremtidige versjoner."
    :debug-enabled                         "Debug server har blitt satt i gang! Du kan nå kjøre *status-dev-cli scan* for å finne serveren på PC'n din fra samme nettverk."
 
-   ;phone types
-   :phone-e164                            "Internasjonal 1"
-   :phone-international                   "Internasjonal 2"
-   :phone-national                        "Nasjonal"
-   :phone-significant                     "Betydningsfull"
-
-   ;chats
+   ;;chats
    :chats                                 "Chats"
    :delete-chat                           "Fjern melding"
    :new-group-chat                        "Ny gruppemelding"
@@ -135,7 +122,7 @@
    :topic-format                          "Feil format [a-z0-9\\-]+"
    :public-group-topic                    "Emne"
 
-   ;discover
+   ;;discover
    :discover                              "Oppdag"
    :none                                  "Ingen"
    :search-tags                           "Søk etter etikett her"
@@ -144,10 +131,10 @@
    :no-statuses-discovered                "Ingen status oppdaget"
    :no-statuses-found                     "Ingen status funnet"
 
-   ;settings
+   ;;settings
    :settings                              "Instillinger"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Kontaker"
    :new-contact                           "Ny kontakt"
    :delete-contact                        "Slett kontakt"
@@ -162,7 +149,7 @@
    :enter-address                         "Adresse"
    :more                                  "mer"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Fjern"
    :save                                  "Lagre"
    :delete                                "Slett"
@@ -175,10 +162,10 @@
    :edit                                  "Rediger"
    :add-members                           "Legg til medlemmer"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
    :new-group                             "Ny gruppe"
    :reorder-groups                        "Organiser grupper"
    :edit-group                            "Rediger gruppe"
@@ -188,9 +175,9 @@
    :contact-s                             {:one   "kontakt"
                                            :other "kontaker"}
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "Motatt chat-invitasjon"
    :removed-from-chat                     "fjernet deg fra gruppechatten"
    :left                                  "venstre"
@@ -198,7 +185,7 @@
    :removed                               "fjernet"
    :You                                   "Du"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Legg til ny kontakt"
    :scan-qr                               "Skan QR-kode"
    :name                                  "Navn"
@@ -208,7 +195,7 @@
    :can-not-add-yourself                  "Du kan ikke legge til deg selv"
    :unknown-address                       "Ukjent adresse"
 
-   ;login
+   ;;login
    :connect                               "Koble til"
    :address                               "Adresse"
    :password                              "Passord"
@@ -216,23 +203,22 @@
    :sign-in                               "Logg på"
    :wrong-password                        "Feil passord"
 
-   ;recover
+   ;;recover
    :passphrase                            "Passordfrase"
    :recover                               "Gjenopprett"
    :twelve-words-in-correct-order         "12 ord i riktig rekkefølge"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Få tilbake tilgang"
    :create-new-account                    "Opprett konto"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Ferdig"
 
-   ;validation
-   :invalid-phone                         "Feil telefonnummer"
+   ;;validation
    :amount                                "Beløp"
 
-   ;transactions
+   ;;transactions
    :confirm                               "Bekreft"
    :transaction                           "Transaksjon"
    :status                                "Status"
@@ -242,14 +228,14 @@
    :data                                  "Data"
    :got-it                                "Mottatt"
 
-   ;:webview
+   ;;webview
    :web-view-error                        "oops, feil"
 
    ;;testfairy warning
    :testfairy-title                       "Advarsel!"
    :testfairy-message                     "Du bruker en nattlig versjon av applikasjonen. I den nattlige versjonen tar vi opp video og kjører en del logging som kan bli tatt i bruk av våre utviklere for å etterforske potensielle problemer. Dette gjelder kun den nattlige versjonen, versjoner som er installert fra PlayStore eller TestFlight blir ikke logget."
 
-   ;; wallet
+   ;;wallet
    :wallet                                "Lommebok"
    :wallets                               "Lommebøker"
    :your-wallets                          "Dine lommebøker"

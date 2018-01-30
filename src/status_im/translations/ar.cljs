@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+                                        ;common
    :members-title                         "الأعضاء"
    :not-implemented                       "!غير مُطَبّق"
    :chat-name                             "اسم الدردشة"
    :notifications-title                   "الإخطارات والأصوات"
    :offline                               "غير متصل"
 
-   ;drawer
+                                        ;drawer
    :switch-users                          "التبديل بين المستخدمين"
 
-   ;chat
+                                        ;chat
    :is-typing                             "يكتب"
    :and-you                               "وأنت أيضاً"
    :search-chat                           "البحث في الدردشة"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "الطلبات"
    :suggestions-commands                  "الأوامر"
 
-   ;sync
+                                        ;sync
    :sync-in-progress                      "قيد المزامنة..."
    :sync-synced                           "بالتزامن"
 
-   ;messages
+                                        ;messages
    :status-sending                        "إرسال"
    :status-pending                        "ريثما"
    :status-sent                           "تم الإرسال"
@@ -42,7 +42,7 @@
    :status-delivered                      "تم الاستلام"
    :status-failed                         "فشل"
 
-   ;datetime
+                                        ;datetime
    :datetime-second                       {:one   "ثانية"
                                            :other "ثوان"}
    :datetime-minute                       {:one   "دقيقة"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "الأمس"
    :datetime-today                        "اليوم"
 
-   ;profile
+                                        ;profile
    :profile                               "الملف الشخصي"
    :message                               "الرسالة"
    :not-specified                         "غير محدد"
    :public-key                            "المفتاح العمومي"
-   :phone-number                          "رقم الهاتف"
    :add-to-contacts                       "أضف إلى جهات الاتصال"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "التقاط صورة"
    :image-source-gallery                  "الاختيار من معرض الصور"
 
-   ;sign-up
-   :contacts-syncronized                  "تمت مزامنة جهات الاتصال الخاصة بك"
-   :confirmation-code                     (str "شكراً! لقد أرسلنا لك رسالة نصية تتضمن رمز تأكيد"
-                                               "يرجى إدخال هذا الرمز لتأكيد رقم هاتفك")
-   :incorrect-code                        (str "عذراً الرمز غير صحيح، يرجى إدخاله مرة أخرى")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*أف* لقد كان أمراً شاقاً، إليك عبارة المرور الخاصة بك، * قم بتسجيلها واحتفظ بها في مكان آمن!* سوف تحتاج إليها لاسترداد حسابك."
    :here-is-your-passphrase               "إليك عبارة المرور الخاصة بك، * قم بتسجيلها واحتفظ بها في مكان آمن! *سوف تحتاج إليها لاسترداد حسابك"
-   :phone-number-required                 "اضغط هنا لإدخال رقم الهاتف الخاص بك وسوف تعثر على أصدقائك"
    :intro-status                          "دردش معي لتثبيت حسابك وقم بتغيير الإعدادات الخاصة بك!"
    :intro-message1                        "مرحبا بك في Status \n اضغط على هذه الرسالة لتعيين كلمة المرور الخاصة بك وابدأ!"
    :account-generation-message            "امنحني ثانية واحدة، سوف أحتاج إلى إجراء بعض الحسابات الرياضية المجنونة لإنتاج الحساب الخاص بك!"
 
-   ;chats
+   ;;chats
    :chats                                 "الدردشات"
    :new-group-chat                        "مجموعة دردشة جديدة"
 
-   ;discover
+   ;;discover
    :discover                             "اكتشاف"
    :none                                  "لا شيء"
    :search-tags                           "اكتب بيانات بحثك هنا"
@@ -92,17 +86,17 @@
    :recent                                "حديثة"
    :no-statuses-discovered                "لم يتم الكشف عن حالات"
 
-   ;settings
+   ;;settings
    :settings                              "الإعدادات"
 
-   ;contacts
+   ;;contacts
    :contacts                              "جهات الاتصال"
    :new-contact                           "جهة اتصال جديدة"
    :contacts-group-new-chat               "ابدأ دردشة جديدة"
    :no-contacts                           "لا توجد جهات اتصال بعد"
    :show-qr                               "عرض شفرة التعريف"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "إزالة"
    :save                                  "حفظ"
    :clear-history                         "حذف التاريخ"
@@ -110,14 +104,14 @@
    :edit                                  "تحرير"
    :add-members                           "إضافة أعضاء"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "تسلم دعوة الدردشة"
    :removed-from-chat                     "قام بإزالتك من مجموعة الدردشة"
    :left                                  "غادر"
@@ -125,7 +119,7 @@
    :removed                               "مُسْتَبْعَد"
    :You                                   "أنت"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "إضافة جهة اتصال جديدة"
    :scan-qr                               "مسح شفرة التعريف"
    :name                                  "اسم"
@@ -135,29 +129,28 @@
    :unknown-address                       "عنوان غير معروف"
 
 
-   ;login
+   ;;login
    :connect                               "اتصال"
    :address                               "عنوان"
    :password                              "كلمة مرور"
    :wrong-password                        "كلمة مرور خاطئة"
 
-   ;recover
+   ;;recover
    :passphrase                            "عبارة المرور"
    :recover                               "استعادة"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "استعادة إمكانية الوصول"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "تم التنفيذ"
    :main-wallet                           "المحفظة الرئيسية"
 
-   ;validation
-   :invalid-phone                         "رقم هاتف غير صحيح"
+   ;;validation
    :amount                                "الكمية"
-   ;transactions
+   ;;transactions
    :status                                "الحالة"
    :recipient                             "المستلم"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "عفواً، حدث خطأ ما"})

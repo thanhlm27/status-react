@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Leden"
    :not-implemented                       "!net ymplemintearre"
    :chat-name                             "Chatnamme"
@@ -17,12 +17,12 @@
 
    :camera-access-error                   "Om de kamera tastimming te jaan, gea nei dyn systeem ynstellings en wêz wis dat Status > Camera selektearre is."
    :photos-access-error                   "Om ús tastimming te jaan oan dyn foto's, gea nei dyn systeem ynstellings en wêz wis dat Status > Foto's selektearre is."
-    
-   ;drawer
+
+   ;;drawer
    :switch-users                          "Skeakel tusken brûkers "
    :current-network                       "Aktuele netwurk"
 
-   ;chat
+   ;;chat
    :is-typing                             "typt"
    :and-you                               "en do"
    :search-chat                           "Sykje yn de chat"
@@ -42,11 +42,11 @@
    :faucet-success                        "Faucet fersyk is ûntfongen"
    :faucet-error                          "Faucet fersyk flater"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Wurdt syngronisearre ..."
    :sync-synced                           "Syngronisearre"
 
-   ;messages
+   ;;messages
    :status-sending                        "Wurdt ferstjoerd "
    :status-pending                        "Yn behanneling"
    :status-sent                           "Ferstjoerd"
@@ -55,7 +55,7 @@
    :status-delivered                      "Besoarge"
    :status-failed                         "Mislearre"
 
-   ;datetime
+   ;;datetime
    :datetime-ago-format                   "{{number}} {{time-intervals}} {{ago}}"
    :datetime-second                       {:one   "sekonde "
                                            :other " sekonden"}
@@ -69,13 +69,12 @@
    :datetime-yesterday                    "juster"
    :datetime-today                        "hjoed"
 
-   ;profile
+   ;;profile
    :profile                               "Profyl"
    :edit-profile                          "Profyl oanpasse"
    :message                               "Berjocht"
    :not-specified                         "Net opjûn"
    :public-key                            "Iepenbiere kaai"
-   :phone-number                          "Telefoannûmer"
    :update-status                         "Fernij dyn status..."
    :add-a-status                          "Foegje in status ta..."
    :status-prompt                         "Foeg in status ta om oare minsken te litte witte wast do oanbiedest, do kinst ek #hashtags gebroeke."
@@ -98,29 +97,18 @@
    :browsing-title                        "Blêdzje"
    :browsing-open-in-web-browser          "Iepenje yn web blêder"
    :browsing-cancel                       "Ôfbrekke"
-    
-   ;sign-up
-   :contacts-syncronized                  "Dyn kontaktpersoanen binne syngroniseard"
-   :confirmation-code                     (str "Tiige tank! Wy ha dy in sms stjoerd mei in befêstigingskoade"
-                                               ". Jou dyn koade op om dyn telefoannûmer te befêstigje")
-   :incorrect-code                        (str "Sorry, de koade wie ferkeard, fier hem opnei yn")
+
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Poah* dat wie dreech, hjir is dyn wachtsin, *skriuw dizze op en bewarje him goed!* Do silst him nedich ha om dyn account te herstelle."
    :here-is-your-passphrase               "Dat wie dreech, hjir is dyn wachtsin, *skriuw dizze op en bewarje him goed!* Do silst him nedich ha om dyn account te herstelle."
-   :phone-number-required                 "Tik hjir om dyn telefoannûmer yn te fieren, dan sykje ik dyn freonen"
    :shake-your-phone                      "Hast in bug fûn of hast in suggestje? ~Skodzje~ dyn telefoan!"
    :intro-status                          "Chat mei my om dyn account yn te stellen en dyn ynstellingen te wizigjen!"
    :intro-message1                        "Wolkom by Status\nTik op dit berjocht om dyn wachtwurd yn te stellen en oan de slach te gean!"
    :account-generation-message            "Jou my in momintsje, ik moat wat yngewikkelde berekkeningen dwaan om dyn account oan te meitsjen !"
    :move-to-internal-failure-message      "We need to move some important files from external to internal storage. To do this, we need your permission. We won't be using external storage in future versions."
    :debug-enabled                         "Debug server has been launched! You can now execute *status-dev-cli scan* to find the server from your computer on the same network."
-    
-   ;phone types
-   :phone-e164                            "Ynternasjonaal 1"
-   :phone-international                   "Ynternasjonaal 2"
-   :phone-national                        "Lanlik"
-   :phone-significant                     "Significant"
-    
-   ;chats
+
+   ;;chats
    :chats                                 "Chats"
    :delete-chat                           "Chat fuortsmite"
    :new-group-chat                        "Nije groepchat"
@@ -131,7 +119,7 @@
    :topic-format                          "Ferkearde yndieling [a-z0-9\\-]+"
    :public-group-topic                    "Ûnderwerp"
 
-   ;discover
+   ;;discover
    :discover                              "Ûntdekking"
    :none                                  "Gjin"
    :search-tags                           "Typ hjir dyn syktags"
@@ -140,10 +128,10 @@
    :no-statuses-discovered                "Gjin statussen ûntdutsen"
    :no-statuses-found                     "Gjin statussen fûn"
 
-   ;settings
+   ;;settings
    :settings                              "Ynstellingen"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Kontaktpersoanen"
    :new-contact                           "Nije kontaktpersoanen"
    :delete-contact                        "Wiskje kontakt"
@@ -158,7 +146,7 @@
    :enter-address                         "Fier adres yn"
    :more                                  "mear"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Fuortsmite"
    :save                                  "Opslaan"
    :delete                                "Wiskje"
@@ -169,10 +157,10 @@
    :edit                                  "Bewurkje"
    :add-members                           "Foegje leden ta"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
    :new-group                             "Nije groep"
    :reorder-groups                        "Reorder groepen"
    :edit-group                            "Bewurkje group"
@@ -181,9 +169,9 @@
    :delete-group-prompt                   "Dit sil gjin ynfloed ha mei jo kontakten"
    :contact-s                             {:one   "kontakt"
                                            :other "kontakten"}
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "Chatútnoeging ûntfange"
    :removed-from-chat                     "ferwidere dy út de chat"
    :left                                  "gie fuort"
@@ -191,7 +179,7 @@
    :removed                               "ferwidere"
    :You                                   "Do"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Foegje nij kontaktpersoan ta "
    :scan-qr                               "QR scanne"
    :name                                  "Namme"
@@ -202,7 +190,7 @@
    :unknown-address                       "Ûnbekend adres"
 
 
-   ;login
+   ;;login
    :connect                               "Ferbine"
    :address                               "Adres"
    :password                              "Wachtwurd"
@@ -210,23 +198,23 @@
    :sign-in                               "Ynlogge"
    :wrong-password                        "Ferkeard wachtwurd"
 
-   ;recover
+   ;;recover
    :passphrase                            "Wachtsin"
    :recover                               "Herstelle"
    :twelve-words-in-correct-order         "12 wurden yn de goeie folchoarder"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Tagong herstelle"
    :create-new-account                    "Nij akkount oanmeitsje"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Klear"
    :main-wallet                           "Haadbeurs"
 
-   ;validation
-   :invalid-phone                         "Ûnjildich telefoannûmer"
+   ;;validation
    :amount                                "Bedrach"
-   ;transactions
+
+   ;;transactions
    :confirm                               "Befestigje"
    :transaction                           "Transaksje"
    :status                                "Status"
@@ -236,5 +224,5 @@
    :data                                  "Data"
    :got-it                                "Befetsje ik"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "oeps, flater"})

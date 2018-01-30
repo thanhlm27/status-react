@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Membros"
    :not-implemented                       "!não implementado"
    :chat-name                             "Nome no chat"
    :notifications-title                   "Notificações e sons"
    :offline                               "Offline"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Mudar de utilizadores"
 
-   ;chat
+   ;;chat
    :is-typing                             "está a digitar"
    :and-you                               "e você"
    :search-chat                           "Pesquisar chat"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Pedidos"
    :suggestions-commands                  "Comandos"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "A sincronizar..."
    :sync-synced                           "Em sincronização"
 
-   ;messages
+   ;;messages
    :status-sending                        "A enviar"
    :status-pending                        "Pendente"
    :status-sent                           "Enviado"
@@ -42,7 +42,7 @@
    :status-delivered                      "Entregue"
    :status-failed                         "Falhou"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "segundo"
                                            :other "segundos"}
    :datetime-minute                       {:one   "minuto"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "ontem"
    :datetime-today                        "hoje"
 
-   ;profile
+   ;;profile
    :profile                               "Perfil"
    :message                               "Mensagem"
    :not-specified                         "Não especificado"
    :public-key                            "Chave Pública"
-   :phone-number                          "Número de telefone"
    :add-to-contacts                       "Adicionar aos contactos"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Capturar"
    :image-source-gallery                  "Selecionar a partir da galeria"
 
-   ;sign-up
-   :contacts-syncronized                  "Os seus contactos foram sincronizados"
-   :confirmation-code                     (str "Obrigado! Enviámos-lhe uma mensagem de texto com um código de "
-                                               "confirmação. Por favor, forneça esse código para confirmar o seu número de telefone")
-   :incorrect-code                        (str "Desculpe, o código estava incorreto. Por favor, volte a digitar")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Ufa* foi complicado, aqui está a sua frase-chave, *anote-a e mantenha-a em segurança!* Vai precisar dela para recuperar a sua conta."
    :here-is-your-passphrase               "Aqui está a sua frase-chave, *anote-a e mantenha-a em segurança!* Vai precisar dela para recuperar a sua conta."
-   :phone-number-required                 "Toque aqui para digitar o seu número de telefone e vou encontrar os seus amigos"
    :intro-status                          "Fale comigo para configurar a sua conta e alterar as suas definições!"
    :intro-message1                        "Bem-vindo ao Status\nToque nesta mensagem para definir a sua palavra-passe e começar!"
    :account-generation-message            "Dê-me um segundo, tenho de fazer alguns cálculos doidos para gerar a sua conta!"
 
-   ;chats
+   ;;chats
    :chats                                 "Chats"
    :new-group-chat                        "Novo chat em grupo"
 
-   ;discover
+   ;;discover
    :discover                              "Descoberta"
    :none                                  "Nenhum"
    :search-tags                           "Digite aqui os seus tags de pesquisa"
@@ -92,17 +86,17 @@
    :recent                                "Recente"
    :no-statuses-discovered                "Não foi descoberto nenhum estado"
 
-   ;settings
+   ;;settings
    :settings                              "Definições"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Contactos"
    :new-contact                           "Novo Contacto"
    :contacts-group-new-chat               "Iniciar um novo chat"
    :no-contacts                           "Ainda sem contactos"
    :show-qr                               "Mostrar QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Remover"
    :save                                  "Guardar"
    :clear-history                         "Limpar o histórico"
@@ -110,14 +104,14 @@
    :edit                                  "Editar"
    :add-members                           "Adicionar Membros"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "recebeu um convite de chat"
    :removed-from-chat                     "removeu-o do chat em grupo"
    :left                                  "saiu"
@@ -125,7 +119,7 @@
    :removed                               "removido"
    :You                                   "Você"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Adicionar novo contacto"
    :scan-qr                               "Digitalizar QR"
    :name                                  "Nome"
@@ -135,35 +129,34 @@
    :unknown-address                       "Endereço desconhecido"
 
 
-   ;login
+   ;;login
    :connect                               "Ligar"
    :address                               "Endereço"
    :password                              "Palavra-passe"
    :wrong-password                        "Palavra-passe errada"
 
-   ;recover
+   ;;recover
    :passphrase                            "Frase-chave"
    :recover                               "Recuperar"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Recuperar o acesso"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Concluído"
    :main-wallet                           "Carteira Principal"
 
-   ;validation
-   :invalid-phone                         "Número de telefone inválido"
+   ;;validation
    :amount                                "Montante"
-   ;transactions
+
+   ;;transactions
    :status                                "Estado"
    :recipient                             "Destinatário"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "ups, erro"
 
    :confirm                               "Confirmar"
-   :phone-national                        "Nacional"
    :public-group-topic                    "Tema"
    :debug-enabled                         "Foi lançado o servidor de depuração! Agora, pode adicionar a sua DApp executando *status-dev-cli scan* do seu computador"
    :new-public-group-chat                 "Juntar-se ao chat público"
@@ -186,7 +179,6 @@
    :faucet-success                        "O pedido de torneira foi recebido"
    :choose-from-contacts                  "Escolher entre os contactos"
    :new-group                             "Novo grupo"
-   :phone-e164                            "Internacional 1"
    :remove-from-group                     "Remover do grupo"
    :search-contacts                       "Pesquisar contactos"
    :transaction                           "Transação"
@@ -196,10 +188,8 @@
    :topic-format                          "Formato errado [a-z0-9\\-]+"
    :enter-valid-public-key                "Por favor, introduza uma chave pública válida ou analise um código QR"
    :faucet-error                          "Erro de pedido de torneira"
-   :phone-significant                     "Significativo"
    :search-for                            "Procurar por..."
    :sharing-copy-to-clipboard             "Copiar para a área de transferência"
-   :phone-international                   "Internacional 2"
    :enter-address                         "Digitar o endereço"
    :send-transaction                      "Enviar a transação"
    :delete-contact                        "Apagar contacto"

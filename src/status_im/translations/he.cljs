@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "חבר"
    :not-implemented                       "!עדיין לא יושם"
    :chat-name                             "שם הצ'אט"
@@ -18,11 +18,11 @@
    :camera-access-error                   ".כדי להעניק את הרשאת המצלמה הנדרשת, בבקשה, תלכו להגדרות המערכת ותוודאו שהאופציה שנבחרה היא סטטוס > מצלמה"
    :photos-access-error                   ".כדי להעניק את הרשאת התמונות הנדרשת, בבקשה, תלכו להגדרות המערכת ותוודאו שהאופציה שנבחרה היא סטטוס > תמונות"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "שנה משתמש"
    :current-network                       "Current network"
 
-   ;chat
+   ;;chat
    :is-typing                             "מקליד"
    :and-you                               "גם אתה"
    :search-chat                           "חפש בצ'אט"
@@ -42,11 +42,11 @@
    :faucet-success                        "בקשת הברז התקבלה"
    :faucet-error                          "שגיאה בבקשת הברז"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "...מסנכרן"
    :sync-synced                           "מסונכרן"
 
-   ;messages
+   ;;messages
    :status-sending                        "שולח"
    :status-pending                        "ממתין"
    :status-sent                           "נשלחה"
@@ -55,7 +55,7 @@
    :status-delivered                      "התקבל"
    :status-failed                         "נכשל"
 
-   ;datetime
+   ;;datetime
    :datetime-ago-format                   "{{number}} {{time-intervals}} {{ago}}"
    :datetime-second                       {:one   "שניה"
                                            :other "שניות"}
@@ -69,13 +69,12 @@
    :datetime-yesterday                    "אתמול"
    :datetime-today                        "היום"
 
-    ;profile
+   ;;profile
    :profile                               "פרופיל"
    :edit-profile                          "ערוך פרופיל"
    :message                               "הודעה"
    :not-specified                         "לא מוגדר"
    :public-key                            "מפתח פומבי"
-   :phone-number                          "מספר טלפון"
    :update-status                         "...עדכן סטטוס"
    :add-a-status                          "...הוסף סטטוס"
    :status-prompt                         ".#hashtags צור סטטוס כדי ליידע אחרים בקשר לדברים אותם אתה מציע. אתה יכול גם להשתמש ב"
@@ -100,14 +99,9 @@
    :browsing-open-in-web-browser          "פתח בדפדפן"
    :browsing-cancel                       "בטל"
 
-   ;sign-up
-   :contacts-syncronized                  "אנשי הקשר שלך סונכרנו"
-   :confirmation-code                     (str "תודה! שלחנו לך הודעה עם קוד"
-                                               "אישור. אנא ספק את הקוד כדי לאשר את מספר הטלפון שלך")
-   :incorrect-code                        (str "סליחה הקוד שגוי, אנא נסה שנית")
+   ;;sign-up
    :phew-here-is-your-passphrase          "פוו זה היה קשה, הנה משפט הקוד שלך, *תרשום אותו ותשמור עליו!* אתה תצטרך אותו כדי לשחזר את המשתמש שלך"
    :here-is-your-passphrase               "הנה משפט הקוד שלך, *תרשום אותו ותשמור עליו!* אתה תצטרך אותו כדי לשחזר את המשתמש שלך."
-   :phone-number-required                 "הקש כאן כדי להזין את מספר הטלפון שלך ואני אמצא את החברים שלך"
    :shake-your-phone                      "!מצאת באג או שיש לך הצעה? פשוט טלטל את הפלאפון"
    :intro-status                          "דבר איתי כדי להסדיר את המשתמש שלך ולשנות את ההגדרות"
    :intro-message1                        "!ברוך הבא לסטטוס הקש על הודעה זו כדי לייצר סיסמא ולהתחיל"
@@ -115,13 +109,7 @@
    :move-to-internal-failure-message      "אנו זקוקים לאישורך כדי להזיז קבצים חשובים מהזיכרון החיצוני לפנימי. אנחנו לא נשתמש בזיכרון חיצוני בגרסאות עתידיות"
    :debug-enabled                         ".שרת הניפוי הותחל! אתה יכול כעת לבצע *status-dev-cli scan* כדי למצוא את השרת מהמחשב שלך על אותה הרשת"
 
-   ;phone types
-   :phone-e164                            "בין לאומי 1"
-   :phone-international                   "בין לאומי 2"
-   :phone-national                        "לאומי"
-   :phone-significant                     "משמעותי"
-
-   ;chats
+   ;;chats
    :chats                                 "צ'אטים"
    :delete-chat                           "מחק צ'אט"
    :new-group-chat                        "צ'אט קבוצתי חדש"
@@ -132,7 +120,7 @@
    :topic-format                          "פורמט שגוי [a-z0-9\\-]+"
    :public-group-topic                    "נושא"
 
-   ;discover
+   ;;discover
    :discover                              "גילוי"
    :none                                  "אף אחד"
    :search-tags                           "תקליד את תג החיפוש שלך כאן"
@@ -141,10 +129,10 @@
    :no-statuses-discovered                "לא התגלה שום סטטוס"
    :no-statuses-found                     "לא נמצא שום סטטוס"
 
-   ;settings
+   ;;settings
    :settings                              "הגדרות"
 
-   ;contacts
+   ;;contacts
    :contacts                              "אנשי קשר"
    :new-contact                           "איש קשר חדש"
    :delete-contact                        "מחק איש קשר"
@@ -159,7 +147,7 @@
    :enter-address                         "הזן כתובת"
    :more                                  "עוד"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "הסר"
    :save                                  "שמור"
    :delete                                "מחק"
@@ -170,10 +158,10 @@
    :edit                                  "ערוך"
    :add-members                           "הוסף מספרים"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} אתר"
 
-   ;new-group
+   ;;new-group
    :new-group                             "קבוצה חדשה"
    :reorder-groups                        "סדר מחדש את הקבוצה"
    :edit-group                            "ערוך את הקבוצה"
@@ -182,9 +170,9 @@
    :delete-group-prompt                   "זה לא ישפיע על אנשי הקשר"
    :contact-s                             {:one   "איש קשר"
                                            :other "אנשי קשר"}
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "התקבלה הזמנה לצ'אט"
    :removed-from-chat                     "הוסרת מהצ'אט הקבוצתי"
    :left                                  "עזב"
@@ -192,7 +180,7 @@
    :removed                               "הוסר"
    :You                                   "אתה"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "הוסף איש קשר חדש"
    :scan-qr                               "סרוק ברקוד"
    :name                                  "שם"
@@ -203,7 +191,7 @@
    :unknown-address                       "כתובת לא ידועה"
 
 
-   ;login
+   ;;login
    :connect                               "התחבר"
    :address                               "כתובת"
    :password                              "סיסמא"
@@ -211,23 +199,23 @@
    :sign-in                               "התחבר"
    :wrong-password                        "סיסמא שגויה"
 
-   ;recover
+   ;;recover
    :passphrase                            "משפט קוד"
    :recover                               "שחזר"
    :twelve-words-in-correct-order         "12 מילים בסדר הנכון"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "שחזר גישה"
    :create-new-account                    "יצר איש קשר חדש"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "הושלם"
    :main-wallet                           "ארנק ראשי"
 
-   ;validation
-   :invalid-phone                         "מספר טלפון שגוי"
+   ;;validation
    :amount                                "כמות"
-   ;transactions
+
+   ;;transactions
    :confirm                               "אשר"
    :transaction                           "העברות"
    :status                                "סטטוס"
@@ -237,5 +225,5 @@
    :data                                  "נתונים"
    :got-it                                "קיבלתי"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "אופס,טעות"})

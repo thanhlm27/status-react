@@ -81,7 +81,6 @@
    :message                               "Messaggio"
    :not-specified                         "Non specificato"
    :public-key                            "Chiave pubblica"
-   :phone-number                          "Numero di telefono"
    :update-status                         "Aggiorna il tuo stato..."
    :add-a-status                          "Aggiungi uno stato..."
    :status-prompt                         "Imposta il tuo stato. L'utilizzo di #hastags aiuterà gli altri a scoprirti e a parlare di ciò che pensi"
@@ -108,26 +107,15 @@
    :browsing-cancel                       "Annulla"
 
    ;;sign-up
-   :contacts-syncronized                  "I tuoi contatti sono stati sincronizzati"
-   :confirmation-code                     (str "Grazie! Ti abbiamo inviato un sms con un codice "
-                                               "di conferma. Per favore inserisci quel codice per confermare il tuo numero di telefono")
-   :incorrect-code                        (str "Il codice era errato, riprova")
    :phew-here-is-your-passphrase          "Fiù, è stato difficile. Ecco la tua passphrase, *scrivila e conservala al sicuro!* Ne avrai bisogno per recuperare il tuo account."
    :here-is-your-passphrase               "Ecco la tua passphrase, *scrivila e conservala al sicuro!* Ne avrai bisogno per recuperare il tuo account."
    :here-is-your-signing-phrase           "Ecco la tua signing phrase. La userai per verificare le tue transazioni. *Scrivila e conservala al sicuro!*"
-   :phone-number-required                 "Tocca qui per convalidare il tuo numero di telefono e troverò i tuoi amici."
    :shake-your-phone                      "Hai trovato un bug o hai un suggerimento? Devi solo ~scuotere~ il tuo telefono!"
    :intro-status                          "Chatta con me per inizializzare il tuo account e cambiare le tue impostazioni."
    :intro-message1                        "Benvenuto in Status!\nTocca questo messaggio per impostare la tua password e cominciare."
    :account-generation-message            "Dammi un secondo, devo fare dei calcoli complicati per generare il tuo account!"
    :move-to-internal-failure-message      "Dobbiamo spostare alcuni file importanti dalla periferica di archiviazione esterna a quella interna. Per farlo, abbiamo bisogno del tuo permesso. Nelle versioni future non utilizzeremo periferiche di archiviazione esterne."
    :debug-enabled                         "Il server di debug è stato lanciato! Adesso puoi eseguire *status-dev-cli scan* per trovare il server dal tuo computer nella tua stessa rete."
-
-   ;;phone types
-   :phone-e164                            "Internazionale 1"
-   :phone-international                   "Internazionale 2"
-   :phone-national                        "Nazionale"
-   :phone-significant                     "Rilevante"
 
    ;;chats
    :chats                                 "Chat"
@@ -241,7 +229,6 @@
    :done                                  "Fatto"
 
    ;;validation
-   :invalid-phone                         "Numero di telefono invalido"
    :amount                                "Quantità"
 
    ;;transactions

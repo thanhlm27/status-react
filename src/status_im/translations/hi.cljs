@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "सदस्य"
    :not-implemented                       "!कार्यान्वित नहीं"
    :chat-name                             "चैट नाम"
    :notifications-title                   "सूचनाएं और आवाज"
    :offline                               "ऑफ़लाइन"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "उपयोगकर्ताओं को स्विच करें"
 
-   ;chat
+   ;;chat
    :is-typing                             "टाइप कर रहा है"
    :and-you                               "और आप"
    :search-chat                           "चैट खोजें"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "अनुरोध"
    :suggestions-commands                  "कमांड"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "सिंक किया जा रहा है..."
    :sync-synced                           "सिंक में"
 
-   ;messages
+   ;;messages
    :status-sending                        "भेज रहे हैं"
    :status-pending                        "विचाराधीन"
    :status-sent                           "भेज दिया"
@@ -42,7 +42,7 @@
    :status-delivered                      "सौंप दिया"
    :status-failed                         "विफल रहा"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "सेकंड"
                                            :other "सेकंड"}
    :datetime-minute                       {:one   "मिनट"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "बीता हुआ कल"
    :datetime-today                        "आज"
 
-   ;profile
+   ;;profile
    :profile                               "प्रोफाइल"
    :message                               "संदेश"
    :not-specified                         "निर्दिष्ट नहीं"
    :public-key                            "सार्वजनिक कुंजी"
-   :phone-number                          "फ़ोन नंबर"
    :add-to-contacts                       "संपर्क में जोड़ें"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "प्राप्त करें"
    :image-source-gallery                  "गैलरी से चयन करें"
 
-   ;sign-up
-   :contacts-syncronized                  "आपके संपर्कों को सिंक्रनाइज़ किया गया है"
-   :confirmation-code                     (str "धन्यवाद! हमने आपको \"पुष्टि कोड\" के साथ एक टेक्स्ट संदेश भेजा है "
-                                               "कृपया अपने फोन नंबर की पुष्टि करने के लिए वह कोड डालें।")
-   :incorrect-code                        (str "क्षमा करें, कोड गलत था, कृपया फिर से डालें")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*उफ़्फ़* यह बहुत मुश्किल था, यह रहा आपका पासफ्रेज, *इसे लिख लें और सुरक्षित रखें! * अपने खाते को ठीक करने के लिए आपको इसकी आवश्यकता होगी।"
    :here-is-your-passphrase               "यह रहा आपका पासफ्रेज, *इसे लिख लें और सुरक्षित रखें! * अपने खाते को ठीक करने के लिए आपको इसकी आवश्यकता होगी।"
-   :phone-number-required                 "अपना फोन नंबर दर्ज करने के लिए यहां टैप करें और मैं आपके दोस्तों को ढूंढ निकालूंगा"
    :intro-status                          "अपना खाता सेट करने और अपनी सेटिंग्स बदलने के लिए मेरे साथ चैट करें!"
    :intro-message1                        "स्टेटस में आपका स्वागत है\n अपना पासवर्ड सेट करने और शुरुआत करने के लिए इस संदेश पर करें!"
    :account-generation-message            "मुझे एक सेकंड का समय दें, आपका खाता जनरेट करने के लिए मुझे कुछ क्रेजी गणित का प्रयोग करना होगा!"
 
-   ;chats
+   ;;chats
    :chats                                 "चैट"
    :new-group-chat                        "नई ग्रुप चैट"
 
-   ;discover
+   ;;discover
    :discover                              "खोज"
    :none                                  "कोई नहीं"
    :search-tags                           "अपने खोज टैग यहां टाइप करें"
@@ -92,17 +86,17 @@
    :recent                                "नया"
    :no-statuses-discovered                "कोई स्टेटस नहीं मिला"
 
-   ;settings
+   ;;settings
    :settings                              "सेटिंग्स"
 
-   ;contacts
+   ;;contacts
    :contacts                              "संपर्क"
    :new-contact                           "नया संपर्क"
    :contacts-group-new-chat               "नई चैट शुरू करें"
    :no-contacts                           "अभी तक कोई संपर्क नहीं"
    :show-qr                               "QR दिखाएं"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "निकालें"
    :save                                  "सहेजें"
    :clear-history                         "इतिहास साफ़ करें"
@@ -110,14 +104,14 @@
    :edit                                  "संपादित करें"
    :add-members                           "सदस्य जोड़ें"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "चैट आमंत्रण प्राप्त हुआ"
    :removed-from-chat                     "आपको ग्रुप चैट से निकाल दिया"
    :left                                  "बाएं"
@@ -125,7 +119,7 @@
    :removed                               "निकाल दिया"
    :You                                   "आप"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "नया संपर्क जोड़ें"
    :scan-qr                               "QR स्कैन करें"
    :name                                  "नाम"
@@ -135,35 +129,34 @@
    :unknown-address                       "अज्ञात पता"
 
 
-   ;login
+   ;;login
    :connect                               "कनेक्ट करें"
    :address                               "पता"
    :password                              "पासवर्ड"
    :wrong-password                        "गलत पासवर्ड"
 
-   ;recover
+   ;;recover
    :passphrase                            "पासफ्रेज"
    :recover                               "ठीक करें"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "पहुंच को ठीक करें"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "पूरा हो गया"
    :main-wallet                           "मुख्य वॉलेट"
 
-   ;validation
-   :invalid-phone                         "अमान्य फोन नंबर"
+   ;;validation
    :amount                                "राशि"
-   ;transactions
+
+   ;;transactions
    :status                                "स्टेटस"
    :recipient                             "प्राप्तकर्ता"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "ओह, त्रुटि"
 
    :confirm                               "पुष्टि करें"
-   :phone-national                        "राष्ट्रीय"
    :public-group-topic                    "विषय"
    :debug-enabled                         "डीबग सर्वर लाँच कर दिया गया है! है। अब आप अपने कम्प्यूटर से *status-dev-cli scan* चलाकर अपने DApp को शामिल कर सकते हैं"
    :new-public-group-chat                 "सार्वजनिक चैट में शामिल हों"
@@ -186,7 +179,6 @@
    :faucet-success                        "फॉसेट का अनुरोध प्राप्त हुआ है"
    :choose-from-contacts                  "संपर्कों में से चुनें"
    :new-group                             "नया समूह"
-   :phone-e164                            "अंतरराष्ट्रीय 1"
    :remove-from-group                     "समूह से हटाएं"
    :search-contacts                       "संपर्क खोजें"
    :transaction                           "लेनदेन"
@@ -196,10 +188,8 @@
    :topic-format                          "गलत फॉर्मैट [a-z0-9\\-]+"
    :enter-valid-public-key                "कृपया वैध सार्वजनिक कुंजी प्रविष्ट करें या QR कोड स्कैन करें"
    :faucet-error                          "फॉसेट के अनुरोध की त्रुटि"
-   :phone-significant                     "उल्लेखनीय"
    :search-for                            "... की खोज करें"
    :sharing-copy-to-clipboard             "क्लिपबोर्ड में कॉपी करें"
-   :phone-international                   "अंतरराष्ट्रीय 2"
    :enter-address                         "पता प्रविष्ट करें"
    :send-transaction                      "लेनदेन भेजें"
    :delete-contact                        "संपर्क मिटाएं"

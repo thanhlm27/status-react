@@ -82,7 +82,6 @@
    :message                               "Nachricht"
    :not-specified                         "Nicht spezifiziert"
    :public-key                            "Öffentlicher Schlüssel"
-   :phone-number                          "Telefonnummer"
    :update-status                         "Aktualisiere deinen Status..."
    :add-a-status                          "Einen Status hinzufügen..."
    :status-prompt                         "Erstelle deinen Status. Die Verwendung von #hashtags kann anderen helfen, dich zu finden und mit dir über das zu reden, was dir auf dem Herzen liegt"
@@ -110,26 +109,15 @@
    :browsing-cancel                       "Abbrechen"
 
    ;;sign-up
-   :contacts-syncronized                  "Deine Kontakte wurden synchronisiert"
-   :confirmation-code                     (str "Danke! Wir haben dir eine Textnachricht mit einem Bestätigungscode "
-                                               "gesendet. Bitte gib diesen Code an, um deine Telefonnummer zu verifizieren.")
-   :incorrect-code                        (str "Es tut uns leid, der Code war nicht korrekt, bitte gib ihn erneut ein")
    :phew-here-is-your-passphrase          "Puh, das war anstrengend. Hier ist deine Passphrase. *Notiere sie dir und bewahre sie sicher auf!* Du wirst sie brauchen, um deinen Account wiederherzustellen."
    :here-is-your-passphrase               "Hier ist deine Passphrase. *Notiere sie dir und bewahre sie sicher auf!* Du wirst sie brauchen, um deinen Account wiederherzustellen."
    :here-is-your-signing-phrase           "Hier ist deine Signing Phrase. Du wirst sie benutzen, um deine Trtansaktionen zu verifizieren. *Notiere sie dir und bewahre sie sicher auf!*"
-   :phone-number-required                 "Tippe hier, um deine Telefonnummer zu validieren und ich werde deine Freunde finden."
    :shake-your-phone                      "Du hast einen Bug gefunden oder hast einen Verbesserungsvorschlag? ~Schüttle~ einfach dein Handy!"
    :intro-status                          "Chatte mit mir, um deinen Account einzurichten und deine Einstellungen zu ändern."
    :intro-message1                        "Willkommen bei Status!\nKlicke auf diese Nachricht, um dein Passwort festzulegen und loszulegen."
    :account-generation-message            "Gib mir eine Sekunde, ich muss wahnsinnig komplizierte Berechnungen tätigen, um deinen Account zu generieren!"
    :move-to-internal-failure-message      "Wir müssen ein paar wichtige Dateien vom externen zum internen Speicher verschieben. Dafür brauchen wir deine Erlaubnis. In zukünftigen Versionen werden wir keinen externen Speicher mehr verwenden."
    :debug-enabled                         "Der Debug-Server wurde gestartet! Du kannst jetzt *status-dev-cli scan* ausführen, um den Server von deinem Computer im selben Netzwerk zu finden."
-
-   ;;phone types
-   :phone-e164                            "International 1"
-   :phone-international                   "International 2"
-   :phone-national                        "National"
-   :phone-significant                     "Signifikant"
 
    ;;chats
    :chats                                 "Chats"
@@ -243,7 +231,6 @@
    :done                                  "Erledigt"
 
    ;;validation
-   :invalid-phone                         "Ungültige Telefonnummer"
    :amount                                "Betrag"
 
    ;;transactions

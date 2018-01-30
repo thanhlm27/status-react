@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+                                        ;common
    :members-title                         "Členové"
    :not-implemented                       "!není implementováno"
    :chat-name                             "Název chatu"
@@ -18,11 +18,11 @@
    :camera-access-error                   "Pro udělení potřebných oprávnění ke kameře přejděte do nastavení systému a ujistěte se, že je vybráno Status > Kamera."
    :photos-access-error                   "Pro udělení potřebných oprávnění k fotoaparátu přejděte do nastavení systému a ujistěte se, že je vybráno Status > Fotoaparát."
 
-   ;drawer
+                                        ;drawer
    :switch-users                          "Přepnout uživatele"
    :current-network                       "Aktuální síť"
 
-   ;chat
+                                        ;chat
    :is-typing                             "píše"
    :and-you                               "a ty"
    :search-chat                           "Hledat v chatu"
@@ -42,11 +42,11 @@
    :faucet-success                        "Požadavek na faucet byl přijat"
    :faucet-error                          "Chyba požadavku na faucet"
 
-   ;sync
+                                        ;sync
    :sync-in-progress                      "Synchronizuji..."
    :sync-synced                           "Synchronizováno"
 
-   ;messages
+                                        ;messages
    :status-sending                        "Odesílám"
    :status-pending                        "Čekám"
    :status-sent                           "Odesláno"
@@ -55,7 +55,7 @@
    :status-delivered                      "Doručeno"
    :status-failed                         "Selhalo"
 
-   ;datetime
+                                        ;datetime
    :datetime-ago-format                   "{{ago}} {{number}} {{time-intervals}}"
    :datetime-second                       {:one   "sekunda"
                                            :other "sekund(y)"}
@@ -69,13 +69,12 @@
    :datetime-yesterday                    "včera"
    :datetime-today                        "dnes"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :edit-profile                          "Upravit profil"
    :message                               "Zpráva"
    :not-specified                         "Není zadáno"
    :public-key                            "Veřejný klíč"
-   :phone-number                          "Telefonní číslo"
    :update-status                         "Aktualizovat svůj status..."
    :add-a-status                          "Přidat status..."
    :status-prompt                         "Můžete vytvořit status, aby ostatní věděli, co nabízíte. Můžete používat i #hashtagy."
@@ -99,14 +98,9 @@
    :browsing-open-in-web-browser          "Otevřít ve webovém prohlížeči"
    :browsing-cancel                       "Storno"
 
-   ;sign-up
-   :contacts-syncronized                  "Vaše kontakty byly synchronizovány"
-   :confirmation-code                     (str "Díky! Poslali jsme Ti textovou zprávu s kódem pro potvrzení. "
-                                               "Prosím potvrď své telefonní číslo zadáním tohoto kódu.")
-   :incorrect-code                        (str "Tento kód není správný, prosím zkus to znovu.")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Uf*, to byla fuška, tady jsou bezpečnostní slova, *zapiš je a ulož na bezpečném místě!* Budou potřeba pro obnovení přístupu k účtu."
    :here-is-your-passphrase               "Tady jsou bezpečnostní slova, *zapiš je a ulož na bezpečném místě!* Budou potřeba pro obnovení přístupu k účtu."
-   :phone-number-required                 "Klepnutím zde můžeš zadat své telefonní číslo a hledat přátele."
    :shake-your-phone                      "Našel jsi chybu nebo máš návrh? Prostě --zatřes-- telefonem!"
    :intro-status                          "Chat se mnou ti může pomoci nastavit ůčet a změnit další nastavení!"
    :intro-message1                       (str "Vítá vás Status\nKlepněte na tuto zprávu pro nastavení hesla a zahájení!")
@@ -114,13 +108,7 @@
    :move-to-internal-failure-message      "Potřebujeme přesunout některé důležité soubory z externího na interní úložiště. K tomu potřebujeme tvoje povolení. V dalších verzích už nebudeme externí úložiště používat."
    :debug-enabled                         "Server pro ladění byl spuštěn! Nyní můžeš spustit *status-dev-cli scan* pro nalezení serveru z počítače ve stejné síti."
 
-   ;phone types
-   :phone-e164                            "Mezinárodní 1"
-   :phone-international                   "Mezinárodní 2"
-   :phone-national                        "Národní"
-   :phone-significant                     "Významný"
-
-   ;chats
+   ;;chats
    :chats                                 "Chaty"
    :delete-chat                           "Smazat chat"
    :new-group-chat                        "Nový skupinový chat"
@@ -131,7 +119,7 @@
    :topic-format                          "Špatný formát [a-z0-9\\-]+"
    :public-group-topic                    "Téma"
 
-   ;discover
+   ;;discover
    :discover                              "Objevit"
    :none                                  "Žádný"
    :search-tags                           "Napište tagy pro hledání"
@@ -140,10 +128,10 @@
    :no-statuses-discovered                "Žádné statusy nebyly objeveny"
    :no-statuses-found                     "Žádné statusy nebyly nalezeny"
 
-   ;settings
+   ;;settings
    :settings                              "Nastavení"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Kontakty"
    :new-contact                          "Nový kontakt"
    :delete-contact                        "Smazat kontakt"
@@ -158,7 +146,7 @@
    :enter-address                         "Zadejte adresu"
    :more                                  "více"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Odstranit"
    :save                                  "Uložit"
    :delete                                "Smazat"
@@ -169,10 +157,10 @@
    :edit                                  "Upravit"
    :add-members                           "Přidat členy"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
    :new-group                             "Nová skupina"
    :reorder-groups                        "Uspořádat skupiny"
    :edit-group                            "Upravit skupinu"
@@ -181,9 +169,9 @@
    :delete-group-prompt                   "Kontaktů se to nedotkne"
    :contact-s                             {:one   "kontakt"
                                            :other "kontakty(ů)"}
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "přijata pozvánka k chatu"
    :removed-from-chat                    "přijata pozvánka k skupinovému chatu"
    :left                                  "opuštěno"
@@ -191,7 +179,7 @@
    :removed                               "odstraněn"
    :You                                   "Ty"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Přidat nový kontakt"
    :scan-qr                               "Načíst QR kód"
    :name                                  "Jméno"
@@ -202,7 +190,7 @@
    :unknown-address                       "Neznámá adresa"
 
 
-   ;login
+   ;;login
    :connect                             "Připojit"
    :address                               "Adresa"
    :password                              "Heslo"
@@ -210,22 +198,21 @@
    :sign-in                               "Přihlásit se"
    :wrong-password                        "Špatné heslo"
 
-   ;recover
+   ;;recover
    :passphrase                            "Bezpečnostní slova"
    :recover                               "Obnovit"
    :twelve-words-in-correct-order         "12 anglických slov ve správném pořadí"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Obnovit přístup"
    :create-new-account                    "Vytvořit nový účet"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Hotovo"
 
-   ;validation
-   :invalid-phone                         "Neplatné telefonní číslo"
+   ;;validation
    :amount                                "Množství"
-   ;transactions
+   ;;transactions
    :confirm                               "Potvrdit"
    :transaction                           "Transakce"
    :status                                "Status"
@@ -235,13 +222,14 @@
    :data                                  "Data"
    :got-it                                "Mám to"
 
-   ;:webview
+   ;;webview
    :web-view-error                        "ups, chyba"
+
    ;;testfairy warning
    :testfairy-title                       "Varování!"
    :testfairy-message                     "Používáte aplikaci z nestabilního sestavení. Kvůli testování se v případě, že používáte Wi-Fi připojení, veškerá interakce nahrává (jako video a záznamy) a tyto informace může využít tým vývojářů pro řešení problémů. Uložená videa ani záznamy neobsahují Vaše hesla. Toto naahrávání se provádí jen v případě, že je aplikace nainstalována z nestabilního sestavení. Pokud je aplikace instalována z Obchodu Play nebo TestFlightu, nic se nenahrává."
 
-   ;; wallet
+   ;;wallet
    :wallet                                "Peněženka"
    :wallets                               "Peněženky"
    :your-wallets                          "Tvé peněženky"
@@ -262,4 +250,3 @@
    :transactions-filter-tokens            "Tokeny"
    :transactions-filter-type              "Typ"
    :transactions-filter-select-all        "Označit vše"})
-

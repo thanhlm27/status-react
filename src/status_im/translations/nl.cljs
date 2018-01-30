@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Leden"
    :not-implemented                       "!niet geïmplementeerd"
    :chat-name                             "Chatnaam"
@@ -18,11 +18,11 @@
    :camera-access-error                   "Om cameratoegang te geven, ga je naar systeem instellingen en zorg je dat Status > Camera geselecteerd is."
    :photos-access-error                   "Om fototoegang te geven, ga je naar systeem instellingen en zorg je dat Status > Foto's geselecteerd is."
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Schakel tussen gebruikers"
    :current-network                       "Huidige netwerk"
 
-   ;chat
+   ;;chat
    :is-typing                             "is aan het typen"
    :and-you                               "en jij"
    :search-chat                           "Zoek in chat"
@@ -41,11 +41,11 @@
    :faucet-success                        "Faucet aanvraag is ontvangen"
    :faucet-error                          "Error bij Faucet aanvraag "
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Wordt gesynchroniseerd..."
    :sync-synced                           "Gesynchroniseerd"
 
-   ;messages
+   ;;messages
    :status-sending                        "Wordt verstuurd"
    :status-pending                        "Hangende"
    :status-sent                           "Verstuurd"
@@ -54,7 +54,7 @@
    :status-delivered                      "Bezorgd"
    :status-failed                         "Mislukt"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "seconde"
                                            :other "seconden"}
    :datetime-minute                       {:one   "minuut"
@@ -67,13 +67,12 @@
    :datetime-yesterday                    "gisteren"
    :datetime-today                        "vandaag"
 
-   ;profile
+   ;;profile
    :profile                               "Profiel"
    :edit-profile                          "Bewerk profiel"
    :message                               "Bericht"
    :not-specified                         "Niet opgegeven"
    :public-key                            "Openbare sleutel"
-   :phone-number                          "Telefoonnummer"
    :update-status                         "Wijzig je status..."
    :add-a-status                          "Voeg een status toe..."
    :status-prompt                         "Maak een status aan om mensen te laten weten wat je te bieden hebt. Je kan ook #hashtags gebruiken."
@@ -97,14 +96,9 @@
    :browsing-open-in-web-browser          "Open in een web browser"
    :browsing-cancel                       "Annuleren"
 
-   ;sign-up
-   :contacts-syncronized                  "Jouw contactpersonen zijn gesynchroniseerd"
-   :confirmation-code                     (str "Bedankt! We hebben je een sms gestuurd met een bevestigingscode"
-                                               ". Geef die code op om jouw telefoonnummer te bevestigen")
-   :incorrect-code                        (str "Sorry, de code was onjuist, voer hem opnieuw in")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Foei* dat was moeilijk, hier is jouw wachtzin, *schrijf deze op en bewaar hem goed!* Je zult hem nodig hebben om jouw account te herstellen."
    :here-is-your-passphrase               "Hier is jouw wachtzin, *schrijf deze op en bewaar hem goed!* Je zult hem nodig hebben om jouw account te herstellen."
-   :phone-number-required                 "Tik hier om je telefoonnummer in te voeren, dan zoek ik jouw vrienden"
    :shake-your-phone                      "Bug gevonden, of heb je een suggestie? ~Schud~ je telefoon!"
    :intro-status                          "Chat met me om jouw account in te stellen en jouw instellingen te wijzigen!"
    :intro-message1                        "Welkom bij Status\nTik op dit bericht om jouw wachtwoord in te stellen en aan de slag te gaan!"
@@ -112,13 +106,7 @@
    :move-to-internal-failure-message      "We moeten wat belangrijke bestanden van externe naar interne opslag verplaatsen. Om dit te doen hebben we je toestemming interne opslag niet meer gebruiken in volgende versies."
    :debug-enabled                         "Debug-server is gelanceerd! Je kan nu *status-dev-cli scan* uitvoeren om de server te vinden vanaf je computer op het zelfde netwerk."
 
-   ;phone types
-   :phone-e164                            "International 1"
-   :phone-international                   "International 2"
-   :phone-national                        "Nationaal"
-   :phone-significant                     "Significant"
-
-   ;chats
+   ;;chats
    :chats                                 "Chats"
    :delete-chat                           "Verwijder chat"
    :new-group-chat                        "Nieuwe groepchat"
@@ -129,7 +117,7 @@
    :topic-format                          "Verkeert formaat [a-z0-9\\-]+"
    :public-group-topic                    "Onderwerp"
 
-   ;discover
+   ;;discover
    :discover                              "Ontdekking"
    :none                                  "Geen"
    :search-tags                           "Typ hier jouw zoektags"
@@ -138,10 +126,10 @@
    :no-statuses-discovered                "Geen statussen ontdekt"
    :no-statuses-found                     "Geen statussen gevonden"
 
-   ;settings
+   ;;settings
    :settings                              "Instellingen"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Contactpersonen"
    :new-contact                           "Nieuwe contactpersonen"
    :delete-contact                        "Delete contact"
@@ -156,7 +144,7 @@
    :enter-address                         "Enter address"
    :more                                  "more"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Verwijderen"
    :save                                  "Opslaan"
    :delete                                "Delete"
@@ -167,10 +155,10 @@
    :edit                                  "Bewerken"
    :add-members                           "Voeg leden toe"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
    :new-group                             "Nieuwe groep"
    :reorder-groups                        "Hergroepeer groep"
    :edit-group                            "Bewerk groep"
@@ -180,9 +168,9 @@
    :contact-s                             {:one   "contact"
                                            :other "contacten"}
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "ontving chatuitnodiging"
    :removed-from-chat                     "verwijderde jou van groepchat"
    :left                                  "ging weg"
@@ -190,7 +178,7 @@
    :removed                               "verwijderd"
    :You                                   "Jou"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Voeg nieuwe contactpersoon toe"
    :scan-qr                               "QR scannen"
    :name                                  "Naam"
@@ -200,7 +188,7 @@
    :can-not-add-yourself                  "Je kunt niet zelf toevoegen"
    :unknown-address                       "Onbekend adres"
 
-   ;login
+   ;;login
    :connect                               "Verbinden"
    :address                               "Adres"
    :password                              "Wachtwoord"
@@ -208,24 +196,23 @@
    :sign-in                               "Meld aan"
    :wrong-password                        "Verkeerd wachtwoord"
 
-   ;recover
+   ;;recover
    :passphrase                            "Wachtzin"
    :recover                               "Herstellen"
    :twelve-words-in-correct-order         "12 woorden in goede volgorde"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Toegang herstellen"
    :create-new-account                    "Maake een nieuwe account aan"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Klaar"
    :main-wallet                           "Hoofdportemonnee"
 
-   ;validation
-   :invalid-phone                         "Ongeldig telefoonnummer"
+   ;;validation
    :amount                                "Bedrag"
 
-   ;transactions
+   ;;transactions
    :confirm                               "Bevestigen"
    :transaction                           "Transactie"
    :status                                "Status"
@@ -235,7 +222,7 @@
    :data                                  "Data"
    :got-it                                "Got it"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "oeps, fout"
 
    :public-group-status                   "Publiek"})

@@ -82,7 +82,6 @@
    :message                               "資訊"
    :not-specified                         "未指定"
    :public-key                            "公鑰"
-   :phone-number                          "電話號碼"
    :update-status                         "更新你的狀態..."
    :add-a-status                          "新增狀態..."
    :status-prompt                         "設定你的 Status。使用 #hastags 可以幫助其他人瞭解你，並且談論你正在想些什麼。"
@@ -109,26 +108,15 @@
    :browsing-cancel                       "取消"
 
    ;;sign-up
-   :contacts-syncronized                  "已同步你的聯絡人"
-   :confirmation-code                     (str "謝謝！我們已經向你傳送了一條包含確認程式碼的簡訊，"
-                                               "請提供該程式碼以確認你的電話號碼。")
-   :incorrect-code                        (str "抱歉，程式碼不正確，請重新輸入")
    :phew-here-is-your-passphrase          "嗨，真不容易。這是你的密碼，*寫下來並好好保管它!* 你需要用它來恢復你的帳戶。"
    :here-is-your-passphrase               "這是你的密碼，*寫下來並好好保管它!* 你需要用它來恢復你的帳戶。"
    :here-is-your-signing-phrase           "這是你的簽名密碼，你需要用它來驗證你的交易，*寫下來並好好保管它!*"
-   :phone-number-required                 "點選此處輸入你的電話號碼，我會找到你的朋友"
    :shake-your-phone                      "發現錯誤或有建議？僅需 ~搖一搖~ 你的手機！"
    :intro-status                          "跟我聊天，以設定你的帳戶並更改你的設定！"
    :intro-message1                        "歡迎來到 Status\n點選該訊息來設定你的密碼並開始！"
    :account-generation-message            "給我一點時間，我得瘋狂地計算一下，才能生成你的帳戶！"
    :move-to-internal-failure-message      "我們需要將一些重要的檔案從外部儲存移動到內部儲存。為此，我們需要你的許可。在之後的版本中，我們將不會使用外部儲存。"
    :debug-enabled                         "除錯伺服器已經推出！現在你可以在自己的計算機上執行 *status-dev-cli scan* 來查詢在同一網路上的伺服器。"
-
-   ;;phone types
-   :phone-e164                            "國際1"
-   :phone-international                   "國際2"
-   :phone-national                        "國內"
-   :phone-significant                     "重要"
 
    ;;chats
    :chats                                 "聊天"
@@ -242,7 +230,6 @@
    :done                                  "完成"
 
    ;;validation
-   :invalid-phone                         "無效的電話號碼"
    :amount                                "金額"
 
    ;;transactions

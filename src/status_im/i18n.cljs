@@ -160,7 +160,7 @@
 ;; We define here the labels for the first specified checkpoint.
 (def checkpoint-0-9-12-labels
   #{:validation-amount-invalid-number :transaction-details :confirm :description
-    :phone-national :amount :open :close-app-title :members-active :chat-name
+    :amount :open :close-app-title :members-active :chat-name
     :phew-here-is-your-passphrase :public-group-topic :debug-enabled
     :chat-settings :offline :update-status :invited :chat-send-eth :address
     :new-public-group-chat :datetime-hour :wallet-settings

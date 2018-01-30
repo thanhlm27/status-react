@@ -2,7 +2,7 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "メンバー"
    :not-implemented                       "実装されていません"
    :chat-name                             "チャット名"
@@ -25,11 +25,11 @@
    :camera-access-error                   "必要なカメラの許可を与えるには、システム設定に行き、ステータス>カメラが選択されていることを確認してください。"
    :photos-access-error                   "必要な写真の許可を与えるには、あなたのシステム設定に行き、ステータス> 写真が選択されていることを確認してください。"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "ユーザーの切り替え"
    :current-network                       "現在のネットワーク"
 
-   ;chat
+   ;;chat
    :is-typing                             "が入力中"
    :and-you                               "とあなた"
    :search-chat                           "チャットを検索"
@@ -49,11 +49,11 @@
    :faucet-success                        "フォーセットリクエストを受け取りました"
    :faucet-error                          "フォーセットリクエストエラー"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "同期中..."
    :sync-synced                           "同期しました"
 
-   ;messages
+   ;;messages
    :status-sending                        "送信中"
    :status-pending                        "保留中"
    :status-sent                           "送信済み"
@@ -62,7 +62,7 @@
    :status-delivered                      "配達済み"
    :status-failed                         "失敗しました"
 
-   ;datetime
+   ;;datetime
    :datetime-ago-format                   "{{number}} {{time-intervals}} {{ago}}"
    :datetime-second                       {:one   "秒"
                                            :other "秒"}
@@ -76,13 +76,12 @@
    :datetime-yesterday                    "昨日"
    :datetime-today                        "今日"
 
-   ;profile
+   ;;profile
    :profile                               "プロフィール"
    :edit-profile                          "プロフィールを編集"
    :message                               "メッセージ"
    :not-specified                         "特定されていません"
    :public-key                            "公開鍵"
-   :phone-number                          "電話番号"
    :update-status                         "ステータスを更新..."
    :add-a-status                          "ステータスを追加..."
    :status-prompt                         "ステータスを設定します。#hastagsを使用すると、他の人があなたを見つけて、あなたのことをより知るのに役立ちます"
@@ -108,27 +107,16 @@
    :browsing-open-in-web-browser          "ブラウザーで閲覧"
    :browsing-cancel                       "キャンセル"
 
-   ;sign-up
-   :contacts-syncronized                  "連絡先が同期されました"
-   :confirmation-code                     (str "ありがとうございます！ 確認コードが記載されたメッセージが"
-                                               "送信されました。電話番号を確認するにはそのコードを入力してください")
-   :incorrect-code                        (str "申し訳ありません。コードが間違っています。もう一度入力してください")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*お疲れ様でした。*これがパスフレーズです。*書き留めて安全な場所に保管してください！*アカウントの復元に必要になります。"
    :here-is-your-passphrase               "これがパスフレーズです。*書き留めて安全な場所に保管してください！*アカウントの復元に必要になります。"
    :here-is-your-signing-phrase           "あなたの署名フレーズがあります。 あなたはそれを使って取引を確認します。 *書き留めて安全に保管してください！*"
-   :phone-number-required                 "ここをタップして電話番号を入力するとお友達を検索します。"
    :shake-your-phone                      "問題点や改善点を発見? スマホを振って下さい！"
    :intro-status                          "チャットしてアカウントを設定し、設定を変更してください！"
    :intro-message1                        "ステータスにようこそ\nこのメッセージをタップして、パスワードを設定し開始しましょう！"
    :account-generation-message            "少々お待ちください。アカウントの生成するにはお時間がかかります。"
    :move-to-internal-failure-message      "いくつかの重要なファイルを外部メディアに保存します。続行するには、許可が必要です。（将来的には外部メディアを使用しないようにします。）"
    :debug-enabled                         "デバッグサーバーを起動しました！ *status-dev-cli scan*を実行すると、同じネットワーク上のコンピュータからサーバーを見つけることができます。"
-
-   ;;phone types
-   :phone-e164                            "国際 1"
-   :phone-international                   "国際 2"
-   :phone-national                        "国内"
-   :phone-significant                     "重要"
 
    ;;chats
    :chats                                 "チャット"
@@ -159,6 +147,7 @@
    :no-statuses-discovered-body           "誰かがステータスを投稿すると、ここに表示されます."
    :no-hashtags-discovered-title          "#hashtags が見つかりませんでした"
    :no-hashtags-discovered-body           "#hashtag ハッシュタグが普及すると、ここに表示されます。"
+
    ;;settings
    :settings                              "設定"
 
@@ -241,7 +230,6 @@
    :done                                  "完了"
 
    ;;validation
-   :invalid-phone                         "無効な電話番号"
    :amount                                "金額"
 
    ;;transactions

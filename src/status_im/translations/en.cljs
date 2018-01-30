@@ -92,7 +92,6 @@
    :notifications                         "Notifications"
    :not-specified                         "Not specified"
    :public-key                            "Public key"
-   :phone-number                          "Phone number"
    :share-contact-code                    "Share my contact code"
    :update-status                         "Update your status..."
    :add-a-status                          "Add a status..."
@@ -120,26 +119,15 @@
    :browsing-cancel                       "Cancel"
 
    ;;sign-up
-   :contacts-syncronized                  "Your contacts have been synchronized"
-   :confirmation-code                     (str "Thanks! We've sent you a text message with a confirmation "
-                                               "code. Please provide that code to confirm your phone number")
-   :incorrect-code                        (str "Sorry the code was incorrect, please enter it again")
    :phew-here-is-your-passphrase          "Phew, that was hard. Here is your passphrase, *write this down and keep it safe!* You will need it to recover your account."
    :here-is-your-passphrase               "Here is your passphrase, *write this down and keep this safe!* You will need it to recover your account."
    :here-is-your-signing-phrase           "Here is your signing phrase. You will use it to verify your transactions. *Write it down and keep it safe!*"
-   :phone-number-required                 "Tap here to validate your phone number & I'll find your friends."
    :shake-your-phone                      "Found a bug or have a suggestion? Just ~shake~ your phone!"
    :intro-status                          "Chat with me to setup your account and change your settings."
    :intro-message1                        "Welcome to Status!\nTap this message to set your password and get started."
    :account-generation-message            "Gimmie a sec, I gotta do some crazy math to generate your account!"
    :move-to-internal-failure-message      "We need to move some important files from external to internal storage. To do this, we need your permission. We won't be using external storage in future versions."
    :debug-enabled                         "Debug server has been launched! You can now execute *status-dev-cli scan* to find the server from your computer on the same network."
-
-   ;;phone types
-   :phone-e164                            "International 1"
-   :phone-international                   "International 2"
-   :phone-national                        "National"
-   :phone-significant                     "Significant"
 
    ;;chats
    :chats                                 "Chats"
@@ -254,7 +242,6 @@
    :done                                  "Done"
 
    ;;validation
-   :invalid-phone                         "Invalid phone number"
    :amount                                "Amount"
 
    ;;transactions

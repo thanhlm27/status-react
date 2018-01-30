@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Člani"
    :not-implemented                       "!ni implementirano"
    :chat-name                             "Ime za klepet"
    :notifications-title                   "Obvestila in zvoki"
    :offline                               "Nedosegljiv/-a"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Preklopi med uporabniki"
 
-   ;chat
+   ;;chat
    :is-typing                             "piše"
    :and-you                               "in ti"
    :search-chat                           "Iskanje po klepetu"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Prošnje"
    :suggestions-commands                  "Ukazi"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Sinhronizacija..."
    :sync-synced                           "Sinhronizirano"
 
-   ;messages
+   ;;messages
    :status-sending                        "Pošiljanje"
    :status-pending                        "V teku"
    :status-sent                           "Poslano"
@@ -42,7 +42,7 @@
    :status-delivered                      "Dostavljeno"
    :status-failed                         "Ni uspelo"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "sekunda"
                                            :other "sekund"}
    :datetime-minute                       {:one   "minuta"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "včeraj"
    :datetime-today                        "danes"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :message                               "Sporočilo"
    :not-specified                         "Ni navedeno"
    :public-key                            "Javni ključ"
-   :phone-number                          "Telefonska številka"
    :add-to-contacts                       "Dodaj med stike"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Zajemi"
    :image-source-gallery                  "Izberi iz galerije"
 
-   ;sign-up
-   :contacts-syncronized                  "Tvoji stiki so bili sinhronizirani"
-   :confirmation-code                     (str "Hvala! Poslali smo ti sporočilo s potrditveno "
-                                               "kodo. Prosimo, vnesi to kodo in potrdi svojo telefonsko številko")
-   :incorrect-code                        (str "Koda na žalost ni bila pravilna, prosimo, da jo ponovno vneseš")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Pfuu* to pa je bilo težko, tukaj je tvoje šifrirno geslo, *zapiši si ga in shrani na varno mesto!* Potreboval/-a ga boš, da obnoviš svoj račun."
    :here-is-your-passphrase               "Tukaj je tvoje geslo, *zapiši si ga in shrani na varno mesto!* Potreboval/-a ga boš, da obnoviš svoj račun."
-   :phone-number-required                 "Pritisni tukaj in vnesi svojo telefonsko številko ter poiskal bom tvoje prijatelje"
    :intro-status                          "Klepetaj z mano in nastavi svoj račun ter spremeni svoje nastavitve!"
    :intro-message1                        "Dobrodošel/-la v status\nPritisni to sporočilo in nastavi svoje geslo ter začni!"
    :account-generation-message            "Počakaj sekundo, opraviti moram noro računico, da ustvarim tvoj račun!"
 
-   ;chats
+   ;;chats
    :chats                                 "Klepeti"
    :new-group-chat                        "Nov skupinski klepet"
 
-   ;discover
+   ;;discover
    :discover                              "Odkrivanje"
    :none                                  "Brez"
    :search-tags                           "Sem vnesi svoje priljubljene oznake"
@@ -92,17 +86,17 @@
    :recent                                "Nedavno"
    :no-statuses-discovered                "Ni odkritih statusov"
 
-   ;settings
+   ;;settings
    :settings                              "Nastavitve"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Stiki"
    :new-contact                           "Nov stik"
    :contacts-group-new-chat               "Začni nov klepet"
    :no-contacts                           "Zaenkrat še ni stikov"
    :show-qr                               "Prikaži QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Odstrani"
    :save                                  "Shrani"
    :clear-history                         "Počisti zgodovino"
@@ -110,14 +104,14 @@
    :edit                                  "Uredi"
    :add-members                           "Dodaj člane"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "je prejel/-a povabilo za klepet"
    :removed-from-chat                     "te je odstranil/-a iz skupinskega klepeta"
    :left                                  "preostane"
@@ -125,7 +119,7 @@
    :removed                               "odstranil/-a"
    :You                                   "Ti"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Dodaj nov stik"
    :scan-qr                               "Skeniraj QR"
    :name                                  "Ime"
@@ -135,35 +129,34 @@
    :unknown-address                       "Neznan naslov"
 
 
-   ;login
+   ;;login
    :connect                               "Poveži"
    :address                               "Naslov"
    :password                              "Geslo"
    :wrong-password                        "Napačno geslo"
 
-   ;recover
+   ;;recover
    :passphrase                            "Šifrirno geslo"
    :recover                               "Povrni"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Povrni dostop"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Končano"
    :main-wallet                           "Glavna denarnica"
 
-   ;validation
-   :invalid-phone                         "Neveljavna telefonska številka"
+   ;;validation
    :amount                                "Vsota"
-   ;transactions
+
+   ;;transactions
    :status                                "Status"
    :recipient                             "Prejemnik"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "ups, napaka"
 
    :confirm                               "Potrdi"
-   :phone-national                        "Državno"
    :public-group-topic                    "Tema"
    :debug-enabled                         "Strežnik za odpravljanje napak je bil zagnan! Sedaj lahko aplikacijo DApp dodate tako, da zaženete *status-dev-cli scan* na vašem računalniku"
    :new-public-group-chat                 "Pridruži se javnemu klepetu"
@@ -186,7 +179,6 @@
    :faucet-success                        "Zahteva za dovod je bila prejeta"
    :choose-from-contacts                  "Izberi iz stikov"
    :new-group                             "Nova skupina"
-   :phone-e164                            "Mednarodno 1"
    :remove-from-group                     "Odstrani iz skupine"
    :search-contacts                       "Iskanje stikov"
    :transaction                           "Transakcija"
@@ -196,10 +188,8 @@
    :topic-format                          "Napačna oblika [a-z0-9\\-]+"
    :enter-valid-public-key                "Prosimo, vnesite veljavno javno kodo, ali skenirajte QR kodo"
    :faucet-error                          "Napaka v zahtevi za dovod"
-   :phone-significant                     "Pomembno"
    :search-for                            "Išči..."
    :sharing-copy-to-clipboard             "Kopiraj v odložišče"
-   :phone-international                   "Mednarodno 2"
    :enter-address                         "Vnesi naslov"
    :send-transaction                      "Pošlji transakcijo"
    :delete-contact                        "Izbriši stik"

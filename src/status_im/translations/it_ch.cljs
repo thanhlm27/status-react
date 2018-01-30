@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Membri"
    :not-implemented                       "!non implementato"
    :chat-name                             "Nome chat"
    :notifications-title                   "Notifiche e suoni"
    :offline                               "Offline"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Cambia utenti"
 
-   ;chat
+   ;;chat
    :is-typing                             "sta scrivendo"
    :and-you                               "e tu"
    :search-chat                           "Cerca chat"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Richieste"
    :suggestions-commands                  "Comandi"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "Sincronizzazione in corso..."
    :sync-synced                           "Sincronizzato"
 
-   ;messages
+   ;;messages
    :status-sending                        "Invio in corso"
    :status-pending                        "In attesa di"
    :status-sent                           "Inviato"
@@ -42,7 +42,7 @@
    :status-delivered                      "Consegnato"
    :status-failed                         "Invio fallito"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "secondo"
                                            :other "secondi"}
    :datetime-minute                       {:one   "minuto"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "ieri"
    :datetime-today                        "oggi"
 
-   ;profile
+   ;;profile
    :profile                               "Profilo"
    :message                               "Messaggio"
    :not-specified                         "Non specificato"
    :public-key                            "Chiave pubblica"
-   :phone-number                          "Numero di telefono"
    :add-to-contacts                       "Aggiungi ai contatti"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Scatta"
    :image-source-gallery                  "Seleziona dalla galleria immagini"
 
-   ;sign-up
-   :contacts-syncronized                  "I tuoi contatti sono stati sincronizzati"
-   :confirmation-code                     (str "Grazie! Ti abbiamo inviato un messaggio con un codice di "
-                                               "conferma. Utilizza tale codice per confermare il tuo numero di telefono")
-   :incorrect-code                        (str "Il codice inserito è errato, riprova")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Wow* È stato difficile, ecco qui la tua passphrase, *prendi nota e conservala in un luogo sicuro!* Ti servirà per ripristinare il tuo conto."
    :here-is-your-passphrase               "Ecco qui la tua passphrase, *prendi nota e conservala in un luogo sicuro!* Ti servirà per ripristinare il tuo conto."
-   :phone-number-required                 "Clicca qui per inserire il tuo numero di telefono e trovare i tuoi amici"
    :intro-status                          "Avvia una conversazione con me per impostare il tuo conto e modificare le tue impostazioni!"
    :intro-message1                        "Benvenuto su Status\nTocca questo messaggio per impostare la tua password e iniziare!"
    :account-generation-message            "Dammi un secondo, devo eseguire dei calcoli matematici complessi per generare il tuo conto!"
 
-   ;chats
+   ;;chats
    :chats                                 "Conversazioni"
    :new-group-chat                        "Nuova conversazione di gruppo"
 
-   ;discover
+   ;;discover
    :discover                              "Scoperta"
    :none                                  "Nessuna"
    :search-tags                           "Inserisci qui i tag di ricerca"
@@ -92,17 +86,17 @@
    :recent                                "Recente"
    :no-statuses-discovered                "Nessuno stato identificato"
 
-   ;settings
+   ;;settings
    :settings                              "Impostazioni"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Contatti"
    :new-contact                           "Nuovo contatto"
    :contacts-group-new-chat               "Inizia una nuova conversazione"
    :no-contacts                           "Nessun contatto registrato"
    :show-qr                               "Mostra QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Rimuovi"
    :save                                  "Salva"
    :clear-history                         "Cancella cronologia"
@@ -110,14 +104,14 @@
    :edit                                  "Modifica"
    :add-members                           "Aggiungi membri"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "ha ricevuto un invito di conversazione"
    :removed-from-chat                     "ti ha rimosso dalla conversazione di gruppo"
    :left                                  "È uscito"
@@ -125,7 +119,7 @@
    :removed                               "È stato rimosso"
    :You                                   "Tu"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Aggiungi nuovo contatto"
    :scan-qr                               "Scansiona QR"
    :name                                  "Nome"
@@ -135,35 +129,34 @@
    :unknown-address                       "Indirizzo sconosciuto"
 
 
-   ;login
+   ;;login
    :connect                               "Effettua connessione"
    :address                               "Indirizzo"
    :password                              "Password"
    :wrong-password                        "Password errata"
 
-   ;recover
+   ;;recover
    :passphrase                            "Passphrase"
    :recover                               "Ripristina"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Ripristina l'accesso"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "OK"
    :main-wallet                           "Wallet principale"
 
-   ;validation
-   :invalid-phone                         "Numero di telefono non valido"
+   ;;validation
    :amount                                "Saldo"
-   ;transactions
+
+   ;;transactions
    :status                                "Stato"
    :recipient                             "Beneficiario"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "Ops, si è verificato un errore"
 
    :confirm                               "Conferma"
-   :phone-national                        "Nazionale"
    :public-group-topic                    "Argomento"
    :debug-enabled                         "Il server di debug è stato avviato! Ora puoi aggiungere la tua DApp eseguendo *status-dev-cli scan* dal tuo computer"
    :new-public-group-chat                 "Entra in chat pubblica"
@@ -186,7 +179,6 @@
    :faucet-success                        "Richiesta faucet ricevuta"
    :choose-from-contacts                  "Scegli dai contatti"
    :new-group                             "Nuovo gruppo"
-   :phone-e164                            "Internazionale 1"
    :remove-from-group                     "Rimuovi dal gruppo"
    :search-contacts                       "Cerca tra i contatti"
    :transaction                           "Transazione"
@@ -196,10 +188,8 @@
    :topic-format                          "Formato errato [a-z0-9\\-]+"
    :enter-valid-public-key                "Inserisci una chiave pubblica valida o scansione un codice QR"
    :faucet-error                          "Errore richiesta faucet"
-   :phone-significant                     "Rilevante"
    :search-for                            "Cerca…"
    :sharing-copy-to-clipboard             "Copia negli appunti"
-   :phone-international                   "Internazionale 2"
    :enter-address                         "Inserisci indirizzo"
    :send-transaction                      "Invia transazione"
    :delete-contact                        "Elimina contatto"

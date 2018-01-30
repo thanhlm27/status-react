@@ -62,7 +62,7 @@
    :status-delivered                      "Délivré"
    :status-failed                         "Échec"
 
-   ;datetime
+                                        ;datetime
    :datetime-ago-format                   "{{number}} {{time-intervals}} {{ago}}"
    :datetime-second                       {:one   "seconde"
                                            :other "secondes"}
@@ -82,7 +82,6 @@
    :message                               "Message"
    :not-specified                         "Non spécifié"
    :public-key                            "Clé publique"
-   :phone-number                          "Numéro de téléphone"
    :update-status                         "Actualisez votre statut..."
    :add-a-status                          "Ajoutez un statut..."
    :status-prompt                         "Créez un nouveau statut pour partager vos intérêts avec tout le monde. Vous pouvez aussi utiliser les #hashtags."
@@ -109,26 +108,15 @@
    :browsing-cancel                       "Annuler"
 
    ;;sign-up
-   :contacts-syncronized                  "Vos contacts ont été synchronisés"
-   :confirmation-code                     (str "Merci ! Nous vous avons envoyé un message texte contenant le code "
-                                               "de confirmation. Veuillez fournir ce code pour confirmer votre numéro de téléphone")
-   :incorrect-code                        (str "Désolé, le code est incorrect. Veuillez le saisir à nouveau.")
    :phew-here-is-your-passphrase          "*Ouf* c'était dur, voici votre phrase secrète, *écrivez-la et gardez-la en lieu sûr !* Vous en aurez besoin pour restaurer votre compte."
    :here-is-your-passphrase               "Voici votre phrase secrète, *écrivez-la et gardez-la en lieu sûr !* Vous en aurez besoin pour restaurer votre compte."
    :here-is-your-signing-phrase           "Voici votre phrase de signature. Vous l'utiliserez pour vérifier vos signatures. *Ecrivez la et conservez la soigneusement!*"
-   :phone-number-required                 "Appuyez ici pour entrer votre numéro de téléphone et je vais trouver vos amis"
    :shake-your-phone                      "Vous avez trouvé un bug ou alors avez une suggestion? ~Secouez~ simplement votre téléphone!"
    :intro-status                          "Chattez avec moi pour configurer votre compte et modifier vos paramètres !"
    :intro-message1                        "Bienvenue dans Status\nTapez sur ce message pour définir votre mot de passe et commencer !"
    :account-generation-message            "Donnez-moi une seconde, je dois faire quelques calculs de ouf pour générer votre compte !"
    :move-to-internal-failure-message      "Nous devons déplacer des fichiers importants depuis un stockage extérieur vers un stockage local. Afin de faire cela, nous avons besoin de votre permission. Nous n'utiliserons plus de stockage extérieur dans nos futures versions."
    :debug-enabled                         "Le serveur Debug a été lancé! Vous pouvez désormais utiliser *status-dev-cli scan* pour trouver le serveur depuis votre ordinateur sur le même réseau."
-
-   ;;phone types
-   :phone-e164                            "International 1"
-   :phone-international                   "International 2"
-   :phone-national                        "National"
-   :phone-significant                     "Significatif"
 
    ;;chats
    :chats                                 "Chats"
@@ -242,7 +230,6 @@
    :done                                  "Terminé"
 
    ;;validation
-   :invalid-phone                         "Numéro de téléphone invalide"
    :amount                                "Montant"
 
    ;;transactions

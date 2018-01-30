@@ -2,17 +2,17 @@
 
 (def translations
   {
-   ;common
+   ;;common
    :members-title                         "Membres"
    :not-implemented                       "!pas mis en place"
    :chat-name                             "Nom de chat"
    :notifications-title                   "Notifications et sons"
    :offline                               "Hors ligne"
 
-   ;drawer
+   ;;drawer
    :switch-users                          "Changer d'utilisateur"
 
-   ;chat
+   ;;chat
    :is-typing                             "est en train de taper"
    :and-you                               "et vous"
    :search-chat                           "Chercher dans une conversation"
@@ -29,11 +29,11 @@
    :suggestions-requests                  "Demandes"
    :suggestions-commands                  "Commandes"
 
-   ;sync
+   ;;sync
    :sync-in-progress                      "En cours de synchronisation..."
    :sync-synced                           "Synchronisé"
 
-   ;messages
+   ;;messages
    :status-sending                        "Envoi en cours"
    :status-pending                        "En attendant"
    :status-sent                           "Envoyé"
@@ -42,7 +42,7 @@
    :status-delivered                      "Livré"
    :status-failed                         "Echoué"
 
-   ;datetime
+   ;;datetime
    :datetime-second                       {:one   "seconde"
                                            :other "secondes"}
    :datetime-minute                       {:one   "minute"
@@ -55,12 +55,11 @@
    :datetime-yesterday                    "hier"
    :datetime-today                        "aujourd'hui"
 
-   ;profile
+   ;;profile
    :profile                               "Profil"
    :message                               "Message"
    :not-specified                         "Non spécifié"
    :public-key                            "Clé publique"
-   :phone-number                          "Numéro de téléphone"
    :add-to-contacts                       "Ajouter aux contacts"
 
    ;;make_photo
@@ -68,23 +67,18 @@
    :image-source-make-photo               "Capture"
    :image-source-gallery                  "Sélectionner dans la galerie"
 
-   ;sign-up
-   :contacts-syncronized                  "Vos contacts ont été synchronisés"
-   :confirmation-code                     (str "Merci! Nous vous avons envoyé un message de texte avec un code "
-                                               "de confirmation. Veuillez fournir ce code pour confirmer votre numéro de téléphone")
-   :incorrect-code                        (str "Désolé, le code est incorrect, veuillez réessayer")
+   ;;sign-up
    :phew-here-is-your-passphrase          "*Pffff* c'était dur, voici votre phrase de passe, *notez-la et gardez-la en sécurité!* Vous en aurez besoin pour récupérer votre compte."
    :here-is-your-passphrase               "Voici votre phrase de passe, *notez-la et gardez-la en sécurité!* Vous en aurez besoin pour récupérer votre compte."
-   :phone-number-required                 "Tapez ici pour saisir votre numéro de téléphone et je trouverai vos amis"
    :intro-status                          "Chattez avec moi pour configurer votre compte et changer vos paramètres !"
    :intro-message1                        "Bienvenue dans le statut\nTapez ce message pour établir votre mot de passe et vous lancer !"
    :account-generation-message            "Une seconde svp, je dois lancer quelques formules magiques pour générer votre compte !"
 
-   ;chats
+   ;;chats
    :chats                                 "Chats"
    :new-group-chat                        "Nouveau chat de groupe"
 
-   ;discover
+   ;;discover
    :discover                              "Découverte"
    :none                                  "Aucun"
    :search-tags                           "Tapez vos clés de recherche ici"
@@ -92,17 +86,17 @@
    :recent                                "Récent"
    :no-statuses-discovered                "Aucun statut trouvé"
 
-   ;settings
+   ;;settings
    :settings                              "Paramètres"
 
-   ;contacts
+   ;;contacts
    :contacts                              "Contacts"
    :new-contact                           "Nouveau Contact"
    :contacts-group-new-chat               "Lancer un nouveau chat"
    :no-contacts                           "Pas encore de contacts"
    :show-qr                               "Montrer QR"
 
-   ;group-settings
+   ;;group-settings
    :remove                                "Supprimer"
    :save                                  "Sauvegarder"
    :clear-history                         "Effacer l'historique"
@@ -110,14 +104,14 @@
    :edit                                  "Modifier"
    :add-members                           "Ajouter des membres"
 
-   ;commands
+   ;;commands
    :chat-send-eth                         "{{amount}} ETH"
 
-   ;new-group
+   ;;new-group
 
-   ;participants
+   ;;participants
 
-   ;protocol
+   ;;protocol
    :received-invitation                   "reçu une invitation à un chat"
    :removed-from-chat                     "vous a supprimé du chat de groupe"
    :left                                  "restant"
@@ -125,7 +119,7 @@
    :removed                               "supprimé"
    :You                                   "Vous"
 
-   ;new-contact
+   ;;new-contact
    :add-new-contact                       "Ajouter un nouveau contact"
    :scan-qr                               "Scannner QR"
    :name                                  "Nom"
@@ -135,35 +129,34 @@
    :unknown-address                       "Adresse inconnue"
 
 
-   ;login
+   ;;login
    :connect                               "Se connecter"
    :address                               "Adresse"
    :password                              "Mot de passe"
    :wrong-password                        "Mauvais mot de passe"
 
-   ;recover
+   ;;recover
    :passphrase                            "Phrase de passe"
    :recover                               "Restaurer"
 
-   ;accounts
+   ;;accounts
    :recover-access                        "Récupérer l'accès"
 
-   ;wallet-qr-code
+   ;;wallet-qr-code
    :done                                  "Terminé"
    :main-wallet                           "Portefeuille principal"
 
-   ;validation
-   :invalid-phone                         "Numéro de téléphone non valable"
+   ;;validation
    :amount                                "Montant"
-   ;transactions
+
+   ;;transactions
    :status                                "Statut"
    :recipient                             "Destinataire"
 
-   ;:webview
+   ;;:webview
    :web-view-error                        "oups, erreur"
 
    :confirm                               "Confirmer"
-   :phone-national                        "National"
    :public-group-topic                    "Sujet"
    :debug-enabled                         "Le serveur de débogage a été lancé ! Vous pouvez maintenant ajouter votre Dapp en exécutant *status-dev-cli scan* depuis votre ordinateur"
    :new-public-group-chat                 "Rejoindre le chat public"
@@ -186,7 +179,6 @@
    :faucet-success                        "La requête du site faucet a été reçue"
    :choose-from-contacts                  "Choisir parmi les contacts"
    :new-group                             "Nouveau groupe"
-   :phone-e164                            "International 1"
    :remove-from-group                     "Retirer du groupe"
    :search-contacts                       "Rechercher des contacts"
    :transaction                           "Transaction"
@@ -196,10 +188,8 @@
    :topic-format                          "Mauvais format [a-z0-9\\-]+"
    :enter-valid-public-key                "Merci de renseigner une clé publique valide ou de scanner un code QR"
    :faucet-error                          "Erreur de la requête du site faucet"
-   :phone-significant                     "Important"
    :search-for                            "Rechercher…"
    :sharing-copy-to-clipboard             "Copier vers le presse-papiers"
-   :phone-international                   "International 2"
    :enter-address                         "Renseigner l'adresse"
    :send-transaction                      "Envoyer la transaction"
    :delete-contact                        "Supprimer le contact"
