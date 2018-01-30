@@ -8,7 +8,6 @@
    :chat-name                             "聊天名稱"
    :notifications-title                   "通知和聲音"
    :offline                               "離線"
-   :search-for                            "搜索..."
    :cancel                                "取消"
    :next                                  "下一個"
    :open                                  "打開"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "正在輸入"
    :and-you                               "你"
-   :search-chat                           "搜索聊天"
    :members                               {:one   "1 個成員"
                                            :other "{{count}} 個成員"
                                            :zero  "無成員"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "新的羣聊"
    :new-public-group-chat                 "加入公共聊天"
    :edit-chats                            "編輯對話"
-   :search-chats                          "搜索對話"
    :empty-topic                           "清空話題"
    :topic-format                          "格式錯誤 [a-z0-9\\-]+"
    :public-group-topic                    "話題"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "發現"
    :none                                  "無"
-   :search-tags                           "在此處輸入搜索標籤"
    :popular-tags                          "熱門標籤"
    :recent                                "最近"
    :no-statuses-found                     "未發現狀態"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "此聯繫人將從你的聯繫人中刪除"
    :remove-from-group                     "從羣組中移除"
    :edit-contacts                         "編輯聯繫人"
-   :search-contacts                       "搜索聯繫人"
    :contacts-group-new-chat               "開始新的聊天"
    :choose-from-contacts                  "從聯繫人中選擇"
    :no-contacts                           "還沒有聯繫人"

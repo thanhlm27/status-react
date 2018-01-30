@@ -8,7 +8,6 @@
    :chat-name                             "Назва чату"
    :notifications-title                   "Сповіщення та звуки"
    :offline                               "Оффлайн"
-   :search-for                            "Шукати..."
    :cancel                                "Скасувати"
    :next                                  "Далі"
    :open                                  "Відкрити"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "друкує"
    :and-you                               "і ви"
-   :search-chat                           "Шукати чат"
    :members                               {:one   "1 контакт"
                                            :other "{{count}} контакти"
                                            :zero  "немає контактів"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "Новий груповий чат"
    :new-public-group-chat                 "Приєднатися до публічного чату"
    :edit-chats                            "Редагувати чати"
-   :search-chats                          "Пошук чатів"
    :empty-topic                           "Порожня тема"
    :topic-format                          "Неправильний формат [a-z0-9\\-]+"
    :public-group-topic                    "Тема"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "Пошук"
    :none                                  "Жоден"
-   :search-tags                           "Введіть теги для пошуку сюди"
    :popular-tags                          "Популярні #хештеги"
    :recent                                "Останні статуси"
    :no-statuses-found                     "Статуси не виявлені"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "Цей контакт буде видалено з ваших контактів"
    :remove-from-group                     "Видалити з групи"
    :edit-contacts                         "Редагування контактів"
-   :search-contacts                       "Пошук контактів"
    :contacts-group-new-chat               "Новий груповий чат"
    :choose-from-contacts                  "Вибрати з контактів"
    :no-contacts                           "Поки що немає контактів"

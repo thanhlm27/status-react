@@ -8,7 +8,6 @@
    :chat-name                             "Kallenavn"
    :notifications-title                   "Notifikasjoner og lyd"
    :offline                               "Avlogget"
-   :search-for                            "Søk etter..."
    :cancel                                "Avbryt"
    :next                                  "Neste"
    :type-a-message                        "Skriv en melding..."
@@ -27,7 +26,6 @@
    ;chat
    :is-typing                             "skriver"
    :and-you                               "og du"
-   :search-chat                           "Søk i meldinger"
    :members                               {:one   "1 medlem"
                                            :other "{{count}} medlemmer"
                                            :zero  "ingen medlemmer"}
@@ -130,7 +128,6 @@
    :new-group-chat                        "Ny gruppemelding"
    :new-public-group-chat                 "Bli med i offentlig chat"
    :edit-chats                            "Rediger melding"
-   :search-chats                          "Søk meldinger"
    :empty-topic                           "Tomt emne"
    :topic-format                          "Feil format [a-z0-9\\-]+"
    :public-group-topic                    "Emne"
@@ -138,7 +135,6 @@
    ;discover
    :discover                              "Oppdag"
    :none                                  "Ingen"
-   :search-tags                           "Søk etter etikett her"
    :popular-tags                          "Populære etiketter"
    :recent                                "Nylig"
    :no-statuses-discovered                "Ingen status oppdaget"
@@ -154,7 +150,6 @@
    :delete-contact-confirmation           "Kontakten vil bli fjernet fra kontaktlisten din"
    :remove-from-group                     "Fjern fra gruppen"
    :edit-contacts                         "Rediger kontakter"
-   :search-contacts                       "Søk kontakter"
    :contacts-group-new-chat               "Start ny chat"
    :choose-from-contacts                  "Velg fra kontaker"
    :no-contacts                           "Ingen kontaker enda"

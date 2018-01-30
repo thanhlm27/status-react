@@ -8,7 +8,6 @@
    :chat-name                             "Název chatu"
    :notifications-title                   "Oznámení a zvuky"
    :offline                               "Offline"
-   :search-for                            "Hledat..."
    :cancel                                "Storno"
    :next                                  "Další"
    :type-a-message                        "Napište zprávu..."
@@ -25,7 +24,6 @@
    ;chat
    :is-typing                             "píše"
    :and-you                               "a ty"
-   :search-chat                           "Hledat v chatu"
    :members                               {:one   "1 účastník"
                                            :other "{{count}} účastníci"
                                            :zero  "žádní účastníci"}
@@ -126,7 +124,6 @@
    :new-group-chat                        "Nový skupinový chat"
    :new-public-group-chat                 "Přidat se k veřejnému chatu"
    :edit-chats                            "Upravit chaty"
-   :search-chats                          "Hledat v chatech"
    :empty-topic                           "Prázdné téma"
    :topic-format                          "Špatný formát [a-z0-9\\-]+"
    :public-group-topic                    "Téma"
@@ -134,7 +131,6 @@
    ;discover
    :discover                              "Objevit"
    :none                                  "Žádný"
-   :search-tags                           "Napište tagy pro hledání"
    :popular-tags                          "Populární tagy"
    :recent                                "Poslední"
    :no-statuses-discovered                "Žádné statusy nebyly objeveny"
@@ -150,7 +146,6 @@
    :delete-contact-confirmation           "Tento kontakt bude smazán z tvých kontaktů"
    :remove-from-group                     "Odstranit ze skupiny"
    :edit-contacts                         "Upravit kontakty"
-   :search-contacts                       "Hledat kontakty"
    :contacts-group-new-chat               "Zahájit nový chat"
    :choose-from-contacts                  "Vybrat z kontaktů"
    :no-contacts                           "Ještě tu nejsou žádné kontakty"

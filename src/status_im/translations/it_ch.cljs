@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "sta scrivendo"
    :and-you                               "e tu"
-   :search-chat                           "Cerca chat"
    :members                               {:one   "1 membro"
                                            :other "{{count}} membri"
                                            :zero  "nessun membro"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "Scoperta"
    :none                                  "Nessuna"
-   :search-tags                           "Inserisci qui i tag di ricerca"
    :popular-tags                          "Tag popolari"
    :recent                                "Recente"
    :no-statuses-discovered                "Nessuno stato identificato"
@@ -188,7 +186,6 @@
    :new-group                             "Nuovo gruppo"
    :phone-e164                            "Internazionale 1"
    :remove-from-group                     "Rimuovi dal gruppo"
-   :search-contacts                       "Cerca tra i contatti"
    :transaction                           "Transazione"
    :public-group-status                   "Pubblico"
    :leave-chat                            "Abbandona chat"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "Inserisci una chiave pubblica valida o scansione un codice QR"
    :faucet-error                          "Errore richiesta faucet"
    :phone-significant                     "Rilevante"
-   :search-for                            "Cerca…"
    :sharing-copy-to-clipboard             "Copia negli appunti"
    :phone-international                   "Internazionale 2"
    :enter-address                         "Inserisci indirizzo"
@@ -210,7 +206,6 @@
                                            :other "contatti"}
    :next                                  "Avanti"
    :from                                  "Da"
-   :search-chats                          "Cerca nelle chat"
    :in-contacts                           "Nei contatti"
 
    :sharing-share                         "Condividi…"

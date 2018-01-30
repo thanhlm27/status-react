@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "yazıyor"
    :and-you                               "ve siz"
-   :search-chat                           "Sohbette ara"
    :members                               {:one   "1 üye"
                                            :other "{{count}} üye"
                                            :zero  "üye yok"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "Keşfet"
    :none                                  "Hiçbiri"
-   :search-tags                           "Aramak istediğiniz etiketleri buraya girin"
    :popular-tags                          "Popüler etiketler"
    :recent                                "Güncel"
    :no-statuses-discovered                "Herhangi bir durum keşfedilmedi"
@@ -188,7 +186,6 @@
    :new-group                             "Yeni grup"
    :phone-e164                            "Uluslararası 1"
    :remove-from-group                     "Gruptan çıkarın"
-   :search-contacts                       "Kişiler listesinde arayın"
    :transaction                           "İşlem"
    :public-group-status                   "Herkese açık"
    :leave-chat                            "Sohbetten çıkın"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "Lütfen geçerli bir ortak anahtar girin veya QR kodu tarayın"
    :faucet-error                          "Musluk talebi hatası"
    :phone-significant                     "Önemli"
-   :search-for                            "Şunu ara..."
    :sharing-copy-to-clipboard             "Panoya kopyalayın"
    :phone-international                   "Uluslararası 2"
    :enter-address                         "Adresi girin"
@@ -210,7 +206,6 @@
                                            :other "kişiler"}
    :next                                  "Sonraki"
    :from                                  "Şuradan:"
-   :search-chats                          "Sohbetlerde arayın"
    :in-contacts                           "kişiler listesinde"
 
    :sharing-share                         "Paylaşın..."

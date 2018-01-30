@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "tastează"
    :and-you                               "Și cu tine"
-   :search-chat                           "Caută în chat"
    :members                               {:one   "1 membru"
                                            :other "{{count}} membri"
                                            :zero  "nici un membru"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "Descoperire"
    :none                                  "Niciuna"
-   :search-tags                           "Tastează aici etichetele de căutat"
    :popular-tags                          "Etichete populare"
    :recent                                "Recente"
    :no-statuses-discovered                "Nici un status găsit"
@@ -188,7 +186,6 @@
    :new-group                             "Grup nou"
    :phone-e164                            "Internațional 1"
    :remove-from-group                     "Eliminare din grup"
-   :search-contacts                       "Căutare contacte"
    :transaction                           "Tranzacție"
    :public-group-status                   "Public"
    :leave-chat                            "Părăsire chat"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "Vă rugăm să introduceți o cheie publică validă sau să scanați un cod QR"
    :faucet-error                          "Eroare solicitare"
    :phone-significant                     "Important"
-   :search-for                            "Căutare după..."
    :sharing-copy-to-clipboard             "Copiere în clipboard"
    :phone-international                   "Internațional 2"
    :enter-address                         "Introduceți adresa"
@@ -210,7 +206,6 @@
                                            :other "contacte"}
    :next                                  "Mai departe"
    :from                                  "De la"
-   :search-chats                          "Căutare discuții"
    :in-contacts                           "În contacte"
 
    :sharing-share                         "Partajare..."

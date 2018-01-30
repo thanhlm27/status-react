@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "is besig om te tik"
    :and-you                               "en jy"
-   :search-chat                           "Deursoek geselsies"
    :members                               {:one   "1 lid"
                                            :other "{{count}} lede"
                                            :zero  "geen lede"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "Ontdekking"
    :none                                  "Geen"
-   :search-tags                           "Tik jou soek-oortjies hier in"
    :popular-tags                          "Gewilde oortjies"
    :recent                                "Onlangs"
    :no-statuses-discovered                "Geen statusse gevind nie"
@@ -188,7 +186,6 @@
    :new-group                             "Nuwe groep"
    :phone-e164                            "Internasionaal 1"
    :remove-from-group                     "Verwyder van groep"
-   :search-contacts                       "Soek kontakte"
    :transaction                           "Transaksie"
    :public-group-status                   "Openbaar"
    :leave-chat                            "Verlaat klets"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "Voer asseblief ‘n geldige openbare sleutel in of skandeer ‘n QR-kode in"
    :faucet-error                          "Kraan versoek fout"
    :phone-significant                     "Aansienlik"
-   :search-for                            "Soek vir..."
    :sharing-copy-to-clipboard             "Kopieer na knipbord"
    :phone-international                   "Internasionaal 2"
    :enter-address                         "Voeg ‘n adres in"
@@ -210,7 +206,6 @@
                                            :other "kontakte"}
    :next                                  "Volgende"
    :from                                  "Van"
-   :search-chats                          "Soek kletse"
    :in-contacts                           "In kontakte"
 
    :sharing-share                         "Deel..."

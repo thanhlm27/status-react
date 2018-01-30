@@ -8,7 +8,6 @@
    :chat-name                             "Nama perbualan"
    :notifications-title                   "Pemberitahuan dan bunyi"
    :offline                               "Luar talian"
-   :search-for                            "Cari..."
    :cancel                                "Batal"
    :next                                  "Seterusnya"
    :type-a-message                        "Taip mesej..."
@@ -25,7 +24,6 @@
    ;chat
    :is-typing                             "sedang menaip"
    :and-you                               "dan anda"
-   :search-chat                           "Cari perbualan"
    :members                               {:one   "1 ahli"
                                            :other "{{count}} ahli"
                                            :zero  "tiada ahli"}
@@ -126,7 +124,6 @@
    :new-group-chat                        "Perbualan kumpulan baru"
    :new-public-group-chat                 "Sertai perbualan umum"
    :edit-chats                            "Ubah perbualan"
-   :search-chats                          "Cari perbualan"
    :empty-topic                           "Tiada topik"
    :topic-format                          "Format salah [a-z0-9\\-]+"
    :public-group-topic                    "Topik"
@@ -134,7 +131,6 @@
    ;discover
    :discover                              "Jelajah"
    :none                                  "Tiada"
-   :search-tags                           "Taip carian anda disini"
    :popular-tags                          "Popular"
    :recent                                "Terbaru"
    :no-statuses-discovered                "Tiada status ditemui"
@@ -150,7 +146,6 @@
    :delete-contact-confirmation           "Kenalan ini akan dipadam dari senarai kenalan anda"
    :remove-from-group                     "Buang dari kumpulan"
    :edit-contacts                         "Ubah kenalan"
-   :search-contacts                       "Cari kenalan"
    :contacts-group-new-chat               "Mulakan perbualan baru"
    :choose-from-contacts                  "Pilih dari kenalan"
    :no-contacts                           "Masih tiada kenalan"

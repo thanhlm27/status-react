@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "conscribit"
    :and-you                               "et tu"
-   :search-chat                           "perscruta colloquii"
    :members                               {:one   "I sodalis"
                                            :other "{{count}} sodalis"
                                            :zero  "nullus sodalis"}
@@ -86,7 +85,6 @@
    ;discover
    :discover                              "invenite"
    :none                                  "nihil"
-   :search-tags                           "perscribe hic verbum querentis"
    :popular-tags                          "favorabilis opiones"
    :recent                                "novae"
    :no-statuses-discovered                "nullus status repertum esse"

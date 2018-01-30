@@ -8,7 +8,6 @@
    :chat-name                             "Pokalbio pavadinimas"
    :notifications-title                   "Perspėjimai ir garsai"
    :offline                               "Neprisijungęs"
-   :search-for                            "Ieškoti..."
    :cancel                                "Atšaukti"
    :next                                  "Sekantis"
    :open                                  "Atidaryti"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "rašo"
    :and-you                               "ir tu"
-   :search-chat                           "Ieškoti pokalbyje"
    :members                               {:one   "1 narys"
                                            :other "{{count}} nariai"
                                            :zero  "jokių narių"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "Naujas grupinis pokalbis"
    :new-public-group-chat                 "Jungtis prie grupinio pokalbio"
    :edit-chats                            "Redaguoti grupinius pokalbius"
-   :search-chats                          "Ieškoti pokalbių"
    :empty-topic                           "Tuščia tema"
    :topic-format                          "Netinkamas formatas [a-z0-9\\-]+"
    :public-group-topic                    "Tema"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "Atrasti"
    :none                                  "Jokio"
-   :search-tags                           "Įveskite paieškos kriterijus"
    :popular-tags                          "Populiarūs hashtagai"
    :recent                                "Paskiausios būsenos"
    :no-statuses-found                     "Jokių būsenų nerasta"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "Šis įrašas bus pašalintas iš kontaktų"
    :remove-from-group                     "Pašalinti iš grupės"
    :edit-contacts                         "Redaguoti kontaktus"
-   :search-contacts                       "Ieškoti kontaktų"
    :contacts-group-new-chat               "Pradėti naują pokalbį"
    :choose-from-contacts                  "Pasirinkti iš kontaktų"
    :no-contacts                           "Jokių kontaktų nerasta"

@@ -8,7 +8,6 @@
    :chat-name                             "チャット名"
    :notifications-title                   "通知と音声"
    :offline                               "オフライン"
-   :search-for                            "検索..."
    :cancel                                "キャンセル"
    :next                                  "次へ"
    :open                                  "開く"
@@ -32,7 +31,6 @@
    ;chat
    :is-typing                             "が入力中"
    :and-you                               "とあなた"
-   :search-chat                           "チャットを検索"
    :members                               {:one   "1人のメンバー"
                                            :other "{{count}}人のメンバー"
                                            :zero  "メンバーがいません"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "新規グループチャット"
    :new-public-group-chat                 "公開チャットに参加"
    :edit-chats                            "チャットを編集"
-   :search-chats                          "チャットを検索"
    :empty-topic                           "空のトピック"
    :topic-format                          "間違った形式 [a-z0-9\\-]+"
    :public-group-topic                    "トピック"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "発見"
    :none                                  "なし"
-   :search-tags                           "ここに検索タグを入力してください"
    :popular-tags                          "人気のタグ"
    :recent                                "最近のステータス"
    :no-statuses-found                     "ステータスが見つかりませんでした"
@@ -169,7 +165,6 @@
    :delete-contact-confirmation           "連絡帳よりこの連絡先を削除します"
    :remove-from-group                     "グループから削除"
    :edit-contacts                         "連絡先を編集"
-   :search-contacts                       "連絡先を検索"
    :contacts-group-new-chat               "新規チャットを開始"
    :choose-from-contacts                  "連絡先から選択"
    :no-contacts                           "まだ連絡先がありません"

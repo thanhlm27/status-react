@@ -8,7 +8,6 @@
    :chat-name                             "च्याट नाम"
    :notifications-title                   "सूचना र ध्वनि"
    :offline                               "अफलाइन"
-   :search-for                            "॰॰॰ को लागि खोज"
    :cancel                                "रद्द गर्नुहोस्"
    :next                                  "अर्को"
    :type-a-message                        "सन्देश टाइप गरौं ॰॰॰"
@@ -25,7 +24,6 @@
    ;;chat
    :is-typing                             "ले टाइप गर्दै हुनुहुन्छ"
    :and-you                               "अनि तपाईं"
-   :search-chat                           "च्याटमा खोजौं"
    :members                               {:one   "१ सदस्य"
                                            :other "{{count}} सदस्यहरु"
                                            :zero  "सदस्यहीन"}
@@ -126,7 +124,6 @@
    :new-group-chat                        "नया सामूहिक च्याट"
    :new-public-group-chat                 "सार्वजनिक च्याटमा भाग लिने"
    :edit-chats                            "च्याटहरुको सम्पादन"
-   :search-chats                          "च्याटहरुमा खोज"
    :empty-topic                           "खाली विषय"
    :topic-format                          "गलत ढाँचा [a-z0-9\\-]+"
    :public-group-topic                    "विषय"
@@ -134,7 +131,6 @@
    ;;discover
    :discover                              "भेट्टाउनुहोस्"
    :none                                  "बिना कुनै"
-   :search-tags                           "खोज्ने ट्यागहरु यहाँ टाइप गर्नुहोस्"
    :popular-tags                          "लोकप्रिय ट्यागहरु"
    :recent                                "भर्खरको"
    :no-statuses-discovered                "कुनैपनि स्टेटस भेट्टाइएन"
@@ -150,7 +146,6 @@
    :delete-contact-confirmation           "यो सम्पर्क तपाईंको सम्पर्कहरुबाट हटाइने छ"
    :remove-from-group                     "समूह बाट हटाउने"
    :edit-contacts                         "सम्पर्क सम्पादन"
-   :search-contacts                       "सम्पर्कहरुमा खोज"
    :contacts-group-new-chat               "नया च्याट सुरु"
    :choose-from-contacts                  "सम्पर्कहरुबाट चयन गर्नुहोस्"
    :no-contacts                           "हाल कुनै सम्पर्कहरु छैनन्"

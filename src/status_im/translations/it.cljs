@@ -8,7 +8,6 @@
    :chat-name                             "Nome della chat"
    :notifications-title                   "Notifiche e suoni"
    :offline                               "Offline"
-   :search-for                            "Cercando..."
    :cancel                                "Annulla"
    :next                                  "Avanti"
    :open                                  "Apri"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "sta scrivendo"
    :and-you                               "e tu"
-   :search-chat                           "Cerca chat"
    :members                               {:one   "1 membro"
                                            :other "{{count}} membri"
                                            :zero  "nessun membro"}
@@ -135,7 +133,6 @@
    :new-group-chat                        "Nuova chat di gruppo"
    :new-public-group-chat                 "Entra nella chat pubblica"
    :edit-chats                            "Modifica chat"
-   :search-chats                          "Cerca chat"
    :empty-topic                           "Argomento vuoto"
    :topic-format                          "Formato errato [a-z0-9\\-]+"
    :public-group-topic                    "Argomento"
@@ -143,7 +140,6 @@
    ;;discover
    :discover                              "Scopri"
    :none                                  "Nessuno"
-   :search-tags                           "Digita qui i tuoi tag di ricerca"
    :popular-tags                          "#hashtags popolari"
    :recent                                "Stati recenti"
    :no-statuses-found                     "Nessuno stato trovato"
@@ -169,7 +165,6 @@
    :delete-contact-confirmation           "Questo contatto sarà eliminato dai tuoi contatti"
    :remove-from-group                     "Rimuovi dal gruppo"
    :edit-contacts                         "Modifica contatto"
-   :search-contacts                       "Cerca contatti"
    :contacts-group-new-chat               "Inizia una nuova chat"
    :choose-from-contacts                  "Scegli dai contatti"
    :no-contacts                           "Ancora nessun contatto"

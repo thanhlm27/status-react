@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "est en train de taper"
    :and-you                               "et vous"
-   :search-chat                           "Chercher dans une conversation"
    :members                               {:one   "1 membre"
                                            :other "{{count}} membres"
                                            :zero  "pas de membres"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "Découverte"
    :none                                  "Aucun"
-   :search-tags                           "Tapez vos clés de recherche ici"
    :popular-tags                          "Clés populaires"
    :recent                                "Récent"
    :no-statuses-discovered                "Aucun statut trouvé"
@@ -188,7 +186,6 @@
    :new-group                             "Nouveau groupe"
    :phone-e164                            "International 1"
    :remove-from-group                     "Retirer du groupe"
-   :search-contacts                       "Rechercher des contacts"
    :transaction                           "Transaction"
    :public-group-status                   "Public"
    :leave-chat                            "Quitter le chat"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "Merci de renseigner une clé publique valide ou de scanner un code QR"
    :faucet-error                          "Erreur de la requête du site faucet"
    :phone-significant                     "Important"
-   :search-for                            "Rechercher…"
    :sharing-copy-to-clipboard             "Copier vers le presse-papiers"
    :phone-international                   "International 2"
    :enter-address                         "Renseigner l'adresse"
@@ -210,7 +206,6 @@
                                            :other "contacts"}
    :next                                  "Suivant"
    :from                                  "De"
-   :search-chats                          "Rechercher dans les discussions"
    :in-contacts                           "Dans les contacts"
 
    :sharing-share                         "Partagez…"

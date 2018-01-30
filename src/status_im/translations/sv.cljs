@@ -8,7 +8,6 @@
    :chat-name                             "Chattnamn"
    :notifications-title                   "Aviseringar och ljud"
    :offline                               "Offline"
-   :search-for                            "Sök efter..."
    :cancel                                "Avbryt"
    :next                                  "Nästa"
    :open                                  "Öppna"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "skriver"
    :and-you                               "och du"
-   :search-chat                           "Sök chatt"
    :members                               {:one   "1 medlem"
                                            :other "{{count}} medlemmar"
                                            :zero  "inga medlemmar"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "Ny gruppchatt"
    :new-public-group-chat                 "Gå med i offentlig chatt"
    :edit-chats                            "Redigera chattar"
-   :search-chats                          "Sök chattar"
    :empty-topic                           "Tom rubrik"
    :topic-format                          "Felaktigt format [a-z0-9\\-]+"
    :public-group-topic                    "Rubrik"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "Upptäck"
    :none                                  "Inga"
-   :search-tags                           "Skriv dina söktaggar här"
    :popular-tags                          "Populära taggar"
    :recent                                "Senaste"
    :no-statuses-found                     "Inga statusar hittade"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "Denna kontakt tas bort från dina kontakter"
    :remove-from-group                     "Ta bort från grupp"
    :edit-contacts                         "Redigera kontakter"
-   :search-contacts                       "Sök kontakter"
    :contacts-group-new-chat               "Starta ny chatt"
    :choose-from-contacts                  "Välj från kontakter"
    :no-contacts                           "Inga kontakter ännu"

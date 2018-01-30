@@ -9,7 +9,7 @@
             [status-im.ui.components.contact.contact :refer [contact-view]]
             [status-im.ui.components.react :as react]
             [status-im.ui.components.status-bar.view :refer [status-bar]]
-            [status-im.ui.components.toolbar.view :refer [toolbar-with-search]]
+            [status-im.ui.components.toolbar.view :as toolbar]
             [status-im.chat.new-chat.styles :as styles]
             [status-im.i18n :as i18n]))
 
@@ -45,18 +45,6 @@
                                 (dispatch [:open-dapp-in-browser contact]))
                               (dispatch [:open-chat-with-contact %]))}])
 
-(defview new-chat-toolbar []
-  (letsubs [show-search [:get-in [:toolbar-search :show]]
-            search-text [:get-in [:toolbar-search :text]]]
-    [react/view
-     [status-bar]
-     (toolbar-with-search
-      {:show-search?       (= show-search :contact-list)
-       :search-text        search-text
-       :search-key         :contact-list
-       :title              (i18n/label :t/contacts-group-new-chat)
-       :search-placeholder (i18n/label :t/search-for)})]))
-
 (defn- header [contacts]
   [react/view
    [options-list]
@@ -69,7 +57,9 @@
   (letsubs [contacts [:all-added-group-contacts-filtered]
             params [:get :contacts/click-params]]
     [react/view styles/contacts-list-container
-     [new-chat-toolbar]
+     [react/view
+      [status-bar]
+      [toolbar/simple-toolbar (i18n/label :t/contacts-group-new-chat)]]
      (when contacts
        [list/flat-list {:style                     styles/contacts-list
                         :data                      contacts

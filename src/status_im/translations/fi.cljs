@@ -8,7 +8,6 @@
    :chat-name                             "Keskustelun nimi"
    :notifications-title                   "Ilmoitukset ja äänet"
    :offline                               "Poissa"
-   :search-for                            "Etsi..."
    :cancel                                "Peruuta"
    :next                                  "Seuraava"
    :type-a-message                        "Kirjoita viesti..."
@@ -25,7 +24,6 @@
    ;chat
    :is-typing                             "kirjoittaa"
    :and-you                               "ja sinä"
-   :search-chat                           "Etsi keskustelusta"
    :members                               {:one   "1 käyttäjä"
                                            :other "{{count}} käyttäjää"
                                            :zero  "ei käyttäjiä"}
@@ -126,7 +124,6 @@
    :new-group-chat                        "Uusi ryhmäkeskustelu"
    :new-public-group-chat                 "Liity julkiseen keskusteluun"
    :edit-chats                            "Muokkaa keskusteluja"
-   :search-chats                          "Etsi keskusteluja"
    :empty-topic                           "Tyhjä otsikko"
    :topic-format                          "Virheellinen muoto [a-z0-9\\-]+"
    :public-group-topic                    "Otsikko"
@@ -134,7 +131,6 @@
    ;discover
    :discover                              "Löydä"
    :none                                  "Tyhjä"
-   :search-tags                           "Kirjoita hakutunnisteesi tähän"
    :popular-tags                          "Suositut tunnisteet"
    :recent                                "Uusimmat"
    :no-statuses-discovered                "Ei hakutuloksia"
@@ -150,7 +146,6 @@
    :delete-contact-confirmation           "Tämä yhteystieto poistetaan yhteystiedoista"
    :remove-from-group                     "Poista ryhmästä"
    :edit-contacts                         "Muokkaa yhteystietoja"
-   :search-contacts                       "Etsi yhteystietoja"
    :contacts-group-new-chat               "Aloita uusi keskustelu"
    :choose-from-contacts                  "Valitse yhteystiedoista"
    :no-contacts                           "No contacts yet"

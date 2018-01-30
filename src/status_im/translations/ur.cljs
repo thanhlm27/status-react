@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "اندراج کر رہا ہے"
    :and-you                               "اور آپ"
-   :search-chat                           "چیٹ تلاش کریں"
    :members                               {:one   "1 ممبر"
                                            :other "{{count}} ممبران"
                                            :zero  "کوئی ممبر نہیں"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "دریافت"
    :none                                  "کوئی نہیں"
-   :search-tags                           "اپنا تلاش کا ٹیگ یہاں درج کریں"
    :popular-tags                          "مشہور ٹیگ"
    :recent                                "حالیہ"
    :no-statuses-discovered                "کوئی سٹیٹس نہیں پایا گیا"
@@ -188,7 +186,6 @@
    :new-group                             "نیا گروپ"
    :phone-e164                            "بین الاقوامی 1"
    :remove-from-group                     "گروپ سے خارج کریں"
-   :search-contacts                       "روابط کی تلاش کریں"
    :transaction                           "لین دین"
    :public-group-status                   "عوامی"
    :leave-chat                            "چیٹ سے باہر نکلیں"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "برائے مہربانی ایک درست عوامی کلید داخل کریں یا کوئی کیو آر کوڈ اسکین کریں"
    :faucet-error                          "فاسیٹ درخواست کی خرابی"
    :phone-significant                     "اہم"
-   :search-for                            ".... کو تلاش کریں"
    :sharing-copy-to-clipboard             "کلپ بورڈ پر نقل کیا گیا"
    :phone-international                   "بین الاقوامی 2"
    :enter-address                         "پتہ داخل کریں"
@@ -210,7 +206,6 @@
                                            :other "روابط"}
    :next                                  "اگلا"
    :from                                  "سے"
-   :search-chats                          "چیٹس تلاش کریں"
    :in-contacts                           "روابط میں"
 
    :sharing-share                         "اشتراک کریں....."

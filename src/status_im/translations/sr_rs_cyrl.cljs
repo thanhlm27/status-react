@@ -8,7 +8,6 @@
    :chat-name                             "Назив разговора"
    :notifications-title                   "Нотификације и звукови"
    :offline                               "Ван мреже"
-   :search-for                            "Тражи..."
    :cancel                                "Откажи"
    :next                                  "Следећи"
    :open                                  "Отвори"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "куца"
    :and-you                               "и ви"
-   :search-chat                           "Претражи разговор"
    :members                               {:one   "1 члан"
                                            :other "{{count}} чланова"
                                            :zero  "нема чланова"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "Нова група за разговор"
    :new-public-group-chat                 "Придружите се јавном разговору"
    :edit-chats                            "Уредите разговор"
-   :search-chats                          "Претражите разговор"
    :empty-topic                           "Празна тема"
    :topic-format                          "Погрешан формат [a-z0-9\\-]+"
    :public-group-topic                    "Тема"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "Открића"
    :none                                  "Ништа"
-   :search-tags                           "Укуцајте кључне речи за претрагу"
    :popular-tags                          "Популарни #тагови"
    :recent                                "Нови статуси"
    :no-statuses-found                     "Ниједан статус није пронађен"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "Овај контакт ће бити уклоњен из вашег адресара"
    :remove-from-group                     "Уклони из групе"
    :edit-contacts                         "Уреди контакте"
-   :search-contacts                       "Претражи контакте"
    :contacts-group-new-chat               "Започни нов разговор"
    :choose-from-contacts                  "Изабери из контаката"
    :no-contacts                           "Још увек без контаката"

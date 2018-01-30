@@ -8,7 +8,6 @@
    :chat-name                             "Chat name"
    :notifications-title                   "Notifications and sounds"
    :offline                               "Offline"
-   :search-for                            "Search for..."
    :cancel                                "Cancel"
    :next                                  "Next"
    :open                                  "Open"
@@ -40,7 +39,6 @@
    ;;chat
    :is-typing                             "is typing"
    :and-you                               "and you"
-   :search-chat                           "Search chat"
    :members                               {:one   "1 member"
                                            :other "{{count}} members"
                                            :zero  "no members"}
@@ -147,7 +145,6 @@
    :new-group-chat                        "New group chat"
    :new-public-group-chat                 "Join public chat"
    :edit-chats                            "Edit chats"
-   :search-chats                          "Search chats"
    :empty-topic                           "Empty topic"
    :topic-format                          "Wrong format [a-z0-9\\-]+"
    :public-group-topic                    "Topic"
@@ -155,7 +152,6 @@
    ;;discover
    :discover                              "Discover"
    :none                                  "None"
-   :search-tags                           "Type your search tags here"
    :popular-tags                          "Popular #hashtags"
    :recent                                "Recent statuses"
    :no-statuses-found                     "No statuses found"
@@ -181,7 +177,6 @@
    :delete-contact-confirmation           "This contact will be removed from your contacts"
    :remove-from-group                     "Remove from group"
    :edit-contacts                         "Edit contacts"
-   :search-contacts                       "Search contacts"
    :contacts-group-new-chat               "Start new chat"
    :choose-from-contacts                  "Choose from contacts"
    :no-contacts                           "No contacts yet"

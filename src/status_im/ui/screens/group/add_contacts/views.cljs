@@ -6,7 +6,7 @@
             [status-im.ui.components.react :as react]
             [status-im.ui.components.sticky-button :refer [sticky-button]]
             [status-im.ui.components.status-bar.view :refer [status-bar]]
-            [status-im.ui.components.toolbar.view :refer [toolbar-with-search]]
+            [status-im.ui.components.toolbar.view :as toolbar]
             [status-im.ui.screens.group.styles :as styles]
             [status-im.ui.screens.contacts.styles :as contacts.styles]
             [status-im.i18n :as i18n]
@@ -40,14 +40,9 @@
        count-value]])])
 
 (defview toggle-list-toolbar [title contacts-count]
-  (letsubs [show-search [:get-in [:toolbar-search :show]]
-            search-text [:get-in [:toolbar-search :text]]]
-    (toolbar-with-search
-      {:show-search?       (= show-search :contact-group-list)
-       :search-text        search-text
-       :search-key         :contact-group-list
-       :custom-title       (title-with-count title contacts-count)
-       :search-placeholder (i18n/label :t/search-contacts)})))
+  [toolbar/toolbar {}
+   toolbar/default-nav-back
+   [title-with-count title contacts-count]])
 
 (defn toggle-list [contacts render-function]
   [react/view {:flex 1}

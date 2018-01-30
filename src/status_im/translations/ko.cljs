@@ -8,7 +8,6 @@
    :chat-name                             "채팅 이름"
    :notifications-title                   "알림 및 소리"
    :offline                               "오프라인"
-   :search-for                            "검색하기..."
    :cancel                                "취소"
    :next                                  "다음"
    :open                                  "열기"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "이(가) 입력 중입니다"
    :and-you                               "그리고 당신"
-   :search-chat                           "채팅 검색"
    :members                               {:one   "멤버 1명"
                                            :other "멤버 {{count}}명"
                                            :zero  "멤버 없음"}
@@ -135,7 +133,6 @@
    :new-group-chat                        "새 그룹 채팅"
    :new-public-group-chat                 "공개 채팅에 참여하기"
    :edit-chats                            "채팅방 편집"
-   :search-chats                          "채팅 검색하기"
    :empty-topic                           "토픽 없음"
    :topic-format                          "잘못된 포맷 [a-z0-9\\-]+"
    :public-group-topic                    "토픽"
@@ -143,7 +140,6 @@
    ;;discover
    :discover                              "찾아보기"
    :none                                  "없음"
-   :search-tags                           "검색할 태그를 입력하세요"
    :popular-tags                          "인기 급상승 태그"
    :recent                                "최근 상태 메시지"
    :no-statuses-found                     "발견된 메시지 없음"
@@ -169,7 +165,6 @@
    :delete-contact-confirmation           "이 연락처가 삭제됩니다"
    :remove-from-group                     "그룹에서 삭제"
    :edit-contacts                         "연락처 편집"
-   :search-contacts                       "연락처 검색"
    :contacts-group-new-chat               "새 채팅 시작"
    :choose-from-contacts                  "연락처에서 선택하기"
    :no-contacts                           "아직 연락처가 없습니다"

@@ -8,7 +8,6 @@
    :chat-name                             "Имя чата"
    :notifications-title                   "Уведомления и звуки"
    :offline                               "Оффлайн"
-   :search-for                            "Искать..."
    :cancel                                "Отмена"
    :next                                  "Продолжить"
    :open                                  "Открыть"
@@ -32,7 +31,6 @@
    ;;chat
    :is-typing                             "печатает"
    :and-you                               "и вы"
-   :search-chat                           "Поиск по чату"
    :members                               {:one   "1 член"
                                            :other "{{count}} члена(ов)"
                                            :zero  "нет членов"}
@@ -136,7 +134,6 @@
    :new-group-chat                        "Новый групповой чат"
    :new-public-group-chat                 "Присоединиться к публичному чату"
    :edit-chats                            "Редактировать чаты"
-   :search-chats                          "Поиск чатов"
    :empty-topic                           "Пустая тема"
    :topic-format                          "Неверный формат [a-z0-9\\-]+"
    :public-group-topic                    "Тема"
@@ -144,7 +141,6 @@
    ;;discover
    :discover                              "Поиск"
    :none                                  "Нет"
-   :search-tags                           "Введите теги для поиска сюда"
    :popular-tags                          "Популярные теги"
    :recent                                "Последние статусы"
    :no-statuses-found                     "Статусы не обнаружены"
@@ -170,7 +166,6 @@
    :delete-contact-confirmation           "Этот контакт будет удален из ваших контактов"
    :remove-from-group                     "Удалить из группы"
    :edit-contacts                         "Редактирование контактов"
-   :search-contacts                       "Поиск контактов"
    :contacts-group-new-chat               "Новый групповой чат"
    :choose-from-contacts                  "Выбрать из контактов"
    :no-contacts                           "Пока нет контактов"

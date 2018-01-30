@@ -8,7 +8,6 @@
    :chat-name                             "Chatnavn"
    :notifications-title                   "Notifikationer"
    :offline                               "Offline"
-   :search-for                            "Søg efter..."
    :cancel                                "Annullér"
    :next                                  "Næste"
    :type-a-message                        "Skriv en besked..."
@@ -25,7 +24,6 @@
    ;chat
    :is-typing                             "skriver"
    :and-you                               "og du"
-   :search-chat                           "Søg i chat"
    :members                               {:one   "1 medlem"
                                            :other "{{count}} medlemmer"
                                            :zero  "ingen medlemmer"}
@@ -125,7 +123,6 @@
    :new-group-chat                        "Ny gruppsamtale"
    :new-public-group-chat                  "Deltag i offentlig samtale"
    :edit-chats                            "Rediger samtaler"
-   :search-chats                          "Søg samtaler"
    :empty-topic                           "Tomt emne"
    :topic-format                          "Forkert format [a-z0-9\\-]+"
    :public-group-topic                    "Emne"
@@ -133,7 +130,6 @@
    ;discover
    :discover                              "Opdag"
    :none                                  "Ingen"
-   :search-tags                           "Skrive de tags du vil søge efter her"
    :popular-tags                          "Populære tags"
    :recent                                "Seneste"
    :no-statuses-discovered                "Ingen statusser opdaget"
@@ -149,7 +145,6 @@
    :delete-contact-confirmation           "Denne kontakt vil blive fjernet fra dine kontakter"
    :remove-from-group                     "Fjern fra gruppe"
    :edit-contacts                         "Rediger kontakter"
-   :search-contacts                       "Søg efter kontakter"
    :contacts-group-new-chat               "Start en ny samtale"
    :choose-from-contacts                  "Vælg fra kontakter"
    :no-contacts                           "Ingen kontakter endnu"

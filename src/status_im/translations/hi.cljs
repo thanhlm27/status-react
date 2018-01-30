@@ -15,7 +15,6 @@
    ;chat
    :is-typing                             "टाइप कर रहा है"
    :and-you                               "और आप"
-   :search-chat                           "चैट खोजें"
    :members                               {:one   "1 सदस्य"
                                            :other "{{count}} सदस्य"
                                            :zero  "कोई सदस्य नहीं"}
@@ -87,7 +86,6 @@
    ;discover
    :discover                              "खोज"
    :none                                  "कोई नहीं"
-   :search-tags                           "अपने खोज टैग यहां टाइप करें"
    :popular-tags                          "लोकप्रिय टैग"
    :recent                                "नया"
    :no-statuses-discovered                "कोई स्टेटस नहीं मिला"
@@ -188,7 +186,6 @@
    :new-group                             "नया समूह"
    :phone-e164                            "अंतरराष्ट्रीय 1"
    :remove-from-group                     "समूह से हटाएं"
-   :search-contacts                       "संपर्क खोजें"
    :transaction                           "लेनदेन"
    :public-group-status                   "सार्वजनिक"
    :leave-chat                            "चैट छोड़ें"
@@ -197,7 +194,6 @@
    :enter-valid-public-key                "कृपया वैध सार्वजनिक कुंजी प्रविष्ट करें या QR कोड स्कैन करें"
    :faucet-error                          "फॉसेट के अनुरोध की त्रुटि"
    :phone-significant                     "उल्लेखनीय"
-   :search-for                            "... की खोज करें"
    :sharing-copy-to-clipboard             "क्लिपबोर्ड में कॉपी करें"
    :phone-international                   "अंतरराष्ट्रीय 2"
    :enter-address                         "पता प्रविष्ट करें"
@@ -210,7 +206,6 @@
                                            :other "संपर्क"}
    :next                                  "अगला"
    :from                                  "द्वारा"
-   :search-chats                          "चैट्स खोजें"
    :in-contacts                           "संपर्कों में"
 
    :sharing-share                         "साझा करें..."

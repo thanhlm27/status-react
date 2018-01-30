@@ -8,7 +8,6 @@
    :chat-name                             "Chatnaam"
    :notifications-title                   "Meldingen en geluiden"
    :offline                               "Offline"
-   :search-for                            "Zoek naar..."
    :cancel                                "Annuleren"
    :next                                  "Volgende"
    :type-a-message                        "Typ een bericht..."
@@ -25,7 +24,6 @@
    ;chat
    :is-typing                             "is aan het typen"
    :and-you                               "en jij"
-   :search-chat                           "Zoek in chat"
    :members                               {:one   "1 lid"
                                            :other "{{count}} leden"
                                            :zero  "geen leden"}
@@ -124,7 +122,6 @@
    :new-group-chat                        "Nieuwe groepchat"
    :new-public-group-chat                 "Neem deel in publieke chat"
    :edit-chats                            "Bewerk chats"
-   :search-chats                          "Zoek chats"
    :empty-topic                           "Leeg onderwerp"
    :topic-format                          "Verkeert formaat [a-z0-9\\-]+"
    :public-group-topic                    "Onderwerp"
@@ -132,7 +129,6 @@
    ;discover
    :discover                              "Ontdekking"
    :none                                  "Geen"
-   :search-tags                           "Typ hier jouw zoektags"
    :popular-tags                          "Populaire tags"
    :recent                                "Recent"
    :no-statuses-discovered                "Geen statussen ontdekt"
@@ -148,7 +144,6 @@
    :delete-contact-confirmation           "This contact will be removed from your contacts"
    :remove-from-group                     "Remove from group"
    :edit-contacts                         "Edit contacts"
-   :search-contacts                       "Search contacts"
    :contacts-group-new-chat               "Start nieuwe chat"
    :choose-from-contacts                  "Choose from contacts"
    :no-contacts                           "Nog geen contactpersonen"
