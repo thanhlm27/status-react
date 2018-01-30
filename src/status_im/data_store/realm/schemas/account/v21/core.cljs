@@ -38,7 +38,7 @@
     (log/debug "v21 Removing contact " (pr-str contact))
     (.delete new-realm contact)))
 
-(defn remove-location-messages [new-realm old-realm]
+(defn remove-location-messages [new-realm]
   (let [messages (.objects new-realm "message")]
     (dotimes [i (.-length messages)]
       (let [message (aget messages i)
@@ -50,6 +50,5 @@
 
 (defn migration [old-realm new-realm]
   (log/debug "migrating v21 account database: " old-realm new-realm)
-  (-> new-realm
-      (remove-contact! "browse")
-      (remove-location-messages old-realm)))
+  (remove-contact! new-realm "browse")
+  (remove-location-messages new-realm))
