@@ -9,7 +9,7 @@
       (when-let [handler (:action (nth options index))]
         (handler)))))
 
-(defn- options [title message options]
+(defn- prepare-options [title message options]
   (let [destructive-opt-index (utils/first-index :destructive? options)] ;; TODO Can only be a single destructive?
     (clj->js (merge {:options           (conj (mapv :label options) (i18n/label :t/cancel))
                      :cancelButtonIndex (count options)}
@@ -20,5 +20,5 @@
 
 (defn show [{:keys [title message options]}]
   (.showActionSheetWithOptions (.-ActionSheetIOS rn-dependencies/react-native)
-                               (options title message options)
+                               (prepare-options title message options)
                                (callback options)))
