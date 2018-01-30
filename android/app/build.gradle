@@ -195,14 +195,11 @@ dependencies {
     compile project(':react-native-splash-screen')
     compile project(':react-native-image-resizer')
     compile project(':react-native-dialogs')
-    compile project(':react-native-randombytes')
-    compile project(':react-native-android-sms-listener')
     compile project(':realm')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
-    compile project(':react-native-contacts')
     compile project(':react-native-i18n')
     compile project(':react-native-linear-gradient')
     compile project(':react-native-camera')

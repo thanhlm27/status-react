@@ -23,7 +23,6 @@
             status-im.chat.events.animation
             status-im.chat.events.queue-message
             status-im.chat.events.receive-message
-            status-im.chat.events.sign-up
             status-im.chat.events.console
             status-im.chat.events.webview-bridge))
 
