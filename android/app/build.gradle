@@ -196,7 +196,6 @@ dependencies {
     compile project(':react-native-splash-screen')
     compile project(':react-native-image-resizer')
     compile project(':react-native-dialogs')
-    compile project(':react-native-randombytes')
     compile project(':react-native-android-sms-listener')
     compile project(':realm')
     compile project(':react-native-vector-icons')

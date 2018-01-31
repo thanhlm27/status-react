@@ -2,7 +2,6 @@
   (:require [re-frame.core :refer [dispatch trim-v reg-fx reg-cofx inject-cofx]]
             [status-im.utils.handlers :refer [register-handler-db register-handler-fx]]
             [status-im.data-store.contacts :as contacts]
-            [status-im.utils.crypt :refer [encrypt]]
             [clojure.string :as s]
             [status-im.protocol.core :as protocol]
             [status-im.utils.utils :refer [http-post]]
@@ -122,7 +121,7 @@
        (mapcat (fn [{:keys [phone-numbers] :as contact}]
                  (map (fn [{:keys [number]}]
                         (let [number' (format-phone-number number)]
-                          [(encrypt number')
+                          [nil
                            (-> contact
                                (assoc :phone-number number')
                                (dissoc :phone-numbers))]))
