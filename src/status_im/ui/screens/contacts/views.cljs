@@ -26,8 +26,7 @@
    {:text (label :t/reorder-groups) :value #(dispatch [:navigate-to :reorder-groups])}])
 
 (defn toolbar-actions []
-  [(act/search #(dispatch [:navigate-to :group-contacts nil :show-search]))
-   (act/opts (if ios? toolbar-options (rest toolbar-options)))])
+  [(act/opts (if ios? toolbar-options (rest toolbar-options)))])
 
 (defn toolbar-view []
   [toolbar/toolbar {}

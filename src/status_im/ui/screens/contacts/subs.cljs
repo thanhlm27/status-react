@@ -93,6 +93,7 @@
     (->> (remove :pending? (vals groups))
          (sort-by :order >))))
 
+;; TODO(alwx): fix it
 (defn search-filter [text item]
   (let [name (-> (or (:name item) "")
                  (str/lower-case))
