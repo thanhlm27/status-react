@@ -12,9 +12,8 @@
 
 (defn sign-up
   "Creates effects for signing up"
-  [db phone-number message-id]
-  (let [current-account-id (:accounts/current-account-id db)
-        {:keys [public-key address]} (get-in db [:accounts/accounts current-account-id])]
+  [{:accounts/keys [account]} phone-number message-id]
+  (let [{:keys [public-key address]} account]
     {:http-post {:action                "sign-up"
                  :data                  {:phone-number     (phone-number-util/format-phone-number phone-number)
                                          :whisper-identity public-key

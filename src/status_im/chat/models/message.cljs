@@ -11,10 +11,6 @@
             [status-im.utils.clocks :as clocks-utils]
             [status-im.utils.random :as random]))
 
-(defn- get-current-account
-  [{:accounts/keys [accounts current-account-id]}]
-  (get accounts current-account-id))
-
 (def receive-interceptors
   [(re-frame/inject-cofx :message-exists?)
    (re-frame/inject-cofx :pop-up-chat?)
@@ -44,8 +40,10 @@
     :as   message
     :or   {clock-value 0}}]
   (let [{:keys [current-chat-id view-id
-                access-scope->commands-responses] :contacts/keys [contacts]} db
-        {:keys [public-key] :as current-account} (get-current-account db)
+                access-scope->commands-responses]
+         :contacts/keys [contacts]
+         :accounts/keys [account]} db
+        {:keys [public-key]} account
         chat-identifier (or group-id chat-id from)
         direct-message? (nil? group-id)]
     ;; proceed with adding message if message is not already stored in realm,
@@ -75,7 +73,7 @@
                                (and command command-request?)
                                (assoc-in [:content :content-command-ref]
                                          (lookup-response-ref access-scope->commands-responses
-                                                              current-account
+                                                              account
                                                               (get-in fx [:db :chats chat-identifier])
                                                               contacts
                                                               command)))]
