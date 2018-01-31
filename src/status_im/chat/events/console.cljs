@@ -58,19 +58,19 @@
 
    "faucet"
    (fn [{:keys [db random-id]} {:keys [params id]}]
-     (let [{:accounts/keys [accounts current-account-id]} db
-           current-address (get-in accounts [current-account-id :address])
+     (let [{:accounts/keys [account]} db
+           current-address (:address account)
            faucet-url (faucet-base-url->url (:url params))]
        {:http-get {:url (gstring/format faucet-url current-address)
                    :success-event-creator (fn [_]
                                             (faucet-response-event
-                                              random-id
-                                              (i18n/label :t/faucet-success)))
+                                             random-id
+                                             (i18n/label :t/faucet-success)))
                    :failure-event-creator (fn [event]
                                             (log/error "Faucet error" event)
                                             (faucet-response-event
-                                              random-id
-                                              (i18n/label :t/faucet-error)))}}))
+                                             random-id
+                                             (i18n/label :t/faucet-error)))}}))
 
    "debug"
    (fn [{:keys [db random-id now] :as cofx} {:keys [params id]}]
@@ -82,9 +82,9 @@
                                 [[:initialize-debugging {:force-start? true}]
                                  [:chat-received-message/add
                                   (console-chat/console-message
-                                    {:message-id random-id
-                                     :content (i18n/label :t/debug-enabled)
-                                     :content-type const/text-content-type})]]
+                                   {:message-id random-id
+                                    :content (i18n/label :t/debug-enabled)
+                                    :content-type const/text-content-type})]]
                                 [[:stop-debugging]])))))})
 
 (def commands-names (set (keys console-commands->fx)))

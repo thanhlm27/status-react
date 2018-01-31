@@ -139,39 +139,40 @@
       (when to-message
         (dispatch [:request-answered chat-id to-message])))))
 
-(register-handler ::invoke-command-handlers!
+(register-handler
+  ::invoke-command-handlers!
   (u/side-effect!
-    (fn [{:keys [bot-db]
-          :accounts/keys [accounts current-account-id]
-          :contacts/keys [contacts] :as db}
-         [_ {{:keys [command
-                     params
-                     id]} :command
-             :keys        [chat-id address]
-             :as          orig-params}]]
-      (let [{:keys [type name scope-bitmask bot owner-id]} command
-            handler-type (if (= :command type) :commands :responses)
-            to           (get-in contacts [chat-id :address])
-            identity     (or owner-id bot chat-id)
-            bot-db       (get bot-db (or bot chat-id))
-            ;; TODO what's actually semantic difference between `:parameters` and `:context`
-            ;; and do we have some clear API for both ? seems very messy and unorganized now
-            jail-params  {:parameters params
-                          :context    (cond-> {:from            address
-                                               :to              to
-                                               :current-account (get accounts current-account-id)
-                                               :message-id      id}
-                                        (:async-handler command)
-                                        (assoc :orig-params orig-params))}] 
-        (status/call-jail
-         {:jail-id  identity
-          :path     [handler-type [name scope-bitmask] :handler]
-          :params   jail-params
-          :callback (if (:async-handler command) ; async handler, we ignore return value
-                      (fn [_]
-                        (log/debug "Async command handler called"))
-                      (fn [res]
-                        (dispatch [:command-handler! chat-id orig-params res])))})))))
+   (fn [{:keys [bot-db]
+         :accounts/keys [account]
+         :contacts/keys [contacts] :as db}
+        [_ {{:keys [command
+                    params
+                    id]} :command
+            :keys        [chat-id address]
+            :as          orig-params}]]
+     (let [{:keys [type name scope-bitmask bot owner-id]} command
+           handler-type (if (= :command type) :commands :responses)
+           to           (get-in contacts [chat-id :address])
+           identity     (or owner-id bot chat-id)
+           bot-db       (get bot-db (or bot chat-id))
+           ;; TODO what's actually semantic difference between `:parameters` and `:context`
+           ;; and do we have some clear API for both ? seems very messy and unorganized now
+           jail-params  {:parameters params
+                         :context    (cond-> {:from            address
+                                              :to              to
+                                              :current-account account
+                                              :message-id      id}
+                                       (:async-handler command)
+                                       (assoc :orig-params orig-params))}]
+       (status/call-jail
+        {:jail-id  identity
+         :path     [handler-type [name scope-bitmask] :handler]
+         :params   jail-params
+         :callback (if (:async-handler command) ; async handler, we ignore return value
+                     (fn [_]
+                       (log/debug "Async command handler called"))
+                     (fn [res]
+                       (dispatch [:command-handler! chat-id orig-params res])))})))))
 
 (register-handler
   :received-bot-response
@@ -243,46 +244,47 @@
                    {:result  result
                     :chat-id chat-id}])))))
 
-(register-handler ::send-command-protocol!
+(register-handler
+  ::send-command-protocol!
   (u/side-effect!
-    (fn [{:keys [web3 current-public-key chats network-status]
-          :accounts/keys [accounts current-account-id]
-          :contacts/keys [contacts] :as db}
-         [_ {:keys [chat-id command]}]]
-      (if (get-in contacts [chat-id :dapp?])
-        (when-let [text-message (get-in command [:content :handler-data :text-message])]
-          (handle-message-from-bot {:message text-message
-                                    :chat-id chat-id}))
-        (let [{:keys [public-key private-key]} (chats chat-id)
-              {:keys [group-chat public?]} (get-in db [:chats chat-id])
+   (fn [{:keys [web3 current-public-key chats network-status]
+         :accounts/keys [account]
+         :contacts/keys [contacts] :as db}
+        [_ {:keys [chat-id command]}]]
+     (if (get-in contacts [chat-id :dapp?])
+       (when-let [text-message (get-in command [:content :handler-data :text-message])]
+         (handle-message-from-bot {:message text-message
+                                   :chat-id chat-id}))
+       (let [{:keys [public-key private-key]} (chats chat-id)
+             {:keys [group-chat public?]} (get-in db [:chats chat-id])
 
-              payload (-> command
-                          (select-keys [:content :content-type
-                                        :clock-value :show?])
-                          (assoc :timestamp (datetime/now-ms)))
-              payload (if (= network-status :offline)
-                        (assoc payload :show? false)
-                        payload)
-              options {:web3    web3
-                       :message {:from       current-public-key
-                                 :message-id (:message-id command)
-                                 :payload    payload}}]
-          (cond
-            (and group-chat (not public?))
-            (protocol/send-group-message! (assoc options
-                                            :group-id chat-id
-                                            :keypair {:public  public-key
-                                                      :private private-key}))
+             payload (-> command
+                         (select-keys [:content :content-type
+                                       :clock-value :show?])
+                         (assoc :timestamp (datetime/now-ms)))
+             payload (if (= network-status :offline)
+                       (assoc payload :show? false)
+                       payload)
+             options {:web3    web3
+                      :message {:from       current-public-key
+                                :message-id (:message-id command)
+                                :payload    payload}}]
+         (cond
+           (and group-chat (not public?))
+           (protocol/send-group-message! (assoc options
+                                                :group-id chat-id
+                                                :keypair {:public  public-key
+                                                          :private private-key}))
 
-            (and group-chat public?)
-            (protocol/send-public-group-message!
-              (let [username (get-in accounts [current-account-id :name])]
-                (assoc options :group-id chat-id
-                               :username username)))
+           (and group-chat public?)
+           (protocol/send-public-group-message!
+            (let [username (:name account)]
+              (assoc options :group-id chat-id
+                     :username username)))
 
-            :else
-            (protocol/send-message! (assoc-in options
-                                              [:message :to] chat-id))))))))
+           :else
+           (protocol/send-message! (assoc-in options
+                                             [:message :to] chat-id))))))))
 
 (register-handler
  :add-request-message!

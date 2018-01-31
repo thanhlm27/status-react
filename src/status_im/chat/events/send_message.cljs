@@ -13,7 +13,7 @@
 (re-frame/reg-fx
   ::send-notification
   (fn [fcm-token]
-    (log/debug "send-notification fcm-token: " fcm-token) 
+    (log/debug "send-notification fcm-token: " fcm-token)
     (status/notify fcm-token #(log/debug "send-notification cb result: " %))))
 
 (re-frame/reg-fx
@@ -34,12 +34,12 @@
 (defn- send-message
   [{:keys          [web3 network-status local-storage chats]
     :contacts/keys [contacts]
-    :accounts/keys [accounts current-account-id]
+    :accounts/keys [account]
     :as db}
    {:keys [message-type content from chat-id to] :as message}]
   (let [{:keys [dapp? fcm-token]}        (get contacts chat-id)
         {:keys [public-key private-key]} (get chats chat-id)
-        sender-name                      (get-in accounts [current-account-id :name])]
+        sender-name                      (:name account)]
     ;; whenever we are sending message to DApp, we are assuming it's a status bot,
     ;; so we are just calling jail `on-message-send` function
     (when message
@@ -53,7 +53,7 @@
                                                     :clock-value :show?])
               message-to-send {:web3    web3
                                :message (-> (select-keys message [:message-id :from])
-                                            (assoc :payload (if (= :offline network-status) 
+                                            (assoc :payload (if (= :offline network-status)
                                                               (assoc payload :show? false)
                                                               payload)))}]
           (case message-type
@@ -68,7 +68,7 @@
                                                :username sender-name)}
             :user-message              (cond-> {::send-message
                                                 (assoc-in message-to-send
-                                                          [:message :to] to)} 
+                                                          [:message :to] to)}
                                          fcm-token (assoc ::send-notification fcm-token))))))))
 
 (defn prepare-message
