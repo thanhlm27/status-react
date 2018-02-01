@@ -285,7 +285,6 @@
                           [:load-contact-groups]
                           [:initialize-debugging {:address address}]
                           [:send-account-update-if-needed]
-                          [:init-discoveries]
                           [:update-wallet]
                           [:update-transactions]
                           [:get-fcm-token]]

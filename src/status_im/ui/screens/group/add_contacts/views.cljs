@@ -46,7 +46,10 @@
 (defn toggle-list-toolbar [title contacts-count]
   [toolbar/toolbar {}
    toolbar/default-nav-back
-   [title-with-count title contacts-count]])
+   [react/view {:flex    1
+                :android {:padding-left 18}
+                :ios     {:align-items :center}}
+    [title-with-count title contacts-count]]])
 
 (defn toggle-list [contacts render-function]
   [react/view {:flex 1}
