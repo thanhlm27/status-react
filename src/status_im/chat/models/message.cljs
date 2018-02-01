@@ -105,7 +105,7 @@
     (receive cofx message)))
 
 (defn- send-dapp-message!
-  [{{:accounts/keys [current-account-id] :as db} :db :as cofx}
+  [{{:accounts/keys [account] :as db} :db :as cofx}
    {{:keys [message-type]
      :as   message} :message
     :keys [chat-id command] :as args}]
@@ -118,7 +118,7 @@
                             :function   :on-message-send
                             :parameters {:message (:content message)}
                             :context    {:data data
-                                         :from current-account-id}}})))
+                                         :from (:address account)}}})))
 
 (defn- generate-message
   [{:keys [web3 current-public-key chats network-status]}
@@ -144,7 +144,7 @@
 
 (defn send
   [{{:keys          [web3 chats]
-     :accounts/keys [accounts current-account-id]
+     :accounts/keys [account]
      :contacts/keys [contacts] :as db} :db :as cofx}
    {:keys [chat-id command] :as args}]
   (let [{:keys [dapp? fcm-token]} (get contacts chat-id)]
@@ -157,13 +157,13 @@
           (and group-chat (not public?))
           (let [{:keys [public-key private-key]} (get chats chat-id)]
             {:send-group-message (assoc options
-                                   :group-id chat-id
-                                   :keypair {:public  public-key
-                                             :private private-key})})
+                                        :group-id chat-id
+                                        :keypair {:public  public-key
+                                                  :private private-key})})
 
           (and group-chat public?)
           {:send-public-group-message (assoc options :group-id chat-id
-                                                     :username (get-in accounts [current-account-id :name]))}
+                                             :username (:name account))}
 
           :else
           (merge {:send-message (assoc-in options [:message :to] chat-id)}
@@ -310,7 +310,7 @@
 
 (defn invoke-command-handlers
   [{{:keys          [bot-db]
-     :accounts/keys [accounts current-account-id]
+     :accounts/keys [account]
      :contacts/keys [contacts] :as db} :db}
    {{:keys [command params id]} :command
     :keys [chat-id address]
@@ -325,10 +325,10 @@
         jail-params  {:parameters params
                       :context    (cond-> {:from            address
                                            :to              to
-                                           :current-account (get accounts current-account-id)
+                                           :current-account account
                                            :message-id      id}
-                                          (:async-handler command)
-                                          (assoc :orig-params orig-params))}]
+                                    (:async-handler command)
+                                    (assoc :orig-params orig-params))}]
     {:call-jail {:jail-id                 identity
                  :path                    [handler-type [name scope-bitmask] :handler]
                  :params                  jail-params
