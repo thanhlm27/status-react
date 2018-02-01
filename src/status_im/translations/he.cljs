@@ -8,6 +8,7 @@
    :chat-name                             "שם הצ'אט"
    :notifications-title                   "התראות וצלילים"
    :offline                               "לא מחובר"
+   :search-for                            "...חפש"
    :cancel                                "בטל"
    :next                                  "הבא"
    :type-a-message                        "...הקלד הודעה"
@@ -24,6 +25,7 @@
    ;chat
    :is-typing                             "מקליד"
    :and-you                               "גם אתה"
+   :search-chat                           "חפש בצ'אט"
    :members                               {:one   "חבר אחד"
                                            :other "{{count}} חברים"
                                            :zero  "אין חברים"}
@@ -125,6 +127,7 @@
    :new-group-chat                        "צ'אט קבוצתי חדש"
    :new-public-group-chat                 "הצטרף לצ'אט פומבי"
    :edit-chats                            "ערוך צ'אטים"
+   :search-chats                          "חפש בצ'אטים"
    :empty-topic                           "נושא ריק"
    :topic-format                          "פורמט שגוי [a-z0-9\\-]+"
    :public-group-topic                    "נושא"
@@ -132,6 +135,7 @@
    ;discover
    :discover                              "גילוי"
    :none                                  "אף אחד"
+   :search-tags                           "תקליד את תג החיפוש שלך כאן"
    :popular-tags                          "תגים פופולאריים"
    :recent                                "חדש"
    :no-statuses-discovered                "לא התגלה שום סטטוס"
@@ -147,6 +151,7 @@
    :delete-contact-confirmation           "המשתמש הזה ימחק מרשימת אנשי הקשר שלך"
    :remove-from-group                     "הסר מהקבוצה"
    :edit-contacts                         "ערוך אנשי קשר"
+   :search-contacts                       "חפש באנשי הקשר"
    :contacts-group-new-chat               "התחל צ'אט חדש"
    :choose-from-contacts                  "בחר מאנשי הקשר"
    :no-contacts                           "אין שום אנשי קשר"

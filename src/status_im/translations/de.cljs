@@ -8,6 +8,7 @@
    :chat-name                             "Chatname"
    :notifications-title                   "Benachrichtigungen und Töne"
    :offline                               "Offline"
+   :search-for                            "Suche nach..."
    :cancel                                "Abbrechen"
    :next                                  "Weiter"
    :open                                  "Öffnen"
@@ -31,6 +32,7 @@
    ;;chat
    :is-typing                             "schreibt"
    :and-you                               "und du"
+   :search-chat                           "Chat durchsuchen"
    :members                               {:one   "1 Mitglied"
                                            :other "{{count}} Mitglieder"
                                            :zero  "Keine Mitglieder"}
@@ -135,6 +137,7 @@
    :new-group-chat                        "Neuer Gruppenchat"
    :new-public-group-chat                 "Öffentlichem Chat beitreten"
    :edit-chats                            "Chats bearbeiten"
+   :search-chats                          "Chats durchsuchen"
    :empty-topic                           "Leeres Thema"
    :topic-format                          "Falsches Format [a-z0-9\\-]+"
    :public-group-topic                    "Thema"
@@ -142,6 +145,7 @@
    ;;discover
    :discover                              "Entdecken"
    :none                                  "Nichts"
+   :search-tags                           "Tippe deine Suchbegriffe hier"
    :popular-tags                          "Beliebte #hashtags"
    :recent                                "Kürzliche Status"
    :no-statuses-found                     "Keine Status gefunden"
@@ -167,6 +171,7 @@
    :delete-contact-confirmation           "Dieser Kontakt wird aus deinen Kontakten gelöscht"
    :remove-from-group                     "Aus Gruppe entfernen"
    :edit-contacts                         "Kontakte bearbeiten"
+   :search-contacts                       "Kontakte durchsuchen"
    :contacts-group-new-chat               "Neuen Chat starten"
    :choose-from-contacts                  "Aus Kontakten wählen"
    :no-contacts                           "Noch keine Kontakte"

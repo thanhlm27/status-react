@@ -17,6 +17,7 @@
    ;chat
    :is-typing                             "друкуе"
    :and-you                               "і вы"
+   :search-chat                           "Пошук па чату"
    :members                               {:one   "1 член"
                                            :other "{{count}} члена(ау)"
                                            :zero  "няма членов"}
@@ -95,6 +96,7 @@
    ;discover
    :discover                             "Пошук"
    :none                                  "Няма"
+   :search-tags                           "Увядзіце тэгі для пошуку сюды"
    :popular-tags                          "Папулярныя тэгі"
    :recent                                "Апошнія"
    :no-statuses-discovered                "Статусы не выяўлены"

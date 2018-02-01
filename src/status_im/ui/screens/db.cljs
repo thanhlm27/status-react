@@ -65,7 +65,6 @@
 (spec/def ::webview-bridge (spec/nilable any?))
 (spec/def ::status-module-initialized? (spec/nilable boolean?))
 (spec/def ::status-node-started? (spec/nilable boolean?))
-(spec/def ::toolbar-search (spec/nilable map?))
 ;;height of native keyboard if shown
 (spec/def ::keyboard-height (spec/nilable number?))
 (spec/def ::keyboard-max-height (spec/nilable number?))
@@ -144,7 +143,6 @@
                   ::webview-bridge
                   ::status-module-initialized?
                   ::status-node-started?
-                  ::toolbar-search
                   ::keyboard-height
                   ::keyboard-max-height
                   ::orientation

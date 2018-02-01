@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "tippt"
    :and-you                               "und du"
+   :search-chat                           "Suche Chat"
    :members                               {:one   "1 Mitglied"
                                            :other "{{count}} Mitglieder"
                                            :zero  "Keine Mitglieder"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                             "Entdecken"
    :none                                  "Keine"
+   :search-tags                           "Gebe hier deine Suchbegriffe ein"
    :popular-tags                          "Beliebte Suchbegriffe"
    :recent                                "Kürzlich"
    :no-statuses-discovered                "Es wurden keine Status gefunden"

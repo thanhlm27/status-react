@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "กำลังพิมพ์"
    :and-you                               "และคุณ"
+   :search-chat                           "ค้นหาแชท"
    :members                               {:one   "1 สมาชิก"
                                            :other "{{count}} สมาชิก"
                                            :zero  "ไม่มีสมาชิก"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "การค้นพบ"
    :none                                  "ไม่มี"
+   :search-tags                           "พิมพ์แท็กการค้นหาของคุณที่นี่"
    :popular-tags                          "แท็กยอดนิยม"
    :recent                                "เมื่อเร็ว ๆ นี้"
    :no-statuses-discovered                "ไม่พบสถานะใด ๆ"
@@ -186,6 +188,7 @@
    :new-group                             "กลุ่มใหม่"
    :phone-e164                            "ระหว่างประเทศ 1"
    :remove-from-group                     "ลบออกจากกลุ่ม"
+   :search-contacts                       "ค้นหารายชื่อติดต่อ"
    :transaction                           "การทำธุรกรรม"
    :public-group-status                   "สาธารณะ"
    :leave-chat                            "ออกจากแชท"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "โปรดใส่คีย์สาธารณะที่ถูกต้องหรือสแกนรหัส QR"
    :faucet-error                          "คำขอไขก๊อกผิดพลาด"
    :phone-significant                     "มีความสำคัญ"
+   :search-for                            "ค้นหา..."
    :sharing-copy-to-clipboard             "คัดลอกไปยังคลิปบอร์ด"
    :phone-international                   "ระหว่างประเทศ 2"
    :enter-address                         "ใส่ที่อยู่"
@@ -206,6 +210,7 @@
                                            :other "รายชื่อติดต่อ"}
    :next                                  "ถัดไป"
    :from                                  "จาก"
+   :search-chats                          "ค้นหาแชท"
    :in-contacts                           "ในรายชื่อติดต่อ"
 
    :sharing-share                         "แชร์..."

@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "gépel"
    :and-you                               "és te"
+   :search-chat                           "Csevegés keresése"
    :members                               {:one   "1 tag"
                                            :other "{{count}} tag"
                                            :zero  "nincsenek tagok"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "Felfedezés"
    :none                                  "Semmi"
+   :search-tags                           "Add meg keresési címkéidet itt"
    :popular-tags                          "Népszerű címkék"
    :recent                                "Legutóbbi"
    :no-statuses-discovered                "Nincsenek felfedezett állapotok"
@@ -186,6 +188,7 @@
    :new-group                             "Új csoport"
    :phone-e164                            "1. nemzetközi"
    :remove-from-group                     "Eltávolítás a csoportból"
+   :search-contacts                       "Névjegyek keresése"
    :transaction                           "Tranzakció"
    :public-group-status                   "Nyilvános"
    :leave-chat                            "Kilépés a csevegésből"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "Kérjük, adj meg egy érvényes nyilvános billentyűkombinációt vagy olvasd be a QR-kódot"
    :faucet-error                          "Hiba a Faucet kérés során"
    :phone-significant                     "Jelentős"
+   :search-for                            "Keresés a következőre: ..."
    :sharing-copy-to-clipboard             "Másolás vágólapra"
    :phone-international                   "2. nemzetközi"
    :enter-address                         "Cím megadása"
@@ -206,6 +210,7 @@
                                            :other "névjegyek"}
    :next                                  "Következő"
    :from                                  "Feladó"
+   :search-chats                          "Csevegések keresése"
    :in-contacts                           "Névjegyekben"
 
    :sharing-share                         "Megosztás..."

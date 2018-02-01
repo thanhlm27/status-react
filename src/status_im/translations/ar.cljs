@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "يكتب"
    :and-you                               "وأنت أيضاً"
+   :search-chat                           "البحث في الدردشة"
    :members                               {:one   "1 عضو"
                                            :other "{{count}} أعضاء"
                                            :zero  "لا يوجد أعضاء"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                             "اكتشاف"
    :none                                  "لا شيء"
+   :search-tags                           "اكتب بيانات بحثك هنا"
    :popular-tags                          "العلامات المشهورة"
    :recent                                "حديثة"
    :no-statuses-discovered                "لم يتم الكشف عن حالات"

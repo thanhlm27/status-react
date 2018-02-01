@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "wpisuje tekst"
    :and-you                               "i ty"
+   :search-chat                           "Przeszukaj czat"
    :members                               {:one   "1 użytkownik"
                                            :other "Użytkownicy: {{count}}"
                                            :zero  "brak użytkowników "}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "Odkryte"
    :none                                  "Brak"
+   :search-tags                           "Tutaj wpisz swoje tagi wyszukiwania"
    :popular-tags                          "Popularne tagi"
    :recent                                "Najnowsze"
    :no-statuses-discovered                "Nie odkryto statusów"
@@ -186,6 +188,7 @@
    :new-group                             "Nowa grupa"
    :phone-e164                            "Międzynarodowy 1"
    :remove-from-group                     "Usuń z grupy"
+   :search-contacts                       "Przeszukaj kontakty"
    :transaction                           "Transakcja"
    :public-group-status                   "Publiczny"
    :leave-chat                            "Opuść czat"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "Wprowadź prawidłowy klucz publiczny lub zeskanuj kod QR"
    :faucet-error                          "Błąd wysyłania prośby dotyczącej kranu"
    :phone-significant                     "Ważne"
+   :search-for                            "Wyszukaj..."
    :sharing-copy-to-clipboard             "Skopiuj do schowka"
    :phone-international                   "Międzynarodowy 2"
    :enter-address                         "Wprowadź adres"
@@ -206,6 +210,7 @@
                                            :other "kontakty"}
    :next                                  "Dalej"
    :from                                  "Z"
+   :search-chats                          "Przeszukaj czaty"
    :in-contacts                           "W kontaktach"
 
    :sharing-share                         "Udostępnij..."

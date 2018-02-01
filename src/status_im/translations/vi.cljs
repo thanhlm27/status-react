@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "đang gõ"
    :and-you                               "và bạn"
+   :search-chat                           "Tìm kiếm trò chuyện"
    :members                               {:one   "1 thành viên"
                                            :other "{{count}} thành viên"
                                            :zero  "không thành viên"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "Khám phá"
    :none                                  "Không"
+   :search-tags                           "Gõ các thẻ tìm kiếm của bạn tại đây"
    :popular-tags                          "Các thẻ phổ biến"
    :recent                                "Gần đây"
    :no-statuses-discovered                "Không có trạng thái được tìm thấy"
@@ -186,6 +188,7 @@
    :new-group                             "Nhóm mới"
    :phone-e164                            "Quốc tế 1"
    :remove-from-group                     "Xóa khỏi nhóm"
+   :search-contacts                       "Tìm kiếm danh bạ"
    :transaction                           "Giao dịch"
    :public-group-status                   "Công cộng"
    :leave-chat                            "Rời cuộc trò chuyện"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "Vui lòng nhập khoá công khai hợp lệ hoặc quét mã QR"
    :faucet-error                          "Lỗi yêu cầu Faucet"
    :phone-significant                     "Đáng kể"
+   :search-for                            "Tìm kiếm..."
    :sharing-copy-to-clipboard             "Sao chép vào bộ nhớ đệm"
    :phone-international                   "Quốc tế 2"
    :enter-address                         "Nhập địa chỉ"
@@ -206,6 +210,7 @@
                                            :other "Danh bạ"}
    :next                                  "Tiếp theo"
    :from                                  "Từ"
+   :search-chats                          "Tìm kiếm các cuộc trò chuyện"
    :in-contacts                           "Trong danh bạ"
 
    :sharing-share                         "Chia sẻ..."

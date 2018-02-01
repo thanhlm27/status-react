@@ -8,6 +8,7 @@
    :chat-name                             "Pseudonyme"
    :notifications-title                   "Notifications et sons"
    :offline                               "Hors ligne"
+   :search-for                            "Rechercher..."
    :cancel                                "Annuler"
    :next                                  "Suivant"
    :open                                  "Ouvrir"
@@ -31,6 +32,7 @@
    ;;chat
    :is-typing                             "écrit..."
    :and-you                               "et vous"
+   :search-chat                           "Rechercher un chat"
    :members                               {:one   "1 membre"
                                            :other "{{count}} membres"
                                            :zero  "Aucun membre"}
@@ -134,6 +136,7 @@
    :new-group-chat                        "Nouveau chat de groupe"
    :new-public-group-chat                 "Rejoindre chat public"
    :edit-chats                            "Modifier chats"
+   :search-chats                          "Rechercher chats"
    :empty-topic                           "Sujet indéfini"
    :topic-format                          "Mauvais format [a-z0-9\\-]+"
    :public-group-topic                    "Sujet"
@@ -141,6 +144,7 @@
    ;;discover
    :discover                              "Découvrir"
    :none                                  "Aucun"
+   :search-tags                           "Entrez vos mots clés ici"
    :popular-tags                          "Mots-clés populaires"
    :recent                                "Récent"
    :no-statuses-found                     "Aucun statut trouvé"
@@ -166,6 +170,7 @@
    :delete-contact-confirmation           "Ce contact sera supprimé de vos contacts"
    :remove-from-group                     "Supprimer ce groupe"
    :edit-contacts                         "Modifier contacts"
+   :search-contacts                       "Rechercher contacts"
    :contacts-group-new-chat               "Démarrer un nouveau chat"
    :choose-from-contacts                  "Ajouter depuis mes contacts"
    :no-contacts                           "Pas encore de contacts"

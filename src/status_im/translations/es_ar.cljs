@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "está escribiendo"
    :and-you                               "y tú"
+   :search-chat                           "Buscar chat"
    :members                               {:one   "1 miembro"
                                            :other "{{count}} miembros"
                                            :zero  "no hay miembros"}
@@ -91,6 +92,7 @@
    ;discover
    :discover                              "Descubrimiento"
    :none                                  "Ninguno"
+   :search-tags                           "Ingresa aquí tus etiquetas de búsqueda"
    :popular-tags                          "Etiquetas populares"
    :recent                                "Reciente"
    :no-statuses-discovered                "No se encontró ningún estatus"
@@ -190,6 +192,7 @@
    :new-group                             "Nuevo grupo"
    :phone-e164                            "Internacional 1"
    :remove-from-group                     "Eliminar del grupo"
+   :search-contacts                       "Buscar contactos"
    :transaction                           "Transacción"
    :public-group-status                   "Público"
    :leave-chat                            "Abandonar chat"
@@ -198,6 +201,7 @@
    :enter-valid-public-key                "Ingrese una clave pública válida o escanee un código QR"
    :faucet-error                          "Error de solicitud de Faucet"
    :phone-significant                     "Significativo"
+   :search-for                            "Buscar..."
    :phone-international                   "Internacional 2"
    :enter-address                         "Ingresar dirección"
    :send-transaction                      "Enviar transacción"
@@ -209,6 +213,7 @@
                                            :other "contactos"}
    :next                                  "Siguiente"
    :from                                  "De"
+   :search-chats                          "Buscar chats"
    :in-contacts                           "En contactos"
 
    :type-a-message                        "Escribir un mensaje..."

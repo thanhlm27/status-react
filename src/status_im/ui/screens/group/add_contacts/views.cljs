@@ -29,17 +29,21 @@
   [toogle-contact-view contact :is-participant-selected? on-toggle-participant])
 
 (defn title-with-count [title count-value]
-  [react/view styles/toolbar-title-with-count
-   [react/text {:style styles/toolbar-title-with-count-text
-                :font  :toolbar-title}
-    title]
-   (when (pos? count-value)
-     [react/view styles/toolbar-title-with-count-container
-      [react/text {:style styles/toolbar-title-with-count-text-count
-                   :font  :toolbar-title}
-       count-value]])])
+  [react/view {:flex    1
+               :android {:padding-left 18}
+               :ios     {:align-items :center}}
+   [react/view styles/toolbar-title-with-count
+    [react/text {:style styles/toolbar-title-with-count-text
+                 :font  :toolbar-title}
+     title]
+    (when (pos? count-value)
+      [react/view styles/toolbar-title-with-count-container
+       [react/text {:style styles/toolbar-title-with-count-text-count
+                    :font  :toolbar-title}
+        count-value]])]])
 
-(defview toggle-list-toolbar [title contacts-count]
+;; TODO(alwx):
+(defn toggle-list-toolbar [title contacts-count]
   [toolbar/toolbar {}
    toolbar/default-nav-back
    [title-with-count title contacts-count]])

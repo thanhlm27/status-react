@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "sedang mengetik"
    :and-you                               "dan kamu"
+   :search-chat                           "cari obrolan"
    :members                               {:one   "1 orang"
                                            :other "anggota {{count}}orang"
                                            :zero  "Tidak ada anggota"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "mendeteksi"
    :none                                  "apa saja"
+   :search-tags                           "silakan memasukkan pencarian di tag"
    :popular-tags                          "tag populer"
    :recent                                "terbaru"
    :no-statuses-discovered                "informasi status tidak ditemukan"

@@ -1,7 +1,6 @@
 (ns status-im.ui.screens.discover.events
   (:require [re-frame.core :as re-frame]
             [status-im.protocol.core :as protocol]
-            [status-im.ui.screens.discover.navigation]
             [status-im.utils.handlers :as handlers]
             [clojure.string :as string]))
 

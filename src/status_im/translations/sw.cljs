@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "anaandika"
    :and-you                               "na wewe"
+   :search-chat                           "Tafuta gumzo"
    :members                               {:one   "Mwanachama 1"
                                            :other "{{count}} wanachama"
                                            :zero  "hakuna wanachama"}
@@ -89,8 +90,9 @@
    :new-group-chat                        "Gumzo mpya ya kikundi"
 
    ;discover
-   :discover                              "Ugunduzi"
+   :discover                             "Ugunduzi"
    :none                                  "Hakuna"
+   :search-tags                           "Andika vitambulisho vyako vya kutafuta hapa"
    :popular-tags                          "Vitambulisho maarufu"
    :recent                                "Hivi karibuni"
    :no-statuses-discovered                "Hakuna hali zimegundulika"

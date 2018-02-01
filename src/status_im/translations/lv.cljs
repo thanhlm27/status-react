@@ -8,6 +8,7 @@
    :chat-name                             "Čata nosaukums"
    :notifications-title                   "Paziņojumi un Skaņas"
    :offline                               "Offline"
+   :search-for                            "Meklēt..."
    :cancel                                "Atcelt"
    :next                                  "Tālāk"
    :type-a-message                        "Raksti īsziņu..."
@@ -24,6 +25,7 @@
    ;chat
    :is-typing                             "raksta"
    :and-you                               "un tu"
+   :search-chat                           "Meklēt čatu"
    :members                               {:one   "1 dalībnieks"
                                            :other "{{count}} dalībnieki"
                                            :zero  "nav dalībnieku"}
@@ -123,6 +125,7 @@
    :new-group-chat                        "Jauna grupa"
    :new-public-group-chat                 "Pievienoties publiskajam čatam"
    :edit-chats                            "Rediģēt čatu"
+   :search-chats                          "Meklēt čatu"
    :empty-topic                           "Nav temata"
    :topic-format                          "Nepareiz formāts [a-z0-9\\-]+"
    :public-group-topic                    "Temats"
@@ -130,6 +133,7 @@
    ;discover
    :discover                              "Discover"
    :none                                  "None"
+   :search-tags                           "Type your search tags here"
    :popular-tags                          "Popular tags"
    :recent                                "Recent"
    :no-statuses-discovered                "No statuses discovered"
@@ -145,6 +149,7 @@
    :delete-contact-confirmation           "Kontakts tiks dzēsts"
    :remove-from-group                     "Dzēst no grupas"
    :edit-contacts                         "Rediģēt kontakts"
+   :search-contacts                       "Meklēt kontaktus"
    :contacts-group-new-chat               "Sākt jaunu čatu"
    :choose-from-contacts                  "Izvēlēties no kontaktiem"
    :no-contacts                           "Kontaktu nav"

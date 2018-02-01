@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "está digitando"
    :and-you                               "e você"
+   :search-chat                           "Pesquisar chat"
    :members                               {:one   "1 membro"
                                            :other "{{count}} membros"
                                            :zero  "nenhum membro"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "Descobrir"
    :none                                  "Nenhum(a)"
+   :search-tags                           "Digite suas tags de pesquisa aqui"
    :popular-tags                          "Tags populares"
    :recent                                "Recentes"
    :no-statuses-discovered                "Nenhum status descoberto"
@@ -186,6 +188,7 @@
    :new-group                             "Novo grupo"
    :phone-e164                            "Internacional 1"
    :remove-from-group                     "Remover do grupo"
+   :search-contacts                       "Buscar contatos"
    :transaction                           "Transação"
    :public-group-status                   "Público"
    :leave-chat                            "Sair do bate-papo"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "Por favor, insira uma chave pública válida ou capture um código QR"
    :faucet-error                          "Erro na requisição faucet"
    :phone-significant                     "Significante"
+   :search-for                            "Buscar por..."
    :sharing-copy-to-clipboard             "Copiar para área de transferência"
    :phone-international                   "Internacional 2"
    :enter-address                         "Inserir endereço"
@@ -206,6 +210,7 @@
                                            :other "contatos"}
    :next                                  "Próximo"
    :from                                  "De"
+   :search-chats                          "Buscar bate-papos"
    :in-contacts                           "Em contatos"
 
    :sharing-share                         "Compartilhar..."

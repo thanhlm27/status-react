@@ -8,6 +8,7 @@
    :chat-name                             "Chatnamme"
    :notifications-title                   "Notifikaasjes en gelûden "
    :offline                               "Offline"
+   :search-for                            "Sykje om..."
    :cancel                                "Ôfbrekke"
    :next                                  "Folgjende"
    :type-a-message                        "Typ in berjocht..."
@@ -24,6 +25,7 @@
    ;chat
    :is-typing                             "typt"
    :and-you                               "en do"
+   :search-chat                           "Sykje yn de chat"
    :members                               {:one   "1 lid"
                                            :other "{{count}} leden"
                                            :zero  "gjin leden"}
@@ -124,6 +126,7 @@
    :new-group-chat                        "Nije groepchat"
    :new-public-group-chat                 "Doch mei yn iepenbare chat"
    :edit-chats                            "Bewurkje chats"
+   :search-chats                          "Sykje chats"
    :empty-topic                           "Leech ûnderwerp"
    :topic-format                          "Ferkearde yndieling [a-z0-9\\-]+"
    :public-group-topic                    "Ûnderwerp"
@@ -131,6 +134,7 @@
    ;discover
    :discover                              "Ûntdekking"
    :none                                  "Gjin"
+   :search-tags                           "Typ hjir dyn syktags"
    :popular-tags                          "Populêre tags"
    :recent                                "Koartlyn"
    :no-statuses-discovered                "Gjin statussen ûntdutsen"
@@ -146,6 +150,7 @@
    :delete-contact-confirmation           "Dit kontakt sil fuortsmiten wurde fan jo kontakten"
    :remove-from-group                     "Fuortsmite út groep"
    :edit-contacts                         "Bewurkje kontakten"
+   :search-contacts                       "Sykje kontakten"
    :contacts-group-new-chat               "Start neie chat"
    :choose-from-contacts                  "Kies út de kontakten"
    :no-contacts                           "Noch gjin kontaktpersoanen"

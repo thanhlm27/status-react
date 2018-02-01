@@ -8,6 +8,7 @@
    :chat-name                             "聊天名称"
    :notifications-title                   "通知和声音"
    :offline                               "离线"
+   :search-for                            "搜索..."
    :cancel                                "取消"
    :next                                  "下一个"
    :open                                  "打开"
@@ -31,6 +32,7 @@
    ;;chat
    :is-typing                             "正在输入"
    :and-you                               "你"
+   :search-chat                           "搜索聊天"
    :members                               {:one   "1 个成员"
                                            :other "{{count}} 个成员"
                                            :zero  "无成员"}
@@ -134,6 +136,7 @@
    :new-group-chat                        "新的群聊"
    :new-public-group-chat                 "加入公共聊天"
    :edit-chats                            "编辑对话"
+   :search-chats                          "搜索对话"
    :empty-topic                           "清空话题"
    :topic-format                          "格式错误 [a-z0-9\\-]+"
    :public-group-topic                    "话题"
@@ -141,6 +144,7 @@
    ;;discover
    :discover                              "发现"
    :none                                  "无"
+   :search-tags                           "在此处输入搜索标签"
    :popular-tags                          "热门标签"
    :recent                                "最近"
    :no-statuses-found                     "未发现状态"
@@ -166,6 +170,7 @@
    :delete-contact-confirmation           "此联系人将从你的联系人中删除"
    :remove-from-group                     "从群组中移除"
    :edit-contacts                         "编辑联系人"
+   :search-contacts                       "搜索联系人"
    :contacts-group-new-chat               "开始新的聊天"
    :choose-from-contacts                  "从联系人中选择"
    :no-contacts                           "还没有联系人"

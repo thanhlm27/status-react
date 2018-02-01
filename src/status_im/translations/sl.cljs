@@ -15,6 +15,7 @@
    ;chat
    :is-typing                             "piše"
    :and-you                               "in ti"
+   :search-chat                           "Iskanje po klepetu"
    :members                               {:one   "1 član"
                                            :other "{{count}} članov"
                                            :zero  "ni članov"}
@@ -86,6 +87,7 @@
    ;discover
    :discover                              "Odkrivanje"
    :none                                  "Brez"
+   :search-tags                           "Sem vnesi svoje priljubljene oznake"
    :popular-tags                          "Priljubljene oznake"
    :recent                                "Nedavno"
    :no-statuses-discovered                "Ni odkritih statusov"
@@ -186,6 +188,7 @@
    :new-group                             "Nova skupina"
    :phone-e164                            "Mednarodno 1"
    :remove-from-group                     "Odstrani iz skupine"
+   :search-contacts                       "Iskanje stikov"
    :transaction                           "Transakcija"
    :public-group-status                   "Javno"
    :leave-chat                            "Zapusti klepet"
@@ -194,6 +197,7 @@
    :enter-valid-public-key                "Prosimo, vnesite veljavno javno kodo, ali skenirajte QR kodo"
    :faucet-error                          "Napaka v zahtevi za dovod"
    :phone-significant                     "Pomembno"
+   :search-for                            "Išči..."
    :sharing-copy-to-clipboard             "Kopiraj v odložišče"
    :phone-international                   "Mednarodno 2"
    :enter-address                         "Vnesi naslov"
@@ -206,6 +210,7 @@
                                            :other "stiki"}
    :next                                  "Naprej"
    :from                                  "Od"
+   :search-chats                          "Išči klepete"
    :in-contacts                           "Med stiki"
 
    :sharing-share                         "Deli..."
