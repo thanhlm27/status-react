@@ -493,15 +493,15 @@
             ;; Root level "timestamp" is a unix ts in seconds.
             timestamp'        (or (:payload timestamp)
                                   (* 1000 timestamp))]
-
-        (if-not existing-contact
-          (let [contact (assoc contact :pending? true)]
-            {:dispatch-n [[:add-contacts [contact]]
-                          [:add-chat from chat]]})
-          (when-not (:pending? existing-contact)
-            (cond-> {:dispatch-n [[:update-chat! chat]
-                                  [:watch-contact contact]]}
-                (<= prev-last-updated timestamp') (update :dispatch-n concat [[:update-contact! contact]]))))))))
+        (when-not (get (:deleted-chats db) from)
+          (if-not existing-contact
+            (let [contact (assoc contact :pending? true)]
+              {:dispatch-n [[:add-contacts [contact]]
+                            [:add-chat from chat]]})
+            (when-not (:pending? existing-contact)
+              (cond-> {:dispatch-n [[:update-chat! chat]
+                                    [:watch-contact contact]]}
+                (<= prev-last-updated timestamp') (update :dispatch-n concat [[:update-contact! contact]])))))))))
 
 ;;GROUP
 
